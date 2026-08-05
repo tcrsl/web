@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sabies que...? Curiositats de transport i grua | Trans-Català Rodes S.L.</title>
+  <title>Sabies que...? — Curiositats del transport i la grua | Trans-Català Rodes S.L.</title>
   <meta name="description"
-    content="Arxiu de curiositats tècniques, història de la maquinària i dades sobre el món del transport i la grua, publicades cada dia per Trans-Català Rodes S.L.">
+    content="Arxiu de curiositats, història de la maquinària i dades del món del transport i el camió grua.">
 
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -16,7 +16,7 @@
   <!-- ============ HEADER ============ -->
   <header class="header">
     <div class="contenidor">
-      <a href="../index.html" class="header__logo">
+      <a href="../index.html#inici" class="header__logo">
         <img src="../img/logo_lletra_blanca.png" alt="Trans-Català Rodes S.L.">
       </a>
 
@@ -26,7 +26,6 @@
           <li><a href="../index.html#qui-som">Qui som</a></li>
           <li><a href="index.html">Sabies que...?</a></li>
           <li><a href="../index.html#serveis">Serveis</a></li>
-          <li><a href="../index.html#contacte">Contacte</a></li>
         </ul>
         <a href="../index.html#contacte" class="boto">Contacta'ns</a>
         <button class="menu__toggle" id="menuToggle" aria-label="Obrir menú">
@@ -37,79 +36,38 @@
   </header>
 
   <!-- ============ ARXIU D'EFEMÈRIDES ============ -->
-  <section class="seccio">
+  <section class="seccio efemeride">
     <div class="contenidor">
       <h2 class="titol-seccio"><span>Sabies que...?</span></h2>
-      <p class="subtitol-seccio">Curiositats tècniques, història de la maquinària i dades sobre el món del transport i
-        la grua, publicades cada dia</p>
+      <p class="subtitol-seccio">Arxiu de curiositats, història de la maquinària i dades del sector del transport i
+        la grua</p>
 
+      <!-- El bot (generar-efemeride.mjs) afegeix cada dia un nou
+           <article class="efemerides-llista__item"> just a l'inici
+           d'aquest div. NO canviïs la línia de sota tal qual, el
+           script la busca literalment per saber on inserir. -->
       <div class="efemerides-llista">
-
-        <!-- ⬇ EXEMPLE: cada dia s'afegeix un bloc nou com aquest, generat automàticament -->
-        <article class="efemerides-llista__item">
-          <span class="efemeride__data">Publicat el 29 de juliol de 2026</span>
-          <span class="efemeride__categoria">Història de la maquinària</span>
-          <h3><a href="2026-07-29.html">El salt del cable a la hidràulica (1952)</a></h3>
-          <p>Els camions grua van passar de sistemes mecànics i de cables a la tecnologia hidràulica durant la dècada de
-            1950, amb la primera grua hidràulica muntada sobre camió el 1952...</p>
-        </article>
-
-        <article class="efemerides-llista__item">
-          <span class="efemeride__data">Publicat el 28 de juliol de 2026</span>
-          <span class="efemeride__categoria">Curiositat tècnica</span>
-          <h3><a href="2026-07-28.html">El contenidor que va estandarditzar el transport (1956)</a></h3>
-          <p>El 1956, Malcolm McLean va posar en marxa el primer transport marítim amb contenidors estandarditzats, una
-            idea que va abaratir el transport de mercaderies a tot el món...</p>
-        </article>
-
-        <article class="efemerides-llista__item">
-          <span class="efemeride__data">Publicat el 27 de juliol de 2026</span>
-          <span class="efemeride__categoria">Dada curiosa</span>
-          <h3><a href="2026-07-27.html">El motor que porta el nom del seu inventor (1893)</a></h3>
-          <p>El motor dièsel va ser patentat per l'enginyer alemany Rudolf Diesel l'any 1893, i amb el temps es va
-            convertir en l'estàndard del transport pesat...</p>
-        </article>
-
       </div>
 
-      <!-- Paginació preparada per quan hi hagi moltes més entrades -->
-      <nav class="paginacio" aria-label="Paginació de l'arxiu">
+      <!-- Paginació: de moment només hi ha una pàgina. Quan l'arxiu
+           creixi (~30 entrades), cal moure les més antigues a
+           pagina-2.html, etc. i activar aquest bloc. -->
+      <!--
+      <nav class="paginacio">
         <span class="actual">1</span>
-        <!-- <a href="pagina-2.html">2</a> -->
-        <!-- <a href="pagina-2.html">Següent &rarr;</a> -->
+        <a href="pagina-2.html">2</a>
       </nav>
-
+      -->
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer id="contacte" class="footer">
+  <footer class="footer">
     <div class="contenidor">
-      <div class="footer__grid">
-        <div class="footer__firma">
-          <img src="../img/firma_trans.png" alt="Trans-Català Rodes S.L.">
-          <p>Transport i serveis de camió grua</p>
-        </div>
-        <div>
-          <h4>Contacte</h4>
-          <ul class="footer__contacte">
-            <li>📍 Avgda Catalunya nº 14, 43750 Flix</li>
-            <li>📞 <a href="tel:+34977410690">977 41 06 90</a></li>
-            <li>✉️ <a href="mailto:transcatalarodes@rodes.com">transcatalarodes@rodes.com</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Enllaços</h4>
-          <ul class="footer__enllacos">
-            <li><a href="../index.html#inici">Inici</a></li>
-            <li><a href="../index.html#qui-som">Qui som</a></li>
-            <li><a href="../index.html#serveis">Serveis</a></li>
-            <li><a href="../index.html#contacte">Contacte</a></li>
-          </ul>
-        </div>
-      </div>
       <div class="footer__linia">
         &copy; <span id="anyActual"></span> Trans-Català Rodes S.L. — Tots els drets reservats.
+        <span class="footer__credit">By <a href="https://castroflix.github.io/portfolio/" target="_blank"
+            rel="noopener">@castroflix</a></span>
       </div>
     </div>
   </footer>

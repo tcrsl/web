@@ -133,6 +133,14 @@ function inicialitzarEfemeride() {
   const contenidor = document.getElementById('efemerideCard');
   if (!contenidor) return;
 
+  // Si l'automatització (GitHub Action) ja ha escrit avui l'efemèride
+  // real directament dins l'HTML, el títol ja no estarà buit: en
+  // aquest cas no toquem res i deixem la dada real tal com és.
+  const titolEl = document.getElementById('efemerideTitol');
+  if (titolEl && titolEl.textContent.trim() !== '') {
+    return;
+  }
+
   const avui = new Date();
 
   // Selecció determinista segons el dia de l'any: cada dia real

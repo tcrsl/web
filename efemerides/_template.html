@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{TITOL}} | Sabies que...? | Trans-Català Rodes S.L.</title>
+  <title>{{TITOL}} | Trans-Català Rodes S.L.</title>
   <meta name="description" content="{{TEXT_CURT}}">
 
   <link rel="stylesheet" href="../style.css">
@@ -15,16 +15,16 @@
   <!-- ============ HEADER ============ -->
   <header class="header">
     <div class="contenidor">
-      <a href="../index.html" class="header__logo">
+      <a href="../index.html#inici" class="header__logo">
         <img src="../img/logo_lletra_blanca.png" alt="Trans-Català Rodes S.L.">
       </a>
+
       <nav class="menu">
         <ul class="menu__enllacos" id="menuEnllacos">
           <li><a href="../index.html#inici">Inici</a></li>
           <li><a href="../index.html#qui-som">Qui som</a></li>
           <li><a href="index.html">Sabies que...?</a></li>
           <li><a href="../index.html#serveis">Serveis</a></li>
-          <li><a href="../index.html#contacte">Contacte</a></li>
         </ul>
         <a href="../index.html#contacte" class="boto">Contacta'ns</a>
         <button class="menu__toggle" id="menuToggle" aria-label="Obrir menú">
@@ -35,12 +35,12 @@
   </header>
 
   <!-- ============ FITXA D'EFEMÈRIDE ============ -->
-  <section class="seccio">
+  <section class="seccio efemeride">
     <div class="contenidor efemeride-fitxa">
-      <a href="index.html" class="efemeride-fitxa__tornar">&larr; Tornar a l'arxiu</a>
+      <a href="index.html" class="efemeride-fitxa__tornar">&larr; Totes les curiositats</a>
 
-      <article class="efemerides-llista__item">
-        <span class="efemeride__data">Publicat el {{DATA}}</span>
+      <article class="efemeride__card">
+        <span class="efemeride__data">{{DATA}}</span>
         <span class="efemeride__categoria">{{CATEGORIA}}</span>
         <h3>{{TITOL}}</h3>
         <p>{{TEXT}}</p>
@@ -50,33 +50,12 @@
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer id="contacte" class="footer">
+  <footer class="footer">
     <div class="contenidor">
-      <div class="footer__grid">
-        <div class="footer__firma">
-          <img src="../img/firma_trans.png" alt="Trans-Català Rodes S.L.">
-          <p>Transport i serveis de camió grua</p>
-        </div>
-        <div>
-          <h4>Contacte</h4>
-          <ul class="footer__contacte">
-            <li>📍 Avgda Catalunya nº 14, 43750 Flix</li>
-            <li>📞 <a href="tel:+34977410690">977 41 06 90</a></li>
-            <li>✉️ <a href="mailto:transcatalarodes@rodes.com">transcatalarodes@rodes.com</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Enllaços</h4>
-          <ul class="footer__enllacos">
-            <li><a href="../index.html#inici">Inici</a></li>
-            <li><a href="../index.html#qui-som">Qui som</a></li>
-            <li><a href="../index.html#serveis">Serveis</a></li>
-            <li><a href="../index.html#contacte">Contacte</a></li>
-          </ul>
-        </div>
-      </div>
       <div class="footer__linia">
         &copy; <span id="anyActual"></span> Trans-Català Rodes S.L. — Tots els drets reservats.
+        <span class="footer__credit">By <a href="https://castroflix.github.io/portfolio/" target="_blank"
+            rel="noopener">@castroflix</a></span>
       </div>
     </div>
   </footer>
