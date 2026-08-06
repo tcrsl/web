@@ -13,7 +13,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const RUTA_DADES = path.resolve("data/efemerides.json");
-const MODEL = "gemini-2.5-flash"; // dins del nivell gratuït
+const MODEL = "gemini-flash-latest"; // dins del nivell gratuït
 const API_KEY = process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
