@@ -13,7 +13,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const RUTA_DADES = path.resolve("data/efemerides.json");
-const MODEL = "gemini-flash-latest"; // dins del nivell gratuït
+const MODEL = "gemini-flash-latest"; // àlies oficial: Google el manté apuntant sempre al Flash més recent
 const API_KEY = process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
@@ -75,9 +75,14 @@ Regles estrictes:
   baix risc.
 - Redacta en català, to proper però amable, entre 2 i 4 frases (uns 40-70 mots).
 - No repeteixis cap d'aquests temes ja publicats: ${titolsPrevis.length ? titolsPrevis.join(" | ") : "(cap encara)"}.
-- Verifica les dades amb la cerca web abans de respondre; si no n'estàs segur,
-  tria un altre fet del qual sí que tinguis una font fiable.
-- Cita 1 o 2 fonts reals amb la seva URL.
+- Fes servir NOMÉS fets ben establerts i consolidats (els que trobaries a
+  enciclopèdies o llocs oficials de fabricants/institucions). Si no n'estàs
+  segur d'una dada concreta (any exacte, xifra, nom), tria un altre fet del
+  qual sí que estiguis segur.
+- Cita 1 o 2 fonts reals i conegudes (per exemple el lloc web oficial d'un
+  fabricant, una institució com un museu, o una organització del sector) amb
+  la seva URL real i coneguda. Si no estàs seguríssim que la URL és correcta,
+  posa només el nom de la font sense URL.
 
 Respon ÚNICAMENT amb un objecte JSON, sense text addicional, sense markdown,
 amb exactament aquesta forma:
@@ -97,7 +102,10 @@ amb exactament aquesta forma:
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       contents: [{ role: "user", parts: [{ text: prompt }] }],
-      tools: [{ google_search: {} }], // cerca web gratuïta per verificar dades
+      // NOTA: la cerca web (tools: [{ google_search: {} }]) s'ha tret perquè
+      // consumeix una quota separada que Google sol exigir amb facturació
+      // activada, fins i tot dins el "nivell gratuït". Sense cerca, el model
+      // respon només amb el seu coneixement, cosa que segueix sent gratuïta.
       generationConfig: { temperature: 0.9 },
     }),
   });
