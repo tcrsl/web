@@ -1,0 +1,39 @@
+name: Efemèride diària
+
+on:
+  schedule:
+    # 05:30 UTC ≈ 06:30/07:30 hora de Catalunya (segons horari d'estiu/hivern)
+    - cron: "30 5 * * *"
+  workflow_dispatch: {} # permet executar-lo manualment des de la pestanya "Actions"
+
+permissions:
+  contents: write
+
+jobs:
+  generar-efemeride:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositori
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generar l'efemèride del dia
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generar-efemeride.mjs
+
+      - name: Desar els canvis al repositori
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/efemerides.json
+          if git diff --staged --quiet; then
+            echo "Sense canvis a desar."
+          else
+            git commit -m "Efemèride diària $(date -u +'%Y-%m-%d')"
+            git push
+          fi
