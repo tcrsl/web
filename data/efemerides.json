@@ -1,0 +1,51 @@
+[
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1952",
+    "titol": "El salt del cable a la hidràulica",
+    "text": "Els camions grua van passar de sistemes mecànics i de cables a la tecnologia hidràulica durant la dècada de 1950. El primer gran pas va arribar el 1952, amb la invenció de la grua hidràulica muntada a la part posterior d'un camió.",
+    "fonts": [{ "nom": "Hiab — història de l'empresa", "url": "https://www.hiab.com/en/about-us/our-history/" }]
+  },
+  {
+    "categoria": "Curiositat tècnica",
+    "any": "1956",
+    "titol": "El contenidor que va estandarditzar el transport",
+    "text": "El 1956, l'empresari Malcolm McLean va posar en marxa el primer transport marítim amb contenidors estandarditzats, una idea que després es va traslladar a camions i trens i que va abaratir dràsticament el transport de mercaderies a tot el món.",
+    "fonts": [{ "nom": "World Shipping Council", "url": "https://www.worldshipping.org/about-the-industry/history-of-containerization" }]
+  },
+  {
+    "categoria": "Dada curiosa",
+    "any": "1893",
+    "titol": "El motor que porta el nom del seu inventor",
+    "text": "El motor dièsel va ser patentat per l'enginyer alemany Rudolf Diesel l'any 1893. La seva eficiència respecte als motors de gasolina el va convertir, dècades més tard, en l'estàndard del transport pesat de mercaderies.",
+    "fonts": [{ "nom": "Deutsches Museum", "url": "https://www.deutsches-museum.de/en/" }]
+  },
+  {
+    "categoria": "Curiositat tècnica",
+    "any": "1919",
+    "titol": "El primer camió amb grua incorporada",
+    "text": "Els primers vehicles amb un braç de grua muntat sobre el propi camió van aparèixer després de la Primera Guerra Mundial, adaptant maquinària militar excedent per a tasques de càrrega i obra civil als anys 20.",
+    "fonts": [{ "nom": "Historical Construction Equipment Association", "url": "https://www.hcea.net/" }]
+  },
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1954",
+    "titol": "Atlas i l'expansió de la grua a Europa",
+    "text": "A mitjans dels anys 50, fabricants com la sueca Hydrauliska Industrie AB (avui Hiab) i l'alemanya Atlas Weyhausen van popularitzar les grues hidràuliques muntades sobre camió arreu d'Europa, substituint els vells sistemes de politja.",
+    "fonts": [{ "nom": "Atlas Weyhausen — arxiu històric", "url": "https://www.atlas-weyhausen.de/en/company/history" }]
+  },
+  {
+    "categoria": "Dada curiosa",
+    "any": "1912",
+    "titol": "El primer semiremolc articulat",
+    "text": "El disseny de semiremolc articulat que encara s'utilitza avui —un remolc sense eix davanter que es recolza sobre la tractora— es va popularitzar a partir de la dècada de 1910 als Estats Units, per facilitar el transport de càrregues llargues.",
+    "fonts": [{ "nom": "Smithsonian Institution", "url": "https://americanhistory.si.edu/" }]
+  },
+  {
+    "categoria": "Dada curiosa",
+    "any": "1963",
+    "titol": "Quan es va estandarditzar el palet europeu",
+    "text": "El palet EUR de fusta, de 1200x800 mm, es va normalitzar el 1963 a partir d'un acord entre ferrocarrils europeus, i encara avui és la mida de referència que determina com es dissenyen caixes de camió i magatzems.",
+    "fonts": [{ "nom": "European Pallet Association (EPAL)", "url": "https://www.epal-pallets.org/eu-en/about-epal/history/" }]
+  }
+]

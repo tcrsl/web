@@ -62,95 +62,60 @@ if (slides.length > 0) {
 // =============================================
 // Efemèride del dia ("Sabies que...?")
 // -----------------------------------------------
-// NOTA PER AL DESENVOLUPADOR / DEMO:
-// Aquestes dades són d'EXEMPLE, escrites a mà, només per mostrar
-// com es veurà el widget. En la versió final, aquest array es
-// generarà automàticament (1 cop al dia, via IA amb cerca web) i
-// es carregarà des d'un fitxer extern (per exemple data/efemerides.json).
-// Aquí les tenim incrustades directament al JS perquè la demo
-// funcioni obrint l'index.html sense servidor (evita problemes
-// de CORS en local amb file://).
+// Les dades ara es carreguen des de data/efemerides.json, que es
+// regenera automàticament un cop al dia mitjançant un GitHub Action
+// (.github/workflows/efemeride-diaria.yml) que crida l'API de Gemini
+// amb cerca web activada.
 //
-// NOMÉS 3 categories, totes de baix risc (sense normativa ni temes
-// legals): curiositats tècniques, història de la maquinària i dades
-// generals/curioses. Cada entrada porta un any de referència i les
-// fonts són d'exemple/il·lustratives — en producció vindran d'una
-// cerca web real feta per la IA abans de redactar el text.
+// Format de cada entrada al JSON:
+// { categoria, any, titol, text, fonts: [{ nom, url }], data? }
+// El camp "data" (YYYY-MM-DD) només existeix a les entrades generades
+// automàticament; les entrades de llavor/exemple no en tenen i es fan
+// servir com a reserva (fallback) si encara no s'ha executat cap
+// generació.
+//
+// NOTA: com que fem servir fetch(), aquesta secció requereix que el
+// web es serveixi per http(s) (GitHub Pages, un servidor local, etc.);
+// no funcionarà obrint l'index.html directament amb file://.
 // =============================================
-const EFEMERIDES_EXEMPLE = [
-  {
-    categoria: "Història de la maquinària",
-    any: "1952",
-    titol: "El salt del cable a la hidràulica",
-    text: "Els camions grua van passar de sistemes mecànics i de cables a la tecnologia hidràulica durant la dècada de 1950. El primer gran pas va arribar el 1952, amb la invenció de la grua hidràulica muntada a la part posterior d'un camió.",
-    fonts: [{ nom: "Hiab — història de l'empresa", url: "https://www.hiab.com/en/about-us/our-history/" }]
-  },
-  {
-    categoria: "Curiositat tècnica",
-    any: "1956",
-    titol: "El contenidor que va estandarditzar el transport",
-    text: "El 1956, l'empresari Malcolm McLean va posar en marxa el primer transport marítim amb contenidors estandarditzats, una idea que després es va traslladar a camions i trens i que va abaratir dràsticament el transport de mercaderies a tot el món.",
-    fonts: [{ nom: "World Shipping Council", url: "https://www.worldshipping.org/about-the-industry/history-of-containerization" }]
-  },
-  {
-    categoria: "Dada curiosa",
-    any: "1893",
-    titol: "El motor que porta el nom del seu inventor",
-    text: "El motor dièsel va ser patentat per l'enginyer alemany Rudolf Diesel l'any 1893. La seva eficiència respecte als motors de gasolina el va convertir, dècades més tard, en l'estàndard del transport pesat de mercaderies.",
-    fonts: [{ nom: "Deutsches Museum", url: "https://www.deutsches-museum.de/en/" }]
-  },
-  {
-    categoria: "Curiositat tècnica",
-    any: "1919",
-    titol: "El primer camió amb grua incorporada",
-    text: "Els primers vehicles amb un braç de grua muntat sobre el propi camió van aparèixer després de la Primera Guerra Mundial, adaptant maquinària militar excedent per a tasques de càrrega i obra civil als anys 20.",
-    fonts: [{ nom: "Historical Construction Equipment Association", url: "https://www.hcea.net/" }]
-  },
-  {
-    categoria: "Història de la maquinària",
-    any: "1954",
-    titol: "Atlas i l'expansió de la grua a Europa",
-    text: "A mitjans dels anys 50, fabricants com la sueca Hydrauliska Industrie AB (avui Hiab) i l'alemanya Atlas Weyhausen van popularitzar les grues hidràuliques muntades sobre camió arreu d'Europa, substituint els vells sistemes de politja.",
-    fonts: [{ nom: "Atlas Weyhausen — arxiu històric", url: "https://www.atlas-weyhausen.de/en/company/history" }]
-  },
-  {
-    categoria: "Dada curiosa",
-    any: "1912",
-    titol: "El primer semiremolc articulat",
-    text: "El disseny de semiremolc articulat que encara s'utilitza avui —un remolc sense eix davanter que es recolza sobre la tractora— es va popularitzar a partir de la dècada de 1910 als Estats Units, per facilitar el transport de càrregues llargues.",
-    fonts: [{ nom: "Smithsonian Institution", url: "https://americanhistory.si.edu/" }]
-  },
-  {
-    categoria: "Dada curiosa",
-    any: "1963",
-    titol: "Quan es va estandarditzar el palet europeu",
-    text: "El palet EUR de fusta, de 1200x800 mm, es va normalitzar el 1963 a partir d'un acord entre ferrocarrils europeus, i encara avui és la mida de referència que determina com es dissenyen caixes de camió i magatzems.",
-    fonts: [{ nom: "European Pallet Association (EPAL)", url: "https://www.epal-pallets.org/eu-en/about-epal/history/" }]
-  }
-];
 
-function inicialitzarEfemeride() {
-  const contenidor = document.getElementById('efemerideCard');
-  if (!contenidor) return;
-
-  // Si l'automatització (GitHub Action) ja ha escrit avui l'efemèride
-  // real directament dins l'HTML, el títol ja no estarà buit: en
-  // aquest cas no toquem res i deixem la dada real tal com és.
-  const titolEl = document.getElementById('efemerideTitol');
-  if (titolEl && titolEl.textContent.trim() !== '') {
-    return;
-  }
-
+function dataAvuiISO() {
   const avui = new Date();
+  const any = avui.getFullYear();
+  const mes = String(avui.getMonth() + 1).padStart(2, '0');
+  const dia = String(avui.getDate()).padStart(2, '0');
+  return `${any}-${mes}-${dia}`;
+}
 
-  // Selecció determinista segons el dia de l'any: cada dia real
-  // mostrarà una entrada diferent de la llista d'exemple, rotant
-  // quan s'arriba al final. En producció, aquesta selecció ja no
-  // caldrà: cada dia hi haurà una entrada nova generada per IA.
+function triarEntradaDelDia(historial) {
+  if (!Array.isArray(historial) || historial.length === 0) return null;
+
+  const avuiISO = dataAvuiISO();
+
+  // 1. Si hi ha una entrada generada exactament avui, és la que toca
+  const deAvui = historial.find((e) => e.data === avuiISO);
+  if (deAvui) return deAvui;
+
+  // 2. Si no, però ja hi ha entrades generades (amb camp "data"),
+  //    mostrem la més recent (per si el GitHub Action encara no
+  //    s'ha executat avui, p. ex. fa pocs minuts que és mitjanit).
+  const generades = historial.filter((e) => e.data);
+  if (generades.length > 0) {
+    generades.sort((a, b) => (a.data < b.data ? 1 : -1));
+    return generades[0];
+  }
+
+  // 3. Si encara no s'ha generat mai cap entrada (p. ex. abans de la
+  //    primera execució del workflow), rotem entre les d'exemple
+  //    segons el dia de l'any, com feia la versió de demo.
+  const avui = new Date();
   const inici = new Date(avui.getFullYear(), 0, 0);
   const diesTranscorreguts = Math.floor((avui - inici) / (1000 * 60 * 60 * 24));
-  const entrada = EFEMERIDES_EXEMPLE[diesTranscorreguts % EFEMERIDES_EXEMPLE.length];
+  return historial[diesTranscorreguts % historial.length];
+}
 
+function pintarEfemeride(entrada) {
+  const avui = new Date();
   const dataFormatada = avui.toLocaleDateString('ca-ES', {
     day: 'numeric', month: 'long', year: 'numeric'
   });
@@ -183,6 +148,26 @@ function inicialitzarEfemeride() {
         }
       });
     }
+  }
+}
+
+async function inicialitzarEfemeride() {
+  const contenidor = document.getElementById('efemerideCard');
+  if (!contenidor) return;
+
+  try {
+    const resposta = await fetch('data/efemerides.json', { cache: 'no-store' });
+    if (!resposta.ok) throw new Error('No s\'ha pogut carregar data/efemerides.json');
+    const historial = await resposta.json();
+
+    const entrada = triarEntradaDelDia(historial);
+    if (!entrada) throw new Error('El fitxer de dades és buit.');
+
+    pintarEfemeride(entrada);
+  } catch (err) {
+    console.error('Error carregant l\'efemèride del dia:', err);
+    // Amaguem la targeta en lloc de mostrar-la buida
+    contenidor.style.display = 'none';
   }
 }
 
