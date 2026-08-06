@@ -1,156 +1,39 @@
-// =============================================================
-// Genera l'efemèride del dia amb l'API gratuïta de Gemini
-// (Google AI Studio) i l'afegeix a data/efemerides.json
-//
-// Es fa servir des del workflow de GitHub Actions
-// (.github/workflows/efemeride-diaria.yml), un cop al dia.
-//
-// Requereix la variable d'entorn GEMINI_API_KEY (secret de
-// GitHub, mai s'escriu al codi ni es puja al repositori).
-// =============================================================
+name: Efemèride diària
 
-import { readFile, writeFile } from "node:fs/promises";
-import path from "node:path";
+on:
+  schedule:
+    # 05:30 UTC ≈ 06:30/07:30 hora de Catalunya (segons horari d'estiu/hivern)
+    - cron: "30 5 * * *"
+  workflow_dispatch: {} # permet executar-lo manualment des de la pestanya "Actions"
 
-const RUTA_DADES = path.resolve("data/efemerides.json");
-const MODEL = "gemini-flash-latest"; // àlies oficial: Google el manté apuntant sempre al Flash més recent
-const API_KEY = process.env.GEMINI_API_KEY;
+permissions:
+  contents: write
 
-if (!API_KEY) {
-  console.error("Falta la variable d'entorn GEMINI_API_KEY.");
-  process.exit(1);
-}
+jobs:
+  generar-efemeride:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositori
+        uses: actions/checkout@v4
 
-// Data d'avui en horari d'Europa/Madrid, format YYYY-MM-DD
-function dataAvuiISO() {
-  const avui = new Date();
-  const formatador = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Madrid",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  });
-  return formatador.format(avui); // ja retorna YYYY-MM-DD
-}
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
 
-async function llegirHistorial() {
-  try {
-    const contingut = await readFile(RUTA_DADES, "utf-8");
-    const dades = JSON.parse(contingut);
-    return Array.isArray(dades) ? dades : [];
-  } catch {
-    return [];
-  }
-}
+      - name: Generar l'efemèride del dia
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generar-efemeride.mjs
 
-function extreureJSON(text) {
-  // El model a vegades embolcalla la resposta amb ```json ... ```
-  const net = text.replace(/```json/gi, "").replace(/```/g, "").trim();
-  const inici = net.indexOf("{");
-  const final = net.lastIndexOf("}");
-  if (inici === -1 || final === -1) {
-    throw new Error("La resposta del model no conté un objecte JSON vàlid.");
-  }
-  return JSON.parse(net.slice(inici, final + 1));
-}
-
-async function generarEfemeride(historial) {
-  const titolsPrevis = historial
-    .slice(-40)
-    .map((e) => e.titol)
-    .filter(Boolean);
-
-  const prompt = `
-Ets un redactor tècnic que escriu per al web d'una empresa catalana de transport
-i serveis de camió grua (Trans-Català Rodes S.L.). Cada dia has de proposar UNA
-"efemèride del dia" curta i interessant per a la secció "Sabies que...?" del web.
-
-Regles estrictes:
-- Categoria: tria NOMÉS una d'aquestes tres, sense excepcions: "Curiositat tècnica",
-  "Història de la maquinària" o "Dada curiosa".
-- Temàtica: camions, grues, transport de mercaderies, logística, contenidors,
-  maquinària pesant, enginyeria del transport, o similars.
-- NO tractis normativa vigent, legislació, seguretat vial actual, política ni cap
-  tema legal o controvertit. Ha de ser una dada històrica, tècnica o curiosa de
-  baix risc.
-- Redacta en català, to proper però amable, entre 2 i 4 frases (uns 40-70 mots).
-- No repeteixis cap d'aquests temes ja publicats: ${titolsPrevis.length ? titolsPrevis.join(" | ") : "(cap encara)"}.
-- Fes servir NOMÉS fets ben establerts i consolidats (els que trobaries a
-  enciclopèdies o llocs oficials de fabricants/institucions). Si no n'estàs
-  segur d'una dada concreta (any exacte, xifra, nom), tria un altre fet del
-  qual sí que estiguis segur.
-- Cita 1 o 2 fonts reals i conegudes (per exemple el lloc web oficial d'un
-  fabricant, una institució com un museu, o una organització del sector) amb
-  la seva URL real i coneguda. Si no estàs seguríssim que la URL és correcta,
-  posa només el nom de la font sense URL.
-
-Respon ÚNICAMENT amb un objecte JSON, sense text addicional, sense markdown,
-amb exactament aquesta forma:
-{
-  "categoria": "...",
-  "any": "any o dècada de referència, com a text, p. ex. 1952",
-  "titol": "títol curt, sense punt final",
-  "text": "el text de l'efemèride",
-  "fonts": [{ "nom": "nom de la font", "url": "https://..." }]
-}
-`.trim();
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
-
-  const resposta = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      // NOTA: la cerca web (tools: [{ google_search: {} }]) s'ha tret perquè
-      // consumeix una quota separada que Google sol exigir amb facturació
-      // activada, fins i tot dins el "nivell gratuït". Sense cerca, el model
-      // respon només amb el seu coneixement, cosa que segueix sent gratuïta.
-      generationConfig: { temperature: 0.9 },
-    }),
-  });
-
-  if (!resposta.ok) {
-    const errText = await resposta.text();
-    throw new Error(`Error de l'API de Gemini (${resposta.status}): ${errText}`);
-  }
-
-  const dades = await resposta.json();
-  const text = dades?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") ?? "";
-  if (!text) throw new Error("Resposta buida del model.");
-
-  const entrada = extreureJSON(text);
-
-  // Validació mínima
-  const camps = ["categoria", "any", "titol", "text", "fonts"];
-  for (const camp of camps) {
-    if (!(camp in entrada)) throw new Error(`Falta el camp "${camp}" a la resposta del model.`);
-  }
-
-  return entrada;
-}
-
-async function main() {
-  const historial = await llegirHistorial();
-  const avui = dataAvuiISO();
-
-  // Si ja hi ha una entrada generada avui (p. ex. reexecució manual), no en fem una altra
-  if (historial.some((e) => e.data === avui)) {
-    console.log(`Ja existeix una efemèride per a ${avui}. No es genera cap de nova.`);
-    return;
-  }
-
-  const entrada = await generarEfemeride(historial);
-  entrada.data = avui;
-
-  // Les noves entrades es posen al principi (la més recent primera)
-  const nouHistorial = [entrada, ...historial];
-
-  await writeFile(RUTA_DADES, JSON.stringify(nouHistorial, null, 2) + "\n", "utf-8");
-  console.log(`Efemèride del ${avui} generada i desada: "${entrada.titol}"`);
-}
-
-main().catch((err) => {
-  console.error("Error generant l'efemèride:", err);
-  process.exit(1);
-});
+      - name: Desar els canvis al repositori
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/efemerides.json efemerides/
+          if git diff --staged --quiet; then
+            echo "Sense canvis a desar."
+          else
+            git commit -m "Efemèride diària $(date -u +'%Y-%m-%d')"
+            git push
+          fi
