@@ -214,7 +214,7 @@ h3 {
 }
 
 /* =========================================================
-   HEADER
+   1. HEADER
    ========================================================= */
 .header {
   background: var(--color-fons-fosc);
@@ -312,7 +312,7 @@ h3 {
 }
 
 /* =========================================================
-   SLIDER / CARRUSEL
+   2. SLIDER / CARRUSEL
    ========================================================= */
 .slider {
   position: relative;
@@ -422,7 +422,7 @@ h3 {
 }
 
 /* =========================================================
-   SECCIONS GENERALS
+  3. SECCIONS GENERALS
    ========================================================= */
 .seccio {
   padding: var(--espai-seccio) 0;
@@ -446,7 +446,7 @@ h3 {
 }
 
 /* =========================================================
-   EFEMÈRIDE DEL DIA ("Sabies que...?")
+   4. EFEMÈRIDE DEL DIA ("Sabies que...?")
    ========================================================= */
 .efemeride {
   background: var(--color-fons-clar);
@@ -532,7 +532,7 @@ h3 {
 }
 
 /* =========================================================
-   ARXIU D'EFEMÈRIDES (/efemerides/) — llistat i paginació
+   5. ARXIU D'EFEMÈRIDES (/efemerides/) — llistat i paginació
    ========================================================= */
 .efemerides-llista {
   display: grid;
@@ -645,7 +645,7 @@ h3 {
 }
 
 /* =========================================================
-   GALERIA DE FOTOS (imatges de fons + lightbox sense JS)
+    6. GALERIA DE FOTOS (imatges de fons + lightbox sense JS)
    ========================================================= */
 .qui-som__galeria {
   display: grid;
@@ -906,7 +906,7 @@ h3 {
 }
 
 /* =========================================================
-   FOOTER
+     7. FOOTER
    ========================================================= */
 .footer {
   background: var(--color-fons-fosc);
@@ -1019,6 +1019,100 @@ h3 {
 
 .footer__credit a:hover {
   color: var(--color-accent);
+}
+
+/* =========================================================
+   8. PÀGINA LEGAL (avís legal, privacitat i cookies)
+   ========================================================= */
+.legal {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.legal__actualitzat {
+  color: var(--color-primari);
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.legal__index {
+  background: #fff;
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radi);
+  box-shadow: var(--ombra);
+  padding: 24px 28px;
+  margin-bottom: var(--espai-seccio);
+}
+
+.legal__index h2 {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.legal__index ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.legal__index li {
+  margin-bottom: 6px;
+}
+
+.legal__index a {
+  color: var(--color-text-fosc);
+}
+
+.legal__index a:hover {
+  color: var(--color-accent);
+}
+
+.legal__bloc {
+  margin-bottom: var(--espai-seccio);
+  scroll-margin-top: 100px;
+}
+
+.legal__bloc h2 {
+  font-size: 1.4rem;
+  border-bottom: 3px solid var(--color-accent);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.legal__bloc h3 {
+  font-size: 1.05rem;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.legal__bloc p,
+.legal__bloc li {
+  color: var(--color-text-fosc);
+  margin-bottom: 14px;
+}
+
+.legal__bloc ul {
+  list-style: disc;
+  padding-left: 22px;
+}
+
+.legal__bloc a {
+  color: var(--color-accent);
+  border-bottom: 1px solid transparent;
+}
+
+.legal__bloc a:hover {
+  border-color: var(--color-accent);
+}
+
+.legal__avis {
+  background: #EFEBE3;
+  border-left: 4px solid var(--color-primari);
+  border-radius: var(--radi);
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  color: var(--color-primari);
+  margin-bottom: 20px;
 }
 
 /* =========================================================
