@@ -109,6 +109,38 @@ function extreureJSON(text) {
   return JSON.parse(net.slice(inici, final + 1));
 }
 
+// Petita espera entre reintents (backoff progressiu).
+function esperar(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Crida l'API de Gemini amb reintents automàtics quan l'error és
+// transitori: p. ex. FAILED_PRECONDITION (regió del runner de GitHub
+// Actions no suportada en aquell moment) o UNAVAILABLE (sobrecàrrega
+// temporal de Google). Amb un altre intent, sovint el runner cau en
+// una altra regió i la crida funciona sense cap intervenció manual.
+async function cridarGeminiAmbReintents(url, cos, intentsMaxims = 3) {
+  for (let intent = 1; intent <= intentsMaxims; intent++) {
+    const resposta = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cos),
+    });
+
+    if (resposta.ok) return resposta;
+
+    const errText = await resposta.text();
+    const esTransitori = errText.includes("FAILED_PRECONDITION") || errText.includes("UNAVAILABLE");
+
+    if (!esTransitori || intent === intentsMaxims) {
+      throw new Error(`Error de l'API de Gemini (${resposta.status}): ${errText}`);
+    }
+
+    console.warn(`Intent ${intent}/${intentsMaxims} fallit (error transitori), reintentant en ${intent * 5}s...`);
+    await esperar(intent * 5000);
+  }
+}
+
 async function generarEfemeride(historial) {
   const titolsPrevis = historial
     .slice(-40)
@@ -152,23 +184,14 @@ amb exactament aquesta forma:
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
-  const resposta = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      // NOTA: la cerca web (tools: [{ google_search: {} }]) s'ha tret perquè
-      // consumeix una quota separada que Google sol exigir amb facturació
-      // activada, fins i tot dins el "nivell gratuït". Sense cerca, el model
-      // respon només amb el seu coneixement, cosa que segueix sent gratuïta.
-      generationConfig: { temperature: 0.9 },
-    }),
+  // NOTA: la cerca web (tools: [{ google_search: {} }]) s'ha tret perquè
+  // consumeix una quota separada que Google sol exigir amb facturació
+  // activada, fins i tot dins el "nivell gratuït". Sense cerca, el model
+  // respon només amb el seu coneixement, cosa que segueix sent gratuïta.
+  const resposta = await cridarGeminiAmbReintents(url, {
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    generationConfig: { temperature: 0.9 },
   });
-
-  if (!resposta.ok) {
-    const errText = await resposta.text();
-    throw new Error(`Error de l'API de Gemini (${resposta.status}): ${errText}`);
-  }
 
   const dades = await resposta.json();
   const text = dades?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") ?? "";
