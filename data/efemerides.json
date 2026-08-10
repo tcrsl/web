@@ -1,5 +1,18 @@
 [
   {
+    "categoria": "Curiositat tècnica",
+    "any": "1952",
+    "titol": "L'arribada del pneumàtic radial als camions de gran tonatge",
+    "text": "Sabies que l'any 1952 Michelin va adaptar la tecnologia del pneumàtic radial als vehicles pesants de transport? Aquesta innovació va revolucionar el sector reduint el consum de combustible i duplicant la durabilitat de les rodes. Va transformar per sempre la logística de llarga distància a tot el món.",
+    "fonts": [
+      {
+        "nom": "Michelin Corporate",
+        "url": "https://www.michelin.com"
+      }
+    ],
+    "data": "2026-08-10"
+  },
+  {
     "categoria": "Història de la maquinària",
     "any": "1969",
     "titol": "El naixement del llegendari motor Scania V8",
