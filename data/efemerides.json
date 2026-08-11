@@ -1,5 +1,18 @@
 [
   {
+    "categoria": "Història de la maquinària",
+    "any": "1904",
+    "titol": "El naixement de la tracció per eruga en la maquinària pesant",
+    "text": "El 1904, l'inventor Benjamin Holt va provar amb èxit un tractor que substituïa les rodes posteriors per un sistema de cadenes de fusta per evitar que s'enfonsés al fang. Aquesta innovació va revolucionar el transport i el treball amb maquinària pesant en terrenys inestables, i va donar origen a la coneguda marca Caterpillar.",
+    "fonts": [
+      {
+        "nom": "Caterpillar Inc.",
+        "url": "https://www.caterpillar.com"
+      }
+    ],
+    "data": "2026-08-11"
+  },
+  {
     "categoria": "Curiositat tècnica",
     "any": "1952",
     "titol": "L'arribada del pneumàtic radial als camions de gran tonatge",
