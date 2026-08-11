@@ -35,5 +35,6 @@ jobs:
             echo "Sense canvis a desar."
           else
             git commit -m "Efemèride diària $(date -u +'%Y-%m-%d')"
+            git pull --rebase origin main
             git push
           fi
