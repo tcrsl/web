@@ -1,5 +1,18 @@
 [
   {
+    "categoria": "Dada curiosa",
+    "any": "1965",
+    "titol": "El Crawler-Transporter, el gegant del transport pesant",
+    "text": "Dissenyat el 1965 per moure els coets Saturn V, el Crawler-Transporter de la NASA és un dels vehicles autopropulsats més grans del món. Aquest gegant de més de 2.700 tones utilitza vuit sistemes d'eruga per moure càrregues extraordinàries a una velocitat màxima d'uns 1,6 km/h. És un exemple màxim d'enginyeria aplicada al transport de grans tonatges.",
+    "fonts": [
+      {
+        "nom": "NASA",
+        "url": "https://www.nasa.gov"
+      }
+    ],
+    "data": "2026-08-12"
+  },
+  {
     "categoria": "Història de la maquinària",
     "any": "1904",
     "titol": "El naixement de la tracció per eruga en la maquinària pesant",
