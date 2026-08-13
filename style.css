@@ -10,7 +10,7 @@
   /* text sobre fons clar */
   --color-fons-fosc: #3A322B;
   /* fons fosc (header/footer/franges) */
-  --color-text-clar: #efeeed;
+  --color-text-clar: #ffffff;
   /* text sobre fons fosc */
   --color-primari: #6B5D4F;
   /* marró/taupe de marca (logo, botons) */
@@ -18,7 +18,7 @@
   /* taronja clar del logo, per a fons de suport i detalls */
   --color-accent: #EE8100;
   /* taronja fosc del logo, per a subratllats, icones i detalls */
-  --color-text-atenuat: #A69783;
+  --color-text-atenuat: #536770;
   /* text secundari/atenuat sobre fons fosc (subtítols, footer) */
 
   /* ---- 2. TIPOGRAFIES ---- */
@@ -377,7 +377,7 @@ h3 {
   font-family: var(--font-detall);
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--color-accent);
+  color: var(--color-text-clar);
   font-size: 0.9rem;
   margin-bottom: 12px;
   display: block;
@@ -674,7 +674,7 @@ h3 {
 /* Una imatge per miniatura — ajusta ací el retall (background-position)
    si a alguna foto li talla malament el cap o els peus del camió */
 .qui-som__miniatura--1 {
-  background-image: url('img/toro_cargadora.jpeg');
+  background-image: url('img/camionet.jpeg');
 }
 
 .qui-som__miniatura--2 {
@@ -686,7 +686,7 @@ h3 {
 }
 
 .qui-som__miniatura--4 {
-  background-image: url('img/toro_altura_verd.jpeg');
+  background-image: url('img/porta_contenedor_pluma.jpg');
 }
 
 .qui-som__miniatura--5 {
@@ -724,7 +724,7 @@ h3 {
 
 /* Mateixa imatge que la miniatura corresponent, però sencera (contain) */
 .qui-som__lightbox--1 {
-  background-image: url('img/toro_cargadora.jpeg');
+  background-image: url('img/camionet.jpeg');
 }
 
 .qui-som__lightbox--2 {
@@ -736,7 +736,7 @@ h3 {
 }
 
 .qui-som__lightbox--4 {
-  background-image: url('img/toro_altura_verd.jpeg');
+  background-image: url('img/porta_contenedor_pluma.jpg');
 }
 
 .qui-som__lightbox--5 {
@@ -982,6 +982,13 @@ h3 {
 
 .footer__contacte a:hover {
   color: var(--color-accent);
+}
+
+.icona-whatsapp {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
 }
 
 .footer__enllacos li {
