@@ -14,7 +14,7 @@
   /* text sobre fons fosc */
   --color-primari: #6B5D4F;
   /* marró/taupe de marca (logo, botons) */
-  --color-secundari: #FFA205;
+  --color-secundari: #1A3E2A;
   /* taronja clar del logo, per a fons de suport i detalls */
   --color-accent: #EE8100;
   /* taronja fosc del logo, per a subratllats, icones i detalls */
@@ -239,8 +239,13 @@ h3 {
 }
 
 .header__logo img {
-  height: 42px;
-  width: auto;
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  object-fit: contain;
 }
 
 .header__marca {
@@ -954,7 +959,7 @@ h3 {
 }
 
 .footer__firma img {
-  height: 60px;
+  height: 90px;
   width: auto;
   margin-bottom: 14px;
   /* firma_trans.png sobre fons fosc */
