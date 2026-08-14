@@ -1190,6 +1190,15 @@ h3 {
     display: flex;
   }
 
+  .header__logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .footer__enllacos-col {
+    margin-left: 0;
+  }
+
   .menu .boto {
     display: none;
   }
@@ -1208,5 +1217,14 @@ h3 {
 
   .slider {
     height: 400px;
+  }
+
+  .slider__contingut {
+    padding-bottom: 50px;
+  }
+
+  .slider__contingut p {
+    margin-bottom: 18px;
+    font-size: 0.95rem;
   }
 }
