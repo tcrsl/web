@@ -9,6 +9,7 @@ on:
       - "avis-legal.html"
       - "efemerides/_template.html"
       - "data/efemerides.json"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
