@@ -248,6 +248,15 @@ h3 {
   object-fit: contain;
 }
 
+.header__marca-text {
+  font-family: var(--font-marca);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: var(--color-text-clar);
+  white-space: nowrap;
+}
+
 .header__marca {
   font-family: var(--font-marca);
   color: var(--color-text-clar);
@@ -962,7 +971,7 @@ h3 {
   font-family: var(--font-marca);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: var(--color-text-atenuat);
   margin-bottom: 14px;
 }
@@ -1143,6 +1152,10 @@ h3 {
 
   .footer__grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .header__marca-text {
+    display: none;
   }
 }
 
