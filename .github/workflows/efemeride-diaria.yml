@@ -26,11 +26,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generar-efemeride.mjs
 
+      - name: Reconstruir header/footer i arxiu
+        run: node scripts/build.mjs
+
       - name: Desar els canvis al repositori
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/efemerides.json efemerides/
+          git add data/efemerides.json efemerides/ index.html avis-legal.html
           if git diff --staged --quiet; then
             echo "Sense canvis a desar."
           else
