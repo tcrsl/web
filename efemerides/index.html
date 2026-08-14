@@ -11,14 +11,36 @@
   <link rel="stylesheet" href="../style.css">
 
   <!-- HEAD_EXTRA_START -->
-  <!-- HEAD_EXTRA_END -->
+<link rel="icon" type="image/svg+xml" href="../img/logo_tri_color.svg">
+
+<!-- HEAD_EXTRA_END -->
 </head>
 
 <body>
 
   <!-- ============ HEADER ============ -->
   <!-- HEADER_START -->
-  <!-- HEADER_END -->
+<header class="header">
+  <div class="contenidor">
+    <a href="../index.html#inici" class="header__logo">
+      <img src="../img/logo_lletra_blanca.png" alt="Trans-Català Rodes S.L.">
+    </a>
+    <nav class="menu">
+      <ul class="menu__enllacos" id="menuEnllacos">
+        <li><a href="../index.html#inici">Inici</a></li>
+        <li><a href="../index.html#qui-som">Qui som</a></li>
+        <li><a href="index.html">Sabies que...?</a></li>
+        <li><a href="../index.html#serveis">Serveis</a></li>
+      </ul>
+      <a href="../index.html#contacte" class="boto">Contacta'ns</a>
+      <button class="menu__toggle" id="menuToggle" aria-label="Obrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HEADER_END -->
 
   <!-- ============ ARXIU D'EFEMÈRIDES ============ -->
   <section class="seccio efemeride">
@@ -36,26 +58,20 @@
           <span class="efemeride__data">8 d’agost del 2026</span>
           <span class="efemeride__categoria">Història de la maquinària</span>
           <h3><a href="2026-08-08.html">El primer camió de motor de la història (1896)</a></h3>
-          <p>L&#39;any 1896, Gottlieb Daimler va construir el primer camió amb motor de combustió interna de la
-            història, basat en un carruatge adaptat. Comptava amb un motor…</p>
+          <p>L&#39;any 1896, Gottlieb Daimler va construir el primer camió amb motor de combustió interna de la història, basat en un carruatge adaptat. Comptava amb un motor…</p>
         </article>
-
         <article class="efemerides-llista__item">
           <span class="efemeride__data">7 d’agost del 2026</span>
           <span class="efemeride__categoria">Història de la maquinària</span>
           <h3><a href="2026-08-07.html">La primera grua torre mòbil fàcil de transportar (1949)</a></h3>
-          <p>L&#39;any 1949, l&#39;enginyer Hans Liebherr va dissenyar la TK 10, la primera grua torre mòbil que es
-            podia transportar fàcilment i plegar per al seu desplaçament.…</p>
+          <p>L&#39;any 1949, l&#39;enginyer Hans Liebherr va dissenyar la TK 10, la primera grua torre mòbil que es podia transportar fàcilment i plegar per al seu desplaçament.…</p>
         </article>
-
         <article class="efemerides-llista__item">
           <span class="efemeride__data">6 d’agost del 2026</span>
           <span class="efemeride__categoria">Història de la maquinària</span>
           <h3><a href="2026-08-06.html">L&#39;origen de la mascota de Mack Trucks (1915)</a></h3>
-          <p>El 1915, la companyia Mack va llançar el model AC, un camió creat per a tasques extremadament dures. Durant
-            la Primera Guerra Mundial, els soldats britànics…</p>
+          <p>El 1915, la companyia Mack va llançar el model AC, un camió creat per a tasques extremadament dures. Durant la Primera Guerra Mundial, els soldats britànics…</p>
         </article>
-
       </div>
 
       <!-- Paginació: de moment només hi ha una pàgina. Quan l'arxiu
@@ -72,7 +88,52 @@
 
   <!-- ============ FOOTER ============ -->
   <!-- FOOTER_START -->
-  <!-- FOOTER_END -->
+<footer id="contacte" class="footer">
+  <div class="contenidor">
+    <div class="footer__grid">
+
+      <div class="footer__firma">
+        <img src="../img/firma_trans.png" alt="Trans-Català Rodes S.L.">
+        <p>Transport i serveis de camió grua</p>
+      </div>
+
+      <div>
+        <h4>Contacte</h4>
+        <ul class="footer__contacte">
+          <li>📍 Avgda Catalunya nº 14, 43750 Flix</li>
+          <li>📞 <a href="tel:+34977410690">977 41 06 90</a></li>
+          <li>✉️ <a href="mailto:transcatalarodes@rodes.com">transcatalarodes@rodes.com</a></li>
+          <li><img src="../img/whatsapp.png" alt="WhatsApp" class="icona-whatsapp"> <a href="https://wa.me/34689219445" target="_blank" rel="noopener">689 21 94 45</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Enllaços</h4>
+        <ul class="footer__enllacos">
+          <li><a href="../index.html#inici">Inici</a></li>
+          <li><a href="../index.html#qui-som">Qui som</a></li>
+          <li><a href="../index.html#serveis">Serveis</a></li>
+        </ul>
+        <a href="../avis-legal.html">Avís legal</a>
+      </div>
+
+      <div class="footer__mapa" id="mapaContenidor">
+        <div class="footer__mapa-avis" id="mapaAvis">
+          <p>Cookies de Google Maps.</p>
+          <button type="button" id="mapaAcceptar" class="boto boto--contorn">Veure el mapa</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__linia">
+      &copy; <span id="anyActual"></span> Trans-Català Rodes S.L. — Tots els drets reservats.
+      <span class="footer__credit">By <a href="https://castroflix.github.io/portfolio/" target="_blank" rel="noopener">@castroflix</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- FOOTER_END -->
 
   <script src="../script.js"></script>
 </body>

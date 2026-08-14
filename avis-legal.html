@@ -11,14 +11,36 @@
 
   <link rel="stylesheet" href="style.css">
   <!-- HEAD_EXTRA_START -->
-  <!-- HEAD_EXTRA_END -->
+<link rel="icon" type="image/svg+xml" href="img/logo_tri_color.svg">
+
+<!-- HEAD_EXTRA_END -->
 </head>
 
 <body>
 
   <!-- ============ HEADER ============ -->
   <!-- HEADER_START -->
-  <!-- HEADER_END -->
+<header class="header">
+  <div class="contenidor">
+    <a href="index.html#inici" class="header__logo">
+      <img src="img/logo_lletra_blanca.png" alt="Trans-Català Rodes S.L.">
+    </a>
+    <nav class="menu">
+      <ul class="menu__enllacos" id="menuEnllacos">
+        <li><a href="index.html#inici">Inici</a></li>
+        <li><a href="index.html#qui-som">Qui som</a></li>
+        <li><a href="efemerides/index.html">Sabies que...?</a></li>
+        <li><a href="index.html#serveis">Serveis</a></li>
+      </ul>
+      <a href="index.html#contacte" class="boto">Contacta'ns</a>
+      <button class="menu__toggle" id="menuToggle" aria-label="Obrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HEADER_END -->
 
   <!-- ============ CONTINGUT LEGAL ============ -->
   <section class="seccio">
@@ -236,7 +258,16 @@
 
   <!-- ============ FOOTER ============ -->
   <!-- FOOTER_START -->
-  <!-- FOOTER_END -->
+<footer class="footer">
+  <div class="contenidor">
+    <div class="footer__linia">
+      &copy; <span id="anyActual"></span> Trans-Català Rodes S.L. — Tots els drets reservats.
+      <span class="footer__credit">By <a href="https://castroflix.github.io/portfolio/" target="_blank" rel="noopener">@castroflix</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- FOOTER_END -->
 
   <script src="script.js"></script>
 </body>
