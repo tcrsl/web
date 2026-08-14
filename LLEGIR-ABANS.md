@@ -13,20 +13,57 @@ Cada dia, sense intervenció humana, es genera una efemèride nova, es
 publica al widget de portada ("Sabies que...?") i es crea una fitxa
 permanent nova a l'arxiu.
 
+A més, des de la migració a plantilles compartides, **el header, el
+footer i els extres del `<head>` (favicon, etc.) ja no estan escrits a
+mà a cada pàgina** — viuen en un sol lloc (`partials/`) i es
+propaguen automàticament a totes les pàgines, incloses les 300+ fitxes
+que hi haurà a l'arxiu amb el temps.
+
 ## Com funciona (peça per peça)
 
 | Peça | Què fa |
 |---|---|
 | **GitHub Pages** | Serveix la web estàtica directament des del repositori. Gratuït, sense hosting extern. |
-| **GitHub Actions** (`.github/workflows/efemeride-diaria.yml`) | Es dispara cada dia a les 05:30 UTC i també es pot llançar a mà des de la pestanya "Actions". |
-| **`scripts/generar-efemeride.mjs`** | Crida l'API de Gemini, valida la resposta, i escriu els tres llocs següents. |
-| **`data/efemerides.json`** | Historial complet en JSON. El `script.js` de la portada el llegeix per mostrar l'efemèride d'avui al widget "Sabies que...?". |
-| **`efemerides/_template.html`** | Plantilla amb placeholders (`{{TITOL}}`, `{{DATA}}`, `{{CATEGORIA}}`, `{{TEXT}}`, `{{TEXT_CURT}}`, `{{FONTS_HTML}}`) que el script omple cada dia. |
-| **`efemerides/YYYY-MM-DD.html`** | Una pàgina nova cada dia, indexable per Google, amb URL pròpia i permanent. |
-| **`efemerides/index.html`** | Llistat de l'arxiu; el script hi insereix l'entrada nova a dalt de tot, automàticament. |
+| **GitHub Actions — `efemeride-diaria.yml`** | Es dispara cada dia a les 05:30 UTC (i també a mà des de la pestanya "Actions"): genera l'efemèride del dia i després reconstrueix el web. |
+| **GitHub Actions — `build.yml`** | Es dispara automàticament cada cop que es fa `push` a `partials/`, `index.html`, `avis-legal.html`, `efemerides/_template.html` o `data/efemerides.json`. Reconstrueix i publica els canvis sol, sense que calgui fer res més. |
+| **`scripts/generar-efemeride.mjs`** | Crida l'API de Gemini, valida la resposta, i l'afegeix a `data/efemerides.json`. |
+| **`scripts/build.mjs`** | El "muntador" del web: injecta `partials/header.html`, `partials/footer.html` (o `footer-llarg.html`) i `partials/head-extra.html` a totes les pàgines, i regenera **totes** les fitxes de l'arxiu i `efemerides/index.html` a partir de `data/efemerides.json`. |
+| **`partials/header.html`** | El `<header>` (menú, logo) compartit per tot el web. Es canvia una vegada, i es propaga a totes les pàgines al següent build. |
+| **`partials/footer.html`** | Footer curt (només copyright). S'usa a `avis-legal.html` i a cada fitxa individual de l'arxiu. |
+| **`partials/footer-llarg.html`** | Footer llarg (contacte, enllaços, mapa). S'usa a `index.html` i a `efemerides/index.html`. |
+| **`partials/head-extra.html`** | Etiquetes addicionals del `<head>` comunes a tot el web (ara mateix, el favicon). Aquí s'afegirà en el futur qualsevol `<meta>` nova, `robots`, analítiques, etc. |
+| **`data/efemerides.json`** | Historial complet en JSON — és la **font de veritat** de tot l'arxiu. El `script.js` de la portada el llegeix per mostrar l'efemèride d'avui al widget "Sabies que...?", i `build.mjs` el llegeix per regenerar totes les fitxes HTML. |
+| **`efemerides/_template.html`** | Plantilla amb placeholders (`{{TITOL}}`, `{{DATA}}`, `{{CATEGORIA}}`, `{{TEXT}}`, `{{TEXT_CURT}}`, `{{FONTS_HTML}}`) més els marcadors `HEADER_START/END`, `FOOTER_START/END` i `HEAD_EXTRA_START/END` que `build.mjs` omple cada vegada. |
+| **`efemerides/YYYY-MM-DD.html`** | Una pàgina nova cada dia, indexable per Google, amb URL pròpia i permanent. Es regenera sencera a cada build. |
+| **`efemerides/index.html`** | Llistat de l'arxiu; `build.mjs` reescriu tota la llista a partir de `data/efemerides.json` a cada build (ja no cal inserir l'entrada nova a mà ni amb el marcador antic). |
 
 Cost total: **0 €/mes**. Tot corre amb els nivells gratuïts de GitHub
 (Pages + Actions) i de l'API de Gemini (Google AI Studio).
+
+## Com fer canvis ara (header, footer, favicon, metadades...)
+
+Amb el sistema de plantilles, **ja no cal tocar cada pàgina una per
+una**. El flux és sempre:
+
+1. Edita el fitxer corresponent dins de `partials/` (per exemple,
+   `partials/header.html` si vols canviar el menú).
+2. Fes `git push`.
+3. El workflow `build.yml` es dispara sol, executa `scripts/build.mjs`
+   i publica el canvi a totes les pàgines — incloses totes les fitxes
+   de l'arxiu, encara que n'hi hagi centenars.
+
+Si vols provar el resultat abans de fer push, es pot executar
+`node scripts/build.mjs` en local (cal tenir Node instal·lat).
+
+**On afegir metadades noves (robots, og:tags, analítiques...):**
+`partials/head-extra.html`. És l'únic lloc a tocar; es propaga a totes
+les pàgines igual que el header i el footer.
+
+**Important:** les pàgines finals (`index.html`, `avis-legal.html`,
+`efemerides/*.html`) **no s'han d'editar directament** en la part del
+header/footer/head-extra — qualsevol canvi fet a mà allà es
+sobreescriurà al següent build. Els únics llocs "font" per a
+aquestes parts són els fitxers dins de `partials/`.
 
 ## Sobre el proveïdor d'IA: per què Gemini i no Anthropic
 
@@ -93,9 +130,15 @@ arxiu que atrau cerques" — no com un botó màgic de SEO immediat.
 - **Canviar el secret `GEMINI_API_KEY`**: Settings → Secrets and
   variables → Actions, al repositori de GitHub.
 - **Veure si ha fallat algun dia**: pestanya "Actions" del
-  repositori — les execucions fallides surten en vermell.
-- **Forçar una execució manual**: Actions → "Efemèride diària" → "Run
-  workflow".
+  repositori — les execucions fallides surten en vermell. Ara hi ha
+  dos workflows a vigilar: "Efemèride diària" i "Reconstruir web".
+- **Forçar una execució manual de l'efemèride**: Actions → "Efemèride
+  diària" → "Run workflow".
+- **Forçar una reconstrucció manual** (per exemple, després d'editar
+  un `partial` sense voler que esperi al push): Actions →
+  "Reconstruir web" — de moment només es dispara amb `push`, no té
+  `workflow_dispatch`; si es vol poder llançar a mà cal afegir-lo a
+  `build.yml`.
 - **Si Google torna a retirar el model** i torna a donar error 404/
   429: el més probable és que calgui revisar el nom del model o
   activar facturació al projecte de Google Cloud (veure secció
