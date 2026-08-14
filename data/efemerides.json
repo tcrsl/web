@@ -1,5 +1,83 @@
 [
   {
+    "categoria": "Curiositat tècnica",
+    "any": "1958",
+    "titol": "El twistlock, la clau de fixació del transport intermodal",
+    "text": "Sabies que un mecanisme tan senzill com el twistlock va revolucionar la logística moderna? Dissenyat per l'enginyer Keith Tantlinger a finals dels anys 50, aquest tancament giratori estandarditzat permet que les grues bloquegin i alliberin contenidors en qüestió de segons sobre camions, trens i vaixells, assegurant una càrrega perfectament ferma durant tot el trajecte.",
+    "fonts": [
+      {
+        "nom": "ISO - International Organization for Standardization",
+        "url": "https://www.iso.org"
+      }
+    ],
+    "data": "2026-08-14"
+  },
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1954",
+    "titol": "L'arribada del turbocompressor als camions de sèrie",
+    "text": "L'any 1954, Volvo va revolucionar el transport pesant en presentar el model L395 Titan equipat amb turbocompressor. Va ser un dels primers camions de gran tonatge fabricats en sèrie que incorporava aquesta tecnologia, aconseguint augmentar la potència del motor de 150 a 185 cavalls sense incrementar-ne significativament el pes.",
+    "fonts": [
+      {
+        "nom": "Volvo Trucks Global",
+        "url": "https://www.volvotrucks.com"
+      }
+    ],
+    "data": "2026-08-13"
+  },
+  {
+    "categoria": "Dada curiosa",
+    "any": "1965",
+    "titol": "El Crawler-Transporter, el gegant del transport pesant",
+    "text": "Dissenyat el 1965 per moure els coets Saturn V, el Crawler-Transporter de la NASA és un dels vehicles autopropulsats més grans del món. Aquest gegant de més de 2.700 tones utilitza vuit sistemes d'eruga per moure càrregues extraordinàries a una velocitat màxima d'uns 1,6 km/h. És un exemple màxim d'enginyeria aplicada al transport de grans tonatges.",
+    "fonts": [
+      {
+        "nom": "NASA",
+        "url": "https://www.nasa.gov"
+      }
+    ],
+    "data": "2026-08-12"
+  },
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1904",
+    "titol": "El naixement de la tracció per eruga en la maquinària pesant",
+    "text": "El 1904, l'inventor Benjamin Holt va provar amb èxit un tractor que substituïa les rodes posteriors per un sistema de cadenes de fusta per evitar que s'enfonsés al fang. Aquesta innovació va revolucionar el transport i el treball amb maquinària pesant en terrenys inestables, i va donar origen a la coneguda marca Caterpillar.",
+    "fonts": [
+      {
+        "nom": "Caterpillar Inc.",
+        "url": "https://www.caterpillar.com"
+      }
+    ],
+    "data": "2026-08-11"
+  },
+  {
+    "categoria": "Curiositat tècnica",
+    "any": "1952",
+    "titol": "L'arribada del pneumàtic radial als camions de gran tonatge",
+    "text": "Sabies que l'any 1952 Michelin va adaptar la tecnologia del pneumàtic radial als vehicles pesants de transport? Aquesta innovació va revolucionar el sector reduint el consum de combustible i duplicant la durabilitat de les rodes. Va transformar per sempre la logística de llarga distància a tot el món.",
+    "fonts": [
+      {
+        "nom": "Michelin Corporate",
+        "url": "https://www.michelin.com"
+      }
+    ],
+    "data": "2026-08-10"
+  },
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1969",
+    "titol": "El naixement del llegendari motor Scania V8",
+    "text": "L'any 1969, Scania va revolucionar el transport pesant amb el llançament del seu icònic motor V8 de 14 litres i 350 cavalls de potència. Muntat al model LB140, es va convertir en el motor de camió comercial més potent d'Europa en la seva època. Aquesta innovació va permetre mantenir velocitats ràpides i constants fins i tot en les pujades més exigents.",
+    "fonts": [
+      {
+        "nom": "Scania Group",
+        "url": "https://www.scania.com"
+      }
+    ],
+    "data": "2026-08-09"
+  },
+  {
     "categoria": "Història de la maquinària",
     "any": "1896",
     "titol": "El primer camió de motor de la història",
