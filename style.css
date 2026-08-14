@@ -958,11 +958,13 @@ h3 {
   font-size: 0.85rem;
 }
 
-.footer__firma img {
-  height: 90px;
-  width: auto;
+.footer__marca-text {
+  font-family: var(--font-marca);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+  color: var(--color-text-atenuat);
   margin-bottom: 14px;
-  /* firma_trans.png sobre fons fosc */
 }
 
 .footer__firma p {
