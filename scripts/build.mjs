@@ -6,6 +6,7 @@ const PARTIALS = path.join(ARREL, "partials");
 const DATA_JSON = path.join(ARREL, "data/efemerides.json");
 const CARPETA_ARXIU = path.join(ARREL, "efemerides");
 const RUTA_PLANTILLA_ARXIU = path.join(CARPETA_ARXIU, "_template.html");
+const RUTA_SITEMAP = path.join(ARREL, "sitemap.xml");
 
 function omplir(str, valors) {
   let out = str;
@@ -82,6 +83,25 @@ async function injectarMarcadorsEnMemoria(html, footerPartial = "footer.html") {
   return html;
 }
 
+async function generarSitemap(historial) {
+  const base = "https://tcrsl.github.io/web/";
+  const entrades = historial
+    .filter((e) => e.data)
+    .sort((a, b) => (a.data < b.data ? 1 : -1));
+
+  let urls = `  <url>\n    <loc>${base}</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
+  urls += `  <url>\n    <loc>${base}efemerides/</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+
+  for (const e of entrades) {
+    urls += `  <url>\n    <loc>${base}efemerides/${e.data}.html</loc>\n    <lastmod>${e.data}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
+  }
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}</urlset>\n`;
+
+  await writeFile(RUTA_SITEMAP, xml, "utf-8");
+  console.log("sitemap.xml regenerat.");
+}
+
 async function regenerarArxiu() {
   const historial = JSON.parse(await readFile(DATA_JSON, "utf-8"));
   const plantillaBase = await readFile(RUTA_PLANTILLA_ARXIU, "utf-8");
@@ -123,6 +143,7 @@ async function regenerarArxiu() {
   );
 
   await writeFile(path.join(CARPETA_ARXIU, "index.html"), nouIndex, "utf-8");
+  await generarSitemap(historial);
 }
 
 async function main() {
