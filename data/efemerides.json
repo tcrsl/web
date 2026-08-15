@@ -1,6 +1,19 @@
 [
   {
     "categoria": "Curiositat tècnica",
+    "any": "1961",
+    "titol": "El fre de motor 'Jake Brake', clau per a les baixades pesants",
+    "text": "L'any 1961 es va començar a comercialitzar el conegut 'Jake Brake' (Jacobs Engine Brake), un enginyós sistema de fre per descompressió inventat per Clessie Cummins. Aquest mecanisme allibera l'aire comprimit dels cilindres per utilitzar la resistència del propi motor com a fre. Això va permetre als camions pesants reduir la velocitat en pendents llargs sense desgastar ni sobreescalfar els frens de servei.",
+    "fonts": [
+      {
+        "nom": "Jacobs Vehicle Systems",
+        "url": "https://www.jacobsvehiclesystems.com"
+      }
+    ],
+    "data": "2026-08-15"
+  },
+  {
+    "categoria": "Curiositat tècnica",
     "any": "1958",
     "titol": "El twistlock, la clau de fixació del transport intermodal",
     "text": "Sabies que un mecanisme tan senzill com el twistlock va revolucionar la logística moderna? Dissenyat per l'enginyer Keith Tantlinger a finals dels anys 50, aquest tancament giratori estandarditzat permet que les grues bloquegin i alliberin contenidors en qüestió de segons sobre camions, trens i vaixells, assegurant una càrrega perfectament ferma durant tot el trajecte.",
