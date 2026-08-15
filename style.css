@@ -397,7 +397,8 @@ h3 {
   display: block;
 }
 
-.slider__contingut h1 {
+.slider__contingut h1,
+.slider__contingut h2 {
   font-family: var(--font-marca);
   color: var(--color-text-clar);
   font-size: 2.6rem;
@@ -1211,7 +1212,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .slider__contingut h1 {
+  .slider__contingut h1,
+  .slider__contingut h2 {
     font-size: 1.8rem;
   }
 
