@@ -689,35 +689,35 @@ h3 {
 /* Una imatge per miniatura — ajusta ací el retall (background-position)
    si a alguna foto li talla malament el cap o els peus del camió */
 .qui-som__miniatura--1 {
-  background-image: url('img/camionet.jpeg');
+  background-image: url('img/miniatures/miniatura_camionet.webp');
 }
 
 .qui-som__miniatura--2 {
-  background-image: url('img/toro_cargadora_altura_front.jpeg');
+  background-image: url('img/miniatures/miniatura_toro_cargadora_altura_front.webp');
 }
 
 .qui-som__miniatura--3 {
-  background-image: url('img/toro2.jpeg');
+  background-image: url('img/miniatures/miniatura_toro2.webp');
 }
 
 .qui-som__miniatura--4 {
-  background-image: url('img/porta_contenedor_pluma.jpg');
+  background-image: url('img/miniatures/miniatura_porta_contenedor_pluma.webp');
 }
 
 .qui-som__miniatura--5 {
-  background-image: url('img/contenidors_tres_tamanys.jpg');
+  background-image: url('img/miniatures/miniatura_contenidors_tres_tamanys.webp');
 }
 
 .qui-som__miniatura--6 {
-  background-image: url('img/flota_camions.jpeg');
+  background-image: url('img/miniatures/miniatura_flota_camions.webp');
 }
 
 .qui-som__miniatura--7 {
-  background-image: url('img/treball_precisio_altura.jpg');
+  background-image: url('img/miniatures/miniatura_treball_precisio_altura.webp');
 }
 
 .qui-som__miniatura--8 {
-  background-image: url('img/treball_gran_pes.jpg');
+  background-image: url('img/miniatures/miniatura_treball_gran_pes.webp');
 }
 
 /* Lightbox: amagat per defecte, apareix quan l'URL apunta al seu #id */
