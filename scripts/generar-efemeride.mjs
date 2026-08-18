@@ -119,7 +119,23 @@ function esperar(ms) {
 // Actions no suportada en aquell moment) o UNAVAILABLE (sobrecàrrega
 // temporal de Google). Amb un altre intent, sovint el runner cau en
 // una altra regió i la crida funciona sense cap intervenció manual.
-async function cridarGeminiAmbReintents(url, cos, intentsMaxims = 3) {
+//
+// Backoff: espera llarga i creixent entre intents, pensada per a
+// errors que poden trigar minuts a resoldre's (no segons).
+//   Intent 1 -> 2: ~60s
+//   Intent 2 -> 3: ~200s
+//   Intent 3 -> 4: ~400s
+//   Intent 4 -> 5: ~800s
+//   Intent 5 -> 6: ~1600s
+//   Intent 6 -> 7: ~3200s (no arriba a fer-se, ja que amb 6 intents
+//                  màxims el 6è error és definitiu i llança excepció)
+// S'afegeix un petit "jitter" aleatori (0-2s) perquè, si hi ha diverses
+// crides fallant alhora, no totes reintentin exactament al mateix segon.
+//
+// Si es vol canviar el nombre d'intents o els temps d'espera, tocar
+// només els paràmetres d'aquesta funció (intentsMaxims i la fórmula
+// de "espera" de sota); la resta del script no cal que ho sàpiga.
+async function cridarGeminiAmbReintents(url, cos, intentsMaxims = 6) {
   for (let intent = 1; intent <= intentsMaxims; intent++) {
     const resposta = await fetch(url, {
       method: "POST",
@@ -136,8 +152,14 @@ async function cridarGeminiAmbReintents(url, cos, intentsMaxims = 3) {
       throw new Error(`Error de l'API de Gemini (${resposta.status}): ${errText}`);
     }
 
-    console.warn(`Intent ${intent}/${intentsMaxims} fallit (error transitori), reintentant en ${intent * 5}s...`);
-    await esperar(intent * 5000);
+    // Primer reintent: ~60s. A partir del segon, es va doblant (progressió
+    // geomètrica: 200s, 400s, 800s...) per donar cada cop més marge.
+    const espera = intent === 1
+      ? 60000 + Math.floor(Math.random() * 2000)
+      : 200000 * 2 ** (intent - 2) + Math.floor(Math.random() * 2000);
+
+    console.warn(`Intent ${intent}/${intentsMaxims} fallit (error transitori), reintentant en ${Math.round(espera / 1000)}s...`);
+    await esperar(espera);
   }
 }
 
