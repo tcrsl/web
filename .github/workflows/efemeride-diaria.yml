@@ -2,10 +2,11 @@ name: Efemèride diària
 
 on:
   schedule:
-    # 05:30 UTC ≈ 06:30/07:30 hora de Catalunya (segons horari d'estiu/hivern)
-    - cron: "30 5 * * *"
+    # 04:00 UTC ≈ 05:00/06:00 hora de Catalunya (segons horari d'estiu/hivern).
+    # Avançat des de les 05:30 UTC per intentar evitar els pics de demanda
+    # del model de Gemini (errors 503 UNAVAILABLE) que es donaven abans.
+    - cron: "0 4 * * *"
   workflow_dispatch: {} # permet executar-lo manualment des de la pestanya "Actions"
-
 permissions:
   contents: write
 
