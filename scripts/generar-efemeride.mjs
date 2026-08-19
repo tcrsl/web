@@ -16,7 +16,20 @@ const RUTA_DADES = path.resolve("data/efemerides.json");
 const RUTA_PLANTILLA_ARXIU = path.resolve("efemerides/_template.html");
 const RUTA_INDEX_ARXIU = path.resolve("efemerides/index.html");
 const CARPETA_ARXIU = path.resolve("efemerides");
-const MODEL = "gemini-flash-latest"; // àlies oficial: Google el manté apuntant sempre al Flash més recent
+
+// gemini-flash-latest apunta a un model experimental amb quota molt
+// restrictiva (així ho documenta Google) i per això fallava sovint,
+// dies seguits. En comptes d'un únic model, fem servir una llista de
+// models ESTABLES amb nivell gratuït: si el primer falla de manera
+// transitòria, es prova automàticament el següent.
+//
+// Si en el futur Google torna a donar error 404/429 de manera
+// persistent amb tots tres, revisa la llista de models vigents a
+// https://ai.google.dev/gemini-api/docs/models i actualitza aquest
+// array (evita sempre els que acaben en "-preview" o "-latest" per a
+// producció, són menys estables).
+const MODELS_FALLBACK = ["gemini-3.1-flash-lite", "gemini-3.5-flash", "gemini-3.6-flash"];
+
 const API_KEY = process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
@@ -114,53 +127,56 @@ function esperar(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-// Crida l'API de Gemini amb reintents automàtics quan l'error és
-// transitori: p. ex. FAILED_PRECONDITION (regió del runner de GitHub
-// Actions no suportada en aquell moment) o UNAVAILABLE (sobrecàrrega
-// temporal de Google). Amb un altre intent, sovint el runner cau en
-// una altra regió i la crida funciona sense cap intervenció manual.
-//
-// Backoff: espera llarga i creixent entre intents, pensada per a
-// errors que poden trigar minuts a resoldre's (no segons).
-//   Intent 1 -> 2: ~60s
-//   Intent 2 -> 3: ~200s
-//   Intent 3 -> 4: ~400s
-//   Intent 4 -> 5: ~800s
-//   Intent 5 -> 6: ~1600s
-//   Intent 6 -> 7: ~3200s (no arriba a fer-se, ja que amb 6 intents
-//                  màxims el 6è error és definitiu i llança excepció)
-// S'afegeix un petit "jitter" aleatori (0-2s) perquè, si hi ha diverses
-// crides fallant alhora, no totes reintentin exactament al mateix segon.
-//
-// Si es vol canviar el nombre d'intents o els temps d'espera, tocar
-// només els paràmetres d'aquesta funció (intentsMaxims i la fórmula
-// de "espera" de sota); la resta del script no cal que ho sàpiga.
-async function cridarGeminiAmbReintents(url, cos, intentsMaxims = 6) {
-  for (let intent = 1; intent <= intentsMaxims; intent++) {
-    const resposta = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(cos),
-    });
+// Crida l'API de Gemini provant, per ordre, cada model de
+// MODELS_FALLBACK. Per a cada model es fan com a màxim
+// `intentsPerModel` intents amb un backoff curt (5s, 10s...) abans de
+// passar al següent model. Distingim:
+//   - Errors TRANSITORIS (429, 500, 503, 504, RESOURCE_EXHAUSTED,
+//     FAILED_PRECONDITION, UNAVAILABLE): val la pena reintentar o
+//     canviar de model.
+//   - Errors DEFINITIUS (clau API invàlida, prompt bloquejat per
+//     seguretat, etc.): reintentar no serveix de res, es llança
+//     l'error immediatament.
+async function cridarGeminiAmbReintents(cos, intentsPerModel = 2) {
+  let ultimError;
 
-    if (resposta.ok) return resposta;
+  for (const model of MODELS_FALLBACK) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
 
-    const errText = await resposta.text();
-    const esTransitori = errText.includes("FAILED_PRECONDITION") || errText.includes("UNAVAILABLE");
+    for (let intent = 1; intent <= intentsPerModel; intent++) {
+      const resposta = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(cos),
+      });
 
-    if (!esTransitori || intent === intentsMaxims) {
-      throw new Error(`Error de l'API de Gemini (${resposta.status}): ${errText}`);
+      if (resposta.ok) return resposta;
+
+      const errText = await resposta.text();
+      const esTransitori =
+        errText.includes("FAILED_PRECONDITION") ||
+        errText.includes("UNAVAILABLE") ||
+        errText.includes("RESOURCE_EXHAUSTED") ||
+        [429, 500, 503, 504].includes(resposta.status);
+
+      ultimError = new Error(`Error de l'API de Gemini amb ${model} (${resposta.status}): ${errText}`);
+
+      if (!esTransitori) {
+        // Error definitiu: no té sentit ni reintentar ni provar un altre model
+        throw ultimError;
+      }
+
+      if (intent < intentsPerModel) {
+        console.warn(`${model}: intent ${intent}/${intentsPerModel} fallit (transitori), reintentant en ${intent * 5}s...`);
+        await esperar(intent * 5000);
+      } else {
+        console.warn(`${model}: esgotats els intents per aquest model, es prova el següent (si n'hi ha).`);
+      }
     }
-
-    // Primer reintent: ~60s. A partir del segon, es va doblant (progressió
-    // geomètrica: 200s, 400s, 800s...) per donar cada cop més marge.
-    const espera = intent === 1
-      ? 60000 + Math.floor(Math.random() * 2000)
-      : 200000 * 2 ** (intent - 2) + Math.floor(Math.random() * 2000);
-
-    console.warn(`Intent ${intent}/${intentsMaxims} fallit (error transitori), reintentant en ${Math.round(espera / 1000)}s...`);
-    await esperar(espera);
   }
+
+  // S'han esgotat tots els models de la llista
+  throw ultimError;
 }
 
 async function generarEfemeride(historial) {
@@ -204,13 +220,11 @@ amb exactament aquesta forma:
 }
 `.trim();
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
-
   // NOTA: la cerca web (tools: [{ google_search: {} }]) s'ha tret perquè
   // consumeix una quota separada que Google sol exigir amb facturació
   // activada, fins i tot dins el "nivell gratuït". Sense cerca, el model
   // respon només amb el seu coneixement, cosa que segueix sent gratuïta.
-  const resposta = await cridarGeminiAmbReintents(url, {
+  const resposta = await cridarGeminiAmbReintents({
     contents: [{ role: "user", parts: [{ text: prompt }] }],
     generationConfig: { temperature: 0.9 },
   });
