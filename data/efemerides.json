@@ -1,6 +1,23 @@
 [
   {
     "categoria": "Història de la maquinària",
+    "any": "1923",
+    "titol": "El naixement del motor dièsel en camions",
+    "text": "Tot i que Rudolf Diesel va patentar el seu motor a finals del segle XIX, no va ser fins al 1923 que Benz & Cie va presentar el primer camió amb motor dièsel a l'Exposició de Berlín. Aquesta innovació va marcar un abans i un desè en l'eficiència i la potència del transport de mercaderies pesants a tot el món.",
+    "fonts": [
+      {
+        "nom": "Mercedes-Benz Group Media",
+        "url": "https://group.mercedes-benz.com"
+      },
+      {
+        "nom": "Deutsches Museum",
+        "url": "https://www.deutsches-museum.de"
+      }
+    ],
+    "data": "2026-08-19"
+  },
+  {
+    "categoria": "Història de la maquinària",
     "any": "1983",
     "titol": "L'aparició del transportador modular autopropulsat",
     "text": "L'any 1983, el fabricant alemany Scheuerle va desenvolupar juntament amb Mammoet el primer transportador modular autopropulsat (SPMT). Aquesta plataforma revolucionària amb eixos de direcció independent hidràulica va permetre moure estructures de milers de tones amb precisió mil·limètrica. Avui dia és una eina clau per traslladar ponts, vaixells o refineries senceres.",
