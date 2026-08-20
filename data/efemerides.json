@@ -2,6 +2,23 @@
   {
     "categoria": "Història de la maquinària",
     "any": "1923",
+    "titol": "El naixement de la primera excavadora hidràulica",
+    "text": "Encara que avui dia ens semblin imprescindibles, les primeres excavadores hidràuliques van sorgir als anys 20 amb el model dissenyat per Poclain. Aquest avenç va permetre substituir els sistemes de cables i politges per cilindres i fluïds, revolucionant la força i precisió de les màquines en l'àmbit de la construcció i l'obra pública.",
+    "fonts": [
+      {
+        "nom": "Poclain Hydraulics",
+        "url": "https://www.poclain-hydraulics.com"
+      },
+      {
+        "nom": "Association des Collectionneurs de Machines Poclain",
+        "url": "https://www.poclain.com"
+      }
+    ],
+    "data": "2026-08-20"
+  },
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1923",
     "titol": "El naixement del motor dièsel en camions",
     "text": "Tot i que Rudolf Diesel va patentar el seu motor a finals del segle XIX, no va ser fins al 1923 que Benz & Cie va presentar el primer camió amb motor dièsel a l'Exposició de Berlín. Aquesta innovació va marcar un abans i un desè en l'eficiència i la potència del transport de mercaderies pesants a tot el món.",
     "fonts": [
