@@ -38,14 +38,14 @@
     </a>
     <nav class="menu">
       <ul class="menu__enllacos" id="menuEnllacos">
-        <li><a href="index.html#inici">Inici</a></li>
-        <li><a href="index.html#qui-som">Qui som</a></li>
-        <li><a href="efemerides/index.html">Sabies que...?</a></li>
-        <li><a href="index.html#serveis">Serveis</a></li>
+        <li><a href="index.html#inici" data-i18n="menu.inici">Inici</a></li>
+        <li><a href="index.html#qui-som" data-i18n="menu.qui-som">Qui som</a></li>
+        <li><a href="efemerides/index.html" data-i18n="menu.sabies">Sabies que...?</a></li>
+        <li><a href="index.html#serveis" data-i18n="menu.serveis">Serveis</a></li>
       </ul>
-      <a href="index.html#contacte" class="boto">Contacta'ns</a>
+      <a href="index.html#contacte" class="boto" data-i18n="menu.contacta">Contacta'ns</a>
+      <button type="button" class="idioma-toggle" id="idiomaToggle" aria-label="Canviar idioma">ES</button>
       <button class="menu__toggle" id="menuToggle" aria-label="Obrir menú">
-        <span></span><span></span><span></span>
       </button>
     </nav>
   </div>
@@ -55,43 +55,43 @@
   <!-- ============ CONTINGUT LEGAL ============ -->
   <section class="seccio">
     <div class="contenidor legal">
-      <h1 class="titol-seccio"><span>Avís legal, privacitat i cookies</span></h1>
-      <p class="legal__actualitzat">Última actualització: <!-- TODO: posar la data en què es publiqui aquesta pàgina -->
+      <h1 class="titol-seccio"><span data-i18n="legal.titol">Avís legal, privacitat i cookies</span></h1>
+      <p class="legal__actualitzat"><span data-i18n="legal.actualitzat">Última actualització:</span> <!-- TODO: posar la data en què es publiqui aquesta pàgina -->
       </p>
 
       <nav class="legal__index" aria-label="Índex de continguts">
-        <h2>Contingut d'aquesta pàgina</h2>
+        <h2 data-i18n="legal.index.titol">Contingut d'aquesta pàgina</h2>
         <ol>
-          <li><a href="#avis-legal">Avís legal</a></li>
-          <li><a href="#privacitat">Política de privacitat</a></li>
-          <li><a href="#cookies">Política de cookies</a></li>
+          <li><a href="#avis-legal" data-i18n="legal.index.1">Avís legal</a></li>
+          <li><a href="#privacitat" data-i18n="legal.index.2">Política de privacitat</a></li>
+          <li><a href="#cookies" data-i18n="legal.index.3">Política de cookies</a></li>
         </ol>
       </nav>
 
       <!-- ============ 1. AVÍS LEGAL ============ -->
       <article class="legal__bloc" id="avis-legal">
-        <h2>1. Avís legal</h2>
+        <h2 data-i18n="legal.1.titol">1. Avís legal</h2>
 
-        <h3>1.1. Dades identificatives</h3>
-        <p>
+        <h3 data-i18n="legal.1.1.titol">1.1. Dades identificatives</h3>
+        <p data-i18n="legal.1.1.text">
           En compliment del deure d'informació que estableix l'article 10 de la
           Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la
           Informació i de Comerç Electrònic (LSSI-CE), s'exposen a continuació
           les dades identificatives de l'empresa titular d'aquest lloc web:
         </p>
         <ul>
-          <li><strong>Denominació social:</strong> Trans-Català Rodes S.L.</li>
-          <li><strong>NIF/CIF:</strong>B43601970</li>
-          <li><strong>Domicili social:</strong> Avgda Catalunya, nº 14, 43750 Flix (Tarragona)</li>
-          <li><strong>Dades registrals:</strong>Registre Mercantil de Tarragona, Tom 1573, Foli 151, Full T20423 </li>
-          <li><strong>Telèfon:</strong> <a href="tel:+34977410690">977 41 06 90</a></li>
-          <li><strong>Correu electrònic:</strong> <a
+          <li><strong data-i18n="legal.1.1.label1">Denominació social:</strong> Trans-Català Rodes S.L.</li>
+          <li><strong data-i18n="legal.1.1.label2">NIF/CIF:</strong>B43601970</li>
+          <li><strong data-i18n="legal.1.1.label3">Domicili social:</strong> Avgda Catalunya, nº 14, 43750 Flix (Tarragona)</li>
+          <li><strong data-i18n="legal.1.1.label4">Dades registrals:</strong>Registre Mercantil de Tarragona, Tom 1573, Foli 151, Full T20423 </li>
+          <li><strong data-i18n="legal.1.1.label5">Telèfon:</strong> <a href="tel:+34977410690">977 41 06 90</a></li>
+          <li><strong data-i18n="legal.1.1.label6">Correu electrònic:</strong> <a
               href="mailto:transcatalarodes@rodes.com">transcatalarodes@rodes.com</a></li>
-          <li><strong>Lloc web:</strong> <a href="https://tcrsl.github.io/web/">https://tcrsl.github.io/web/</a></li>
+          <li><strong data-i18n="legal.1.1.label7">Lloc web:</strong> <a href="https://tcrsl.github.io/web/">https://tcrsl.github.io/web/</a></li>
         </ul>
 
-        <h3>1.2. Objecte i àmbit d'aplicació</h3>
-        <p>
+        <h3 data-i18n="legal.1.2.titol">1.2. Objecte i àmbit d'aplicació</h3>
+        <p data-i18n="legal.1.2.text">
           Aquest avís legal regula l'ús del lloc web (d'ara endavant, "el
           Lloc Web") que Trans-Català Rodes S.L. (d'ara endavant, "l'Empresa")
           posa a disposició dels usuaris d'Internet amb la finalitat de donar
@@ -100,22 +100,22 @@
           l'acceptació d'aquest avís legal.
         </p>
 
-        <h3>1.3. Condicions d'ús</h3>
-        <p>
+        <h3 data-i18n="legal.1.3.titol">1.3. Condicions d'ús</h3>
+        <p data-i18n="legal.1.3.text">
           L'usuari es compromet a fer un ús adequat i lícit del Lloc Web,
           d'acord amb la legislació vigent, la bona fe, l'ordre públic i
           aquest avís legal. Queda expressament prohibit:
         </p>
         <ul>
-          <li>Fer un ús del Lloc Web que pugui ser contrari a la llei, a la moral o a l'ordre públic.</li>
-          <li>Reproduir, distribuir o modificar total o parcialment els continguts del Lloc Web sense autorització
+          <li data-i18n="legal.1.3.li1">Fer un ús del Lloc Web que pugui ser contrari a la llei, a la moral o a l'ordre públic.</li>
+          <li data-i18n="legal.1.3.li2">Reproduir, distribuir o modificar total o parcialment els continguts del Lloc Web sense autorització
             expressa de l'Empresa.</li>
-          <li>Introduir o difondre virus informàtics o qualsevol altre sistema que pugui causar danys al Lloc Web o a
+          <li data-i18n="legal.1.3.li3">Introduir o difondre virus informàtics o qualsevol altre sistema que pugui causar danys al Lloc Web o a
             tercers.</li>
         </ul>
 
-        <h3>1.4. Propietat intel·lectual i industrial</h3>
-        <p>
+        <h3 data-i18n="legal.1.4.titol">1.4. Propietat intel·lectual i industrial</h3>
+        <p data-i18n="legal.1.4.text">
           Tots els continguts del Lloc Web —textos, imatges, logotips,
           dissenys i codi font, entre d'altres— són propietat de l'Empresa
           o de tercers que n'han autoritzat l'ús, i estan protegits per la
@@ -124,15 +124,15 @@
           autorització prèvia i per escrit.
         </p>
 
-        <h3>1.5. Exclusió de responsabilitat</h3>
-        <p>
+        <h3 data-i18n="legal.1.5.titol">1.5. Exclusió de responsabilitat</h3>
+        <p data-i18n="legal.1.5.text1">
           L'Empresa no es fa responsable de les interrupcions del servei,
           errors de connexió, absència de disponibilitat o fallades en
           l'accés al Lloc Web derivats de causes alienes al seu control.
           Tampoc es fa responsable dels danys que puguin derivar-se de l'ús
           incorrecte del Lloc Web per part de l'usuari.
         </p>
-        <p>
+        <p data-i18n="legal.1.5.text2">
           La secció "Sabies que...?" es genera de manera automàtica mitjançant
           intel·ligència artificial, amb revisió humana periòdica però no
           necessàriament prèvia a cada publicació. El seu contingut té una
@@ -140,16 +140,16 @@
           tècnic, legal ni de cap altre tipus.
         </p>
 
-        <h3>1.6. Enllaços a tercers</h3>
-        <p>
+        <h3 data-i18n="legal.1.6.titol">1.6. Enllaços a tercers</h3>
+        <p data-i18n="legal.1.6.text">
           El Lloc Web pot contenir enllaços a pàgines web de tercers (com
           Google Maps). L'Empresa no assumeix cap responsabilitat pel
           contingut, funcionament o polítiques de privacitat d'aquests llocs
           externs.
         </p>
 
-        <h3>1.7. Legislació aplicable i jurisdicció</h3>
-        <p>
+        <h3 data-i18n="legal.1.7.titol">1.7. Legislació aplicable i jurisdicció</h3>
+        <p data-i18n="legal.1.7.text">
           Aquest avís legal es regeix per la legislació espanyola. Per a la
           resolució de qualsevol controvèrsia derivada de l'accés o l'ús
           d'aquest Lloc Web, les parts se sotmeten als jutjats i tribunals
@@ -160,9 +160,9 @@
 
       <!-- ============ 2. PRIVACITAT ============ -->
       <article class="legal__bloc" id="privacitat">
-        <h2>2. Política de privacitat</h2>
+        <h2 data-i18n="legal.2.titol">2. Política de privacitat</h2>
 
-        <div class="legal__avis">
+        <div class="legal__avis" data-i18n="legal.2.avis">
           Aquest lloc web, en el seu estat actual, no incorpora formularis de
           contacte ni sistemes de registre d'usuaris: les úniques vies de
           contacte són el telèfon i el correu electrònic indicats a la
@@ -170,25 +170,25 @@
           quedarà ampliada si en el futur s'afegeixen formularis web.
         </div>
 
-        <h3>2.1. Responsable del tractament</h3>
+        <h3 data-i18n="legal.2.1.titol">2.1. Responsable del tractament</h3>
         <p>
-          El responsable del tractament de les dades personals que ens
+          <span data-i18n="legal.2.1.text">El responsable del tractament de les dades personals que ens
           faciliteu per telèfon o correu electrònic és Trans-Català Rodes
           S.L., amb domicili a Avgda Catalunya, nº 14, 43750 Flix
-          (Tarragona), i adreça de contacte
+          (Tarragona), i adreça de contacte</span>
           <a href="mailto:transcatalarodes@rodes.com">transcatalarodes@rodes.com</a>.
         </p>
 
-        <h3>2.2. Finalitat del tractament</h3>
-        <p>
+        <h3 data-i18n="legal.2.2.titol">2.2. Finalitat del tractament</h3>
+        <p data-i18n="legal.2.2.text">
           Les dades que ens faciliteu (nom, telèfon, correu electrònic i
           qualsevol informació inclosa al vostre missatge) s'utilitzen
           únicament per gestionar la vostra sol·licitud d'informació o
           pressupost i per respondre-us.
         </p>
 
-        <h3>2.3. Base legal</h3>
-        <p>
+        <h3 data-i18n="legal.2.3.titol">2.3. Base legal</h3>
+        <p data-i18n="legal.2.3.text">
           La base legal per al tractament és el consentiment de la persona
           interessada, que s'entén atorgat en el moment de contactar-nos
           voluntàriament per telèfon o correu electrònic, i/o l'execució
@@ -196,50 +196,50 @@
           serveis de transport.
         </p>
 
-        <h3>2.4. Conservació de les dades</h3>
-        <p>
+        <h3 data-i18n="legal.2.4.titol">2.4. Conservació de les dades</h3>
+        <p data-i18n="legal.2.4.text">
           Les dades es conservaran durant el temps necessari per atendre la
           sol·licitud i, posteriorment, durant els terminis legals de
           prescripció de responsabilitats que puguin derivar-se de la
           relació comercial.
         </p>
 
-        <h3>2.5. Cessió a tercers</h3>
-        <p>
+        <h3 data-i18n="legal.2.5.titol">2.5. Cessió a tercers</h3>
+        <p data-i18n="legal.2.5.text">
           No es cedeixen dades a tercers, excepte obligació legal o quan
           sigui estrictament necessari per a la prestació del servei
           sol·licitat (per exemple, proveïdors logístics implicats en el
           transport).
         </p>
 
-        <h3>2.6. Drets de la persona interessada</h3>
+        <h3 data-i18n="legal.2.6.titol">2.6. Drets de la persona interessada</h3>
         <p>
-          Podeu exercir els vostres drets d'accés, rectificació, supressió,
+          <span data-i18n="legal.2.6.text1">Podeu exercir els vostres drets d'accés, rectificació, supressió,
           oposició, limitació del tractament i portabilitat de les dades
-          enviant un correu a
+          enviant un correu a</span>
           <a href="mailto:transcatalarodes@rodes.com">transcatalarodes@rodes.com</a>,
-          indicant el dret que voleu exercir i adjuntant una còpia d'un
+          <span data-i18n="legal.2.6.text2">indicant el dret que voleu exercir i adjuntant una còpia d'un
           document identificatiu. També teniu dret a presentar una
           reclamació davant l'Agència Espanyola de Protecció de Dades
-          (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>)
+          (</span><a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a><span data-i18n="legal.2.6.text3">)
           si considereu que el tractament de les vostres dades no s'ajusta a
-          la normativa vigent.
+          la normativa vigent.</span>
         </p>
       </article>
 
       <!-- ============ 3. COOKIES ============ -->
       <article class="legal__bloc" id="cookies">
-        <h2>3. Política de cookies</h2>
+        <h2 data-i18n="legal.3.titol">3. Política de cookies</h2>
 
-        <h3>3.1. Què és una cookie</h3>
-        <p>
+        <h3 data-i18n="legal.3.1.titol">3.1. Què és una cookie</h3>
+        <p data-i18n="legal.3.1.text">
           Una cookie és un petit fitxer de text que un lloc web desa al
           vostre navegador quan el visiteu, i que permet, entre altres
           coses, recordar preferències o mesurar l'ús del lloc.
         </p>
 
-        <h3>3.2. Cookies utilitzades en aquest lloc web</h3>
-        <p>
+        <h3 data-i18n="legal.3.2.titol">3.2. Cookies utilitzades en aquest lloc web</h3>
+        <p data-i18n="legal.3.2.text1">
           Aquest lloc web no instal·la cookies pròpies ni de tercers de
           manera automàtica en carregar la pàgina. L'única excepció és el
           mapa de la secció de contacte: les cookies de Google Maps només
@@ -248,15 +248,15 @@
           servidors de Google.
         </p>
         <p>
-          Si feu clic en aquest botó, Google podrà instal·lar les seves
+          <span data-i18n="legal.3.2.text2">Si feu clic en aquest botó, Google podrà instal·lar les seves
           pròpies cookies d'acord amb la seva política de privacitat, que
-          podeu consultar a
+          podeu consultar a</span>
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
-          Aquest lloc web no té control sobre aquestes cookies de tercers.
+          <span data-i18n="legal.3.2.text3">Aquest lloc web no té control sobre aquestes cookies de tercers.</span>
         </p>
 
-        <h3>3.3. Com desactivar o eliminar les cookies</h3>
-        <p>
+        <h3 data-i18n="legal.3.3.titol">3.3. Com desactivar o eliminar les cookies</h3>
+        <p data-i18n="legal.3.3.text">
           Podeu permetre, bloquejar o eliminar les cookies instal·lades al
           vostre equip mitjançant la configuració de les opcions del
           navegador que feu servir (Chrome, Firefox, Safari, Edge, etc.).
@@ -271,14 +271,16 @@
 <footer class="footer">
   <div class="contenidor">
     <div class="footer__linia">
-      &copy; <span id="anyActual"></span> Trans-Català Rodes S.L. — Tots els drets reservats.
-      <span class="footer__credit">By <a href="https://castroflix.github.io/portfolio/" target="_blank" rel="noopener">@castroflix</a></span>
+      &copy; <span id="anyActual"></span>Trans-Català Rodes S.L. — <span data-i18n="footer.drets">Tots els drets
+        reservats</span>.
+      <span class="footer__credit">By <a href="https://castroflix.github.io/portfolio/" target="_blank"
+          rel="noopener">@castroflix</a></span>
     </div>
   </div>
 </footer>
-
 <!-- FOOTER_END -->
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 

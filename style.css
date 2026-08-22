@@ -276,12 +276,12 @@ h3 {
 .menu {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 22px;
 }
 
 .menu__enllacos {
   display: flex;
-  gap: 28px;
+  gap: 20px;
 }
 
 .menu__enllacos a {
@@ -292,6 +292,7 @@ h3 {
   color: var(--color-text-clar);
   position: relative;
   padding-bottom: 4px;
+  white-space: nowrap;
 }
 
 .menu__enllacos a::after {
@@ -307,6 +308,26 @@ h3 {
 
 .menu__enllacos a:hover::after {
   width: 100%;
+}
+
+/* Botó de canvi d'idioma (CA/ES) */
+.idioma-toggle {
+  font-family: var(--font-detall);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--color-text-clar);
+  background: transparent;
+  border: 2px solid var(--color-text-atenuat);
+  border-radius: var(--radi);
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: border-color var(--transicio), color var(--transicio);
+}
+
+.idioma-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* Botó de menú per a mòbil */
@@ -1146,6 +1167,13 @@ h3 {
 /* =========================================================
    RESPONSIU
    ========================================================= */
+
+@media (max-width: 1150px) {
+  .header__marca-text {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .qui-som {
     grid-template-columns: 1fr;
