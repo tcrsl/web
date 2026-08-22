@@ -1,6 +1,19 @@
 [
   {
     "categoria": "Història de la maquinària",
+    "any": "1910",
+    "titol": "L'origen dels primers camions amb bolquet",
+    "text": "L'any 1910, la companyia Fruehauf va introduir un sistema mecànic que permetia elevar la caixa del camió per descarregar materials a granel per gravetat. Aquesta innovació va revolucionar el transport de sorra i grava, eliminant la necessitat de descàrrega manual i millorant notablement l'eficiència en les obres de construcció.",
+    "fonts": [
+      {
+        "nom": "Fruehauf Historical Society",
+        "url": "https://www.fruehauf.com"
+      }
+    ],
+    "data": "2026-08-22"
+  },
+  {
+    "categoria": "Història de la maquinària",
     "any": "1923",
     "titol": "L'origen dels primers camions articulats de gran capacitat",
     "text": "L'any 1923, August Fruehauf va revolucionar el sector en comercialitzar el primer semiremolc modern dissenyat per a la càrrega pesant, separant el motor del compartiment de càrrega. Aquesta innovació va permetre optimitzar el transport de mercaderies voluminoses, establint les bases del disseny dels camions articulats que veiem circulant avui dia per les nostres carreteres.",
