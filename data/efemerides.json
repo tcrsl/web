@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina avançada",
+      "es": "El nacimiento de la primera cabina avanzada"
+    },
+    "text": {
+      "ca": "L'any 1930, l'empresa Autocar va introduir la primera cabina avançada de sèrie, situant el conductor directament sobre el motor. Aquest disseny va permetre escurçar la longitud total del camió sense perdre espai de càrrega, revolucionant així la maniobrabilitat en el transport de mercaderies.",
+      "es": "En 1930, la empresa Autocar introdujo la primera cabina avanzada de serie, situando al conductor directamente sobre el motor. Este diseño permitió acortar la longitud total del camión sin perder espacio de carga, revolucionando así la maniobrabilidad en el transporte de mercancías."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com/history"
+      }
+    ],
+    "data": "2026-08-24"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1910",
     "titol": {
       "ca": "L'origen dels primers camions amb bolquet",
