@@ -2,6 +2,19 @@
   {
     "categoria": "Història de la maquinària",
     "any": "1924",
+    "titol": "El debut del motor dièsel al transport pesant",
+    "text": "Encara que Rudolf Diesel va patentar el seu motor a finals del segle XIX, no va ser fins al 1924 que el fabricant alemany MAN va presentar el primer camió amb motor dièsel d'injecció directa. Aquesta innovació va revolucionar l'eficiència del transport de mercaderies, substituint progressivament els motors de benzina per la seva superior capacitat de tracció i menor consum.",
+    "fonts": [
+      {
+        "nom": "MAN Truck & Bus - Història de l'empresa",
+        "url": "https://www.man.eu/corp/en/company/history/milestones.html"
+      }
+    ],
+    "data": "2026-08-24"
+  },
+  {
+    "categoria": "Història de la maquinària",
+    "any": "1924",
     "titol": "L'arribada de la direcció assistida",
     "text": "Va ser l'any 1924 quan Francis W. Davis va inventar el primer sistema de direcció assistida per a vehicles pesants. Aquesta innovació va suposar un canvi radical per als conductors de camions, reduint l'esforç físic necessari per maniobrar les grans rodes i millorant considerablement la precisió en el transport de mercaderies voluminoses.",
     "fonts": [
