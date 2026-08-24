@@ -87,6 +87,23 @@ function dataAvuiISO() {
   return `${any}-${mes}-${dia}`;
 }
 
+// Identificador de categoria (entrades noves, bilingües) -> etiqueta
+// visible en cada idioma. Ha de coincidir amb el mateix mapa que hi ha
+// a scripts/generar-efemeride.mjs. Les entrades antigues (anteriors al
+// suport bilingüe) ja porten l'etiqueta directament a "categoria" i no
+// una d'aquestes claus; per això, si "categoria" no és cap d'aquestes
+// claus, es mostra tal qual (només existeix en català).
+const CATEGORIES = {
+  "curiositat-tecnica": { ca: "Curiositat tècnica", es: "Curiosidad técnica" },
+  "historia-maquinaria": { ca: "Història de la maquinària", es: "Historia de la maquinaria" },
+  "dada-curiosa": { ca: "Dada curiosa", es: "Dato curioso" },
+};
+
+// Idioma d'aquesta pàgina concreta: el determina l'atribut lang de
+// <html> (cada pàgina és estàtica en un sol idioma; ja no hi ha botó
+// de canvi en calent). Per defecte, català.
+const IDIOMA_PAGINA = document.documentElement.lang === "es" ? "es" : "ca";
+
 function triarEntradaDelDia(historial) {
   if (!Array.isArray(historial) || historial.length === 0) return null;
 
@@ -116,24 +133,33 @@ function triarEntradaDelDia(historial) {
 
 function pintarEfemeride(entrada) {
   const avui = new Date();
-  const dataFormatada = avui.toLocaleDateString('ca-ES', {
+  const localeData = IDIOMA_PAGINA === 'es' ? 'es-ES' : 'ca-ES';
+  const dataFormatada = avui.toLocaleDateString(localeData, {
     day: 'numeric', month: 'long', year: 'numeric'
   });
 
+  // Entrades noves: { ca: "...", es: "..." }. Entrades antigues
+  // (anteriors al suport bilingüe): string pla, només en català.
+  const titol = typeof entrada.titol === 'object' ? (entrada.titol[IDIOMA_PAGINA] || entrada.titol.ca) : entrada.titol;
+  const text = typeof entrada.text === 'object' ? (entrada.text[IDIOMA_PAGINA] || entrada.text.ca) : entrada.text;
+  const categoria = CATEGORIES[entrada.categoria]
+    ? CATEGORIES[entrada.categoria][IDIOMA_PAGINA]
+    : entrada.categoria; // entrada antiga: l'etiqueta ja ve feta, sense traducció
+
   document.getElementById('efemerideData').textContent = dataFormatada;
-  document.getElementById('efemerideCategoria').textContent = entrada.categoria;
+  document.getElementById('efemerideCategoria').textContent = categoria;
 
   const titolAny = entrada.any && entrada.any !== "avui"
-    ? `${entrada.titol} (${entrada.any})`
-    : entrada.titol;
+    ? `${titol} (${entrada.any})`
+    : titol;
   document.getElementById('efemerideTitol').textContent = titolAny;
-  document.getElementById('efemerideText').textContent = entrada.text;
+  document.getElementById('efemerideText').textContent = text;
 
   const fontsEl = document.getElementById('efemerideFonts');
   if (fontsEl) {
     fontsEl.innerHTML = '';
     if (entrada.fonts && entrada.fonts.length > 0) {
-      fontsEl.appendChild(document.createTextNode('Font: '));
+      fontsEl.appendChild(document.createTextNode(IDIOMA_PAGINA === 'es' ? 'Fuente: ' : 'Font: '));
       entrada.fonts.forEach((f, i) => {
         if (i > 0) fontsEl.appendChild(document.createTextNode(' · '));
         if (f.url) {
@@ -156,7 +182,12 @@ async function inicialitzarEfemeride() {
   if (!contenidor) return;
 
   try {
-    const resposta = await fetch('data/efemerides.json', { cache: 'no-store' });
+    // Calculem la ruta a partir d'on està script.js (no d'on està la
+    // pàgina): així funciona igual des de l'arrel, des de /es/, des de
+    // /efemerides/ o des de /es/efemerides/, sense haver de mantenir
+    // rutes relatives diferents a cada plantilla.
+    const rutaDades = new URL('data/efemerides.json', document.currentScript.src).href;
+    const resposta = await fetch(rutaDades, { cache: 'no-store' });
     if (!resposta.ok) throw new Error('No s\'ha pogut carregar data/efemerides.json');
     const historial = await resposta.json();
 

@@ -11,19 +11,35 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tcrsl.github.io/web/efemerides/2026-08-24.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://tcrsl.github.io/web/es/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/efemerides/2026-08-22.html</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tcrsl.github.io/web/efemerides/2026-08-23.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-22.html</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-21.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-21.html</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -35,7 +51,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-20.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-19.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-19.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -47,7 +75,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-17.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-16.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-16.html</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -59,7 +99,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-15.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-14.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-14.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -71,7 +123,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-13.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-12.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-12.html</loc>
     <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -83,7 +147,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-11.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-10.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-10.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -95,7 +171,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-09.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-08.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-08.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -107,7 +195,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-07.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tcrsl.github.io/web/efemerides/2026-08-06.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tcrsl.github.io/web/es/efemerides/2026-08-06.html</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -1,39 +1,34 @@
 [
   {
-    "categoria": "Història de la maquinària",
-    "any": "1924",
-    "titol": "El debut del motor dièsel al transport pesant",
-    "text": "Encara que Rudolf Diesel va patentar el seu motor a finals del segle XIX, no va ser fins al 1924 que el fabricant alemany MAN va presentar el primer camió amb motor dièsel d'injecció directa. Aquesta innovació va revolucionar l'eficiència del transport de mercaderies, substituint progressivament els motors de benzina per la seva superior capacitat de tracció i menor consum.",
+    "categoria": "historia-maquinaria",
+    "any": "1910",
+    "titol": {
+      "ca": "L'origen dels primers camions amb bolquet",
+      "es": "El origen de los primeros camiones basculantes"
+    },
+    "text": {
+      "ca": "L'any 1910, la companyia Fruehauf va introduir un sistema mecànic que permetia elevar la caixa del camió per descarregar materials a granel per gravetat. Aquesta innovació va revolucionar el transport de sorra i grava, eliminant la necessitat de descàrrega manual i millorant notablement l'eficiència en les obres de construcció.",
+      "es": "En 1910, la compañía Fruehauf introdujo un sistema mecánico que permitía elevar la caja del camión para descargar materiales a granel por gravedad. Esta innovación revolucionó el transporte de arena y grava, eliminando la necesidad de descarga manual y mejorando notablemente la eficiencia en las obras de construcción."
+    },
     "fonts": [
       {
-        "nom": "MAN Truck & Bus - Història de l'empresa",
-        "url": "https://www.man.eu/corp/en/company/history/milestones.html"
+        "nom": "Fruehauf Historical Society",
+        "url": "https://www.fruehauf.com"
       }
     ],
-    "data": "2026-08-24"
+    "data": "2026-08-22"
   },
   {
-    "categoria": "Història de la maquinària",
-    "any": "1924",
-    "titol": "L'arribada de la direcció assistida",
-    "text": "Va ser l'any 1924 quan Francis W. Davis va inventar el primer sistema de direcció assistida per a vehicles pesants. Aquesta innovació va suposar un canvi radical per als conductors de camions, reduint l'esforç físic necessari per maniobrar les grans rodes i millorant considerablement la precisió en el transport de mercaderies voluminoses.",
-    "fonts": [
-      {
-        "nom": "SAE International",
-        "url": "https://www.sae.org"
-      },
-      {
-        "nom": "Smithsonian Institution",
-        "url": "https://www.si.edu"
-      }
-    ],
-    "data": "2026-08-23"
-  },
-  {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1923",
-    "titol": "L'origen dels primers camions articulats de gran capacitat",
-    "text": "L'any 1923, August Fruehauf va revolucionar el sector en comercialitzar el primer semiremolc modern dissenyat per a la càrrega pesant, separant el motor del compartiment de càrrega. Aquesta innovació va permetre optimitzar el transport de mercaderies voluminoses, establint les bases del disseny dels camions articulats que veiem circulant avui dia per les nostres carreteres.",
+    "titol": {
+      "ca": "L'origen dels primers camions articulats de gran capacitat",
+      "es": "El origen de los primeros camiones articulados de gran capacidad"
+    },
+    "text": {
+      "ca": "L'any 1923, August Fruehauf va revolucionar el sector en comercialitzar el primer semiremolc modern dissenyat per a la càrrega pesant, separant el motor del compartiment de càrrega. Aquesta innovació va permetre optimitzar el transport de mercaderies voluminoses, establint les bases del disseny dels camions articulats que veiem circulant avui dia per les nostres carreteres.",
+      "es": "En 1923, August Fruehauf revolucionó el sector al comercializar el primer semirremolque moderno diseñado para la carga pesada, separando el motor del compartimento de carga. Esta innovación permitió optimizar el transporte de mercancías voluminosas, sentando las bases del diseño de los camiones articulados que vemos circular hoy en día por nuestras carreteras."
+    },
     "fonts": [
       {
         "nom": "Fruehauf Trailer Corporation History",
@@ -43,10 +38,16 @@
     "data": "2026-08-21"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1923",
-    "titol": "El naixement de la primera excavadora hidràulica",
-    "text": "Encara que avui dia ens semblin imprescindibles, les primeres excavadores hidràuliques van sorgir als anys 20 amb el model dissenyat per Poclain. Aquest avenç va permetre substituir els sistemes de cables i politges per cilindres i fluïds, revolucionant la força i precisió de les màquines en l'àmbit de la construcció i l'obra pública.",
+    "titol": {
+      "ca": "El naixement de la primera excavadora hidràulica",
+      "es": "El nacimiento de la primera excavadora hidráulica"
+    },
+    "text": {
+      "ca": "Encara que avui dia ens semblin imprescindibles, les primeres excavadores hidràuliques van sorgir als anys 20 amb el model dissenyat per Poclain. Aquest avenç va permetre substituir els sistemes de cables i politges per cilindres i fluïds, revolucionant la força i precisió de les màquines en l'àmbit de la construcció i l'obra pública.",
+      "es": "Aunque hoy en día nos parezcan imprescindibles, las primeras excavadoras hidráulicas surgieron en los años 20 con el modelo diseñado por Poclain. Este avance permitió sustituir los sistemas de cables y poleas por cilindros y fluidos, revolucionando la fuerza y precisión de las máquinas en el ámbito de la construcción y la obra pública."
+    },
     "fonts": [
       {
         "nom": "Poclain Hydraulics",
@@ -60,10 +61,16 @@
     "data": "2026-08-20"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1923",
-    "titol": "El naixement del motor dièsel en camions",
-    "text": "Tot i que Rudolf Diesel va patentar el seu motor a finals del segle XIX, no va ser fins al 1923 que Benz & Cie va presentar el primer camió amb motor dièsel a l'Exposició de Berlín. Aquesta innovació va marcar un abans i un desè en l'eficiència i la potència del transport de mercaderies pesants a tot el món.",
+    "titol": {
+      "ca": "El naixement del motor dièsel en camions",
+      "es": "El nacimiento del motor diésel en camiones"
+    },
+    "text": {
+      "ca": "Tot i que Rudolf Diesel va patentar el seu motor a finals del segle XIX, no va ser fins al 1923 que Benz & Cie va presentar el primer camió amb motor dièsel a l'Exposició de Berlín. Aquesta innovació va marcar un abans i un desè en l'eficiència i la potència del transport de mercaderies pesants a tot el món.",
+      "es": "Aunque Rudolf Diesel patentó su motor a finales del siglo XIX, no fue hasta 1923 cuando Benz & Cie presentó el primer camión con motor diésel en la Exposición de Berlín. Esta innovación marcó un antes y un después en la eficiencia y la potencia del transporte de mercancías pesadas en todo el mundo."
+    },
     "fonts": [
       {
         "nom": "Mercedes-Benz Group Media",
@@ -77,10 +84,16 @@
     "data": "2026-08-19"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1983",
-    "titol": "L'aparició del transportador modular autopropulsat",
-    "text": "L'any 1983, el fabricant alemany Scheuerle va desenvolupar juntament amb Mammoet el primer transportador modular autopropulsat (SPMT). Aquesta plataforma revolucionària amb eixos de direcció independent hidràulica va permetre moure estructures de milers de tones amb precisió mil·limètrica. Avui dia és una eina clau per traslladar ponts, vaixells o refineries senceres.",
+    "titol": {
+      "ca": "L'aparició del transportador modular autopropulsat",
+      "es": "La aparición del transportador modular autopropulsado"
+    },
+    "text": {
+      "ca": "L'any 1983, el fabricant alemany Scheuerle va desenvolupar juntament amb Mammoet el primer transportador modular autopropulsat (SPMT). Aquesta plataforma revolucionària amb eixos de direcció independent hidràulica va permetre moure estructures de milers de tones amb precisió mil·limètrica. Avui dia és una eina clau per traslladar ponts, vaixells o refineries senceres.",
+      "es": "En 1983, el fabricante alemán Scheuerle desarrolló junto con Mammoet el primer transportador modular autopropulsado (SPMT). Esta plataforma revolucionaria con ejes de dirección independiente hidráulica permitió mover estructuras de miles de toneladas con precisión milimétrica. Hoy en día es una herramienta clave para trasladar puentes, barcos o refinerías enteras."
+    },
     "fonts": [
       {
         "nom": "Mammoet",
@@ -94,10 +107,16 @@
     "data": "2026-08-17"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1917",
-    "titol": "El Tructractor de Clark i el naixement del carretó elevador",
-    "text": "Sabies que el carretó elevador modern va néixer per pura necessitat interna d'un taller? El 1917, els treballadors de la fàbrica d'eixos Clark a Michigan van construir el Tructractor per moure materials pesants entre naus. L'èxit va ser tan gran que les visites van començar a encarregar-ne per als seus negocis, revolucionant per sempre la càrrega i descàrrega de camions.",
+    "titol": {
+      "ca": "El Tructractor de Clark i el naixement del carretó elevador",
+      "es": "El Tructractor de Clark y el nacimiento de la carretilla elevadora"
+    },
+    "text": {
+      "ca": "Sabies que el carretó elevador modern va néixer per pura necessitat interna d'un taller? El 1917, els treballadors de la fàbrica d'eixos Clark a Michigan van construir el Tructractor per moure materials pesants entre naus. L'èxit va ser tan gran que les visites van començar a encarregar-ne per als seus negocis, revolucionant per sempre la càrrega i descàrrega de camions.",
+      "es": "¿Sabías que la carretilla elevadora moderna nació por pura necesidad interna de un taller? En 1917, los trabajadores de la fábrica de ejes Clark en Michigan construyeron el Tructractor para mover materiales pesados entre naves. El éxito fue tan grande que otras empresas empezaron a encargar unidades para sus propios negocios, revolucionando para siempre la carga y descarga de camiones."
+    },
     "fonts": [
       {
         "nom": "Clark Material Handling Company - History",
@@ -107,10 +126,16 @@
     "data": "2026-08-16"
   },
   {
-    "categoria": "Curiositat tècnica",
+    "categoria": "curiositat-tecnica",
     "any": "1961",
-    "titol": "El fre de motor 'Jake Brake', clau per a les baixades pesants",
-    "text": "L'any 1961 es va començar a comercialitzar el conegut 'Jake Brake' (Jacobs Engine Brake), un enginyós sistema de fre per descompressió inventat per Clessie Cummins. Aquest mecanisme allibera l'aire comprimit dels cilindres per utilitzar la resistència del propi motor com a fre. Això va permetre als camions pesants reduir la velocitat en pendents llargs sense desgastar ni sobreescalfar els frens de servei.",
+    "titol": {
+      "ca": "El fre de motor 'Jake Brake', clau per a les baixades pesants",
+      "es": "El freno de motor 'Jake Brake', clave para las bajadas pesadas"
+    },
+    "text": {
+      "ca": "L'any 1961 es va començar a comercialitzar el conegut 'Jake Brake' (Jacobs Engine Brake), un enginyós sistema de fre per descompressió inventat per Clessie Cummins. Aquest mecanisme allibera l'aire comprimit dels cilindres per utilitzar la resistència del propi motor com a fre. Això va permetre als camions pesants reduir la velocitat en pendents llargs sense desgastar ni sobreescalfar els frens de servei.",
+      "es": "En 1961 se empezó a comercializar el conocido 'Jake Brake' (Jacobs Engine Brake), un ingenioso sistema de freno por descompresión inventado por Clessie Cummins. Este mecanismo libera el aire comprimido de los cilindros para utilizar la resistencia del propio motor como freno. Esto permitió a los camiones pesados reducir la velocidad en pendientes largas sin desgastar ni sobrecalentar los frenos de servicio."
+    },
     "fonts": [
       {
         "nom": "Jacobs Vehicle Systems",
@@ -120,10 +145,16 @@
     "data": "2026-08-15"
   },
   {
-    "categoria": "Curiositat tècnica",
+    "categoria": "curiositat-tecnica",
     "any": "1958",
-    "titol": "El twistlock, la clau de fixació del transport intermodal",
-    "text": "Sabies que un mecanisme tan senzill com el twistlock va revolucionar la logística moderna? Dissenyat per l'enginyer Keith Tantlinger a finals dels anys 50, aquest tancament giratori estandarditzat permet que les grues bloquegin i alliberin contenidors en qüestió de segons sobre camions, trens i vaixells, assegurant una càrrega perfectament ferma durant tot el trajecte.",
+    "titol": {
+      "ca": "El twistlock, la clau de fixació del transport intermodal",
+      "es": "El twistlock, la clave de fijación del transporte intermodal"
+    },
+    "text": {
+      "ca": "Sabies que un mecanisme tan senzill com el twistlock va revolucionar la logística moderna? Dissenyat per l'enginyer Keith Tantlinger a finals dels anys 50, aquest tancament giratori estandarditzat permet que les grues bloquegin i alliberin contenidors en qüestió de segons sobre camions, trens i vaixells, assegurant una càrrega perfectament ferma durant tot el trajecte.",
+      "es": "¿Sabías que un mecanismo tan sencillo como el twistlock revolucionó la logística moderna? Diseñado por el ingeniero Keith Tantlinger a finales de los años 50, este cierre giratorio estandarizado permite que las grúas bloqueen y liberen contenedores en cuestión de segundos sobre camiones, trenes y barcos, asegurando una carga perfectamente firme durante todo el trayecto."
+    },
     "fonts": [
       {
         "nom": "ISO - International Organization for Standardization",
@@ -133,10 +164,16 @@
     "data": "2026-08-14"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1954",
-    "titol": "L'arribada del turbocompressor als camions de sèrie",
-    "text": "L'any 1954, Volvo va revolucionar el transport pesant en presentar el model L395 Titan equipat amb turbocompressor. Va ser un dels primers camions de gran tonatge fabricats en sèrie que incorporava aquesta tecnologia, aconseguint augmentar la potència del motor de 150 a 185 cavalls sense incrementar-ne significativament el pes.",
+    "titol": {
+      "ca": "L'arribada del turbocompressor als camions de sèrie",
+      "es": "La llegada del turbocompresor a los camiones de serie"
+    },
+    "text": {
+      "ca": "L'any 1954, Volvo va revolucionar el transport pesant en presentar el model L395 Titan equipat amb turbocompressor. Va ser un dels primers camions de gran tonatge fabricats en sèrie que incorporava aquesta tecnologia, aconseguint augmentar la potència del motor de 150 a 185 cavalls sense incrementar-ne significativament el pes.",
+      "es": "En 1954, Volvo revolucionó el transporte pesado al presentar el modelo L395 Titan equipado con turbocompresor. Fue uno de los primeros camiones de gran tonelaje fabricados en serie que incorporaba esta tecnología, logrando aumentar la potencia del motor de 150 a 185 caballos sin incrementar significativamente el peso."
+    },
     "fonts": [
       {
         "nom": "Volvo Trucks Global",
@@ -146,10 +183,16 @@
     "data": "2026-08-13"
   },
   {
-    "categoria": "Dada curiosa",
+    "categoria": "dada-curiosa",
     "any": "1965",
-    "titol": "El Crawler-Transporter, el gegant del transport pesant",
-    "text": "Dissenyat el 1965 per moure els coets Saturn V, el Crawler-Transporter de la NASA és un dels vehicles autopropulsats més grans del món. Aquest gegant de més de 2.700 tones utilitza vuit sistemes d'eruga per moure càrregues extraordinàries a una velocitat màxima d'uns 1,6 km/h. És un exemple màxim d'enginyeria aplicada al transport de grans tonatges.",
+    "titol": {
+      "ca": "El Crawler-Transporter, el gegant del transport pesant",
+      "es": "El Crawler-Transporter, el gigante del transporte pesado"
+    },
+    "text": {
+      "ca": "Dissenyat el 1965 per moure els coets Saturn V, el Crawler-Transporter de la NASA és un dels vehicles autopropulsats més grans del món. Aquest gegant de més de 2.700 tones utilitza vuit sistemes d'eruga per moure càrregues extraordinàries a una velocitat màxima d'uns 1,6 km/h. És un exemple màxim d'enginyeria aplicada al transport de grans tonatges.",
+      "es": "Diseñado en 1965 para mover los cohetes Saturno V, el Crawler-Transporter de la NASA es uno de los vehículos autopropulsados más grandes del mundo. Este gigante de más de 2.700 toneladas utiliza ocho sistemas de oruga para mover cargas extraordinarias a una velocidad máxima de unos 1,6 km/h. Es un ejemplo máximo de ingeniería aplicada al transporte de grandes tonelajes."
+    },
     "fonts": [
       {
         "nom": "NASA",
@@ -159,10 +202,16 @@
     "data": "2026-08-12"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1904",
-    "titol": "El naixement de la tracció per eruga en la maquinària pesant",
-    "text": "El 1904, l'inventor Benjamin Holt va provar amb èxit un tractor que substituïa les rodes posteriors per un sistema de cadenes de fusta per evitar que s'enfonsés al fang. Aquesta innovació va revolucionar el transport i el treball amb maquinària pesant en terrenys inestables, i va donar origen a la coneguda marca Caterpillar.",
+    "titol": {
+      "ca": "El naixement de la tracció per eruga en la maquinària pesant",
+      "es": "El nacimiento de la tracción por oruga en la maquinaria pesada"
+    },
+    "text": {
+      "ca": "El 1904, l'inventor Benjamin Holt va provar amb èxit un tractor que substituïa les rodes posteriors per un sistema de cadenes de fusta per evitar que s'enfonsés al fang. Aquesta innovació va revolucionar el transport i el treball amb maquinària pesant en terrenys inestables, i va donar origen a la coneguda marca Caterpillar.",
+      "es": "En 1904, el inventor Benjamin Holt probó con éxito un tractor que sustituía las ruedas traseras por un sistema de cadenas de madera para evitar que se hundiera en el barro. Esta innovación revolucionó el transporte y el trabajo con maquinaria pesada en terrenos inestables, y dio origen a la conocida marca Caterpillar."
+    },
     "fonts": [
       {
         "nom": "Caterpillar Inc.",
@@ -172,10 +221,16 @@
     "data": "2026-08-11"
   },
   {
-    "categoria": "Curiositat tècnica",
+    "categoria": "curiositat-tecnica",
     "any": "1952",
-    "titol": "L'arribada del pneumàtic radial als camions de gran tonatge",
-    "text": "Sabies que l'any 1952 Michelin va adaptar la tecnologia del pneumàtic radial als vehicles pesants de transport? Aquesta innovació va revolucionar el sector reduint el consum de combustible i duplicant la durabilitat de les rodes. Va transformar per sempre la logística de llarga distància a tot el món.",
+    "titol": {
+      "ca": "L'arribada del pneumàtic radial als camions de gran tonatge",
+      "es": "La llegada del neumático radial a los camiones de gran tonelaje"
+    },
+    "text": {
+      "ca": "Sabies que l'any 1952 Michelin va adaptar la tecnologia del pneumàtic radial als vehicles pesants de transport? Aquesta innovació va revolucionar el sector reduint el consum de combustible i duplicant la durabilitat de les rodes. Va transformar per sempre la logística de llarga distància a tot el món.",
+      "es": "¿Sabías que en 1952 Michelin adaptó la tecnología del neumático radial a los vehículos pesados de transporte? Esta innovación revolucionó el sector reduciendo el consumo de combustible y duplicando la durabilidad de las ruedas. Transformó para siempre la logística de larga distancia en todo el mundo."
+    },
     "fonts": [
       {
         "nom": "Michelin Corporate",
@@ -185,10 +240,16 @@
     "data": "2026-08-10"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1969",
-    "titol": "El naixement del llegendari motor Scania V8",
-    "text": "L'any 1969, Scania va revolucionar el transport pesant amb el llançament del seu icònic motor V8 de 14 litres i 350 cavalls de potència. Muntat al model LB140, es va convertir en el motor de camió comercial més potent d'Europa en la seva època. Aquesta innovació va permetre mantenir velocitats ràpides i constants fins i tot en les pujades més exigents.",
+    "titol": {
+      "ca": "El naixement del llegendari motor Scania V8",
+      "es": "El nacimiento del legendario motor Scania V8"
+    },
+    "text": {
+      "ca": "L'any 1969, Scania va revolucionar el transport pesant amb el llançament del seu icònic motor V8 de 14 litres i 350 cavalls de potència. Muntat al model LB140, es va convertir en el motor de camió comercial més potent d'Europa en la seva època. Aquesta innovació va permetre mantenir velocitats ràpides i constants fins i tot en les pujades més exigents.",
+      "es": "En 1969, Scania revolucionó el transporte pesado con el lanzamiento de su icónico motor V8 de 14 litros y 350 caballos de potencia. Montado en el modelo LB140, se convirtió en el motor de camión comercial más potente de Europa en su época. Esta innovación permitió mantener velocidades rápidas y constantes incluso en las subidas más exigentes."
+    },
     "fonts": [
       {
         "nom": "Scania Group",
@@ -198,10 +259,16 @@
     "data": "2026-08-09"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1896",
-    "titol": "El primer camió de motor de la història",
-    "text": "L'any 1896, Gottlieb Daimler va construir el primer camió amb motor de combustió interna de la història, basat en un carruatge adaptat. Comptava amb un motor de dos cilindres que generava tot just 4 cavalls de potència i podia carregar fins a 1.500 quilos. Aquest vehicle va revolucionar la logística comercial i va iniciar l'era del transport modern per carretera.",
+    "titol": {
+      "ca": "El primer camió de motor de la història",
+      "es": "El primer camión de motor de la historia"
+    },
+    "text": {
+      "ca": "L'any 1896, Gottlieb Daimler va construir el primer camió amb motor de combustió interna de la història, basat en un carruatge adaptat. Comptava amb un motor de dos cilindres que generava tot just 4 cavalls de potència i podia carregar fins a 1.500 quilos. Aquest vehicle va revolucionar la logística comercial i va iniciar l'era del transport modern per carretera.",
+      "es": "En 1896, Gottlieb Daimler construyó el primer camión con motor de combustión interna de la historia, basado en un carruaje adaptado. Contaba con un motor de dos cilindros que generaba apenas 4 caballos de potencia y podía cargar hasta 1.500 kilos. Este vehículo revolucionó la logística comercial e inició la era del transporte moderno por carretera."
+    },
     "fonts": [
       {
         "nom": "Daimler Truck Museum",
@@ -211,10 +278,16 @@
     "data": "2026-08-08"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1949",
-    "titol": "La primera grua torre mòbil fàcil de transportar",
-    "text": "L'any 1949, l'enginyer Hans Liebherr va dissenyar la TK 10, la primera grua torre mòbil que es podia transportar fàcilment i plegar per al seu desplaçament. Aquest invent revolucionari no només va accelerar la reconstrucció d'Europa durant la postguerra, sinó que va donar origen a un dels majors fabricants de maquinària pesant del món.",
+    "titol": {
+      "ca": "La primera grua torre mòbil fàcil de transportar",
+      "es": "La primera grúa torre móvil fácil de transportar"
+    },
+    "text": {
+      "ca": "L'any 1949, l'enginyer Hans Liebherr va dissenyar la TK 10, la primera grua torre mòbil que es podia transportar fàcilment i plegar per al seu desplaçament. Aquest invent revolucionari no només va accelerar la reconstrucció d'Europa durant la postguerra, sinó que va donar origen a un dels majors fabricants de maquinària pesant del món.",
+      "es": "En 1949, el ingeniero Hans Liebherr diseñó la TK 10, la primera grúa torre móvil que se podía transportar fácilmente y plegar para su desplazamiento. Este invento revolucionario no solo aceleró la reconstrucción de Europa durante la posguerra, sino que dio origen a uno de los mayores fabricantes de maquinaria pesada del mundo."
+    },
     "fonts": [
       {
         "nom": "Grup Liebherr",
@@ -224,10 +297,16 @@
     "data": "2026-08-07"
   },
   {
-    "categoria": "Història de la maquinària",
+    "categoria": "historia-maquinaria",
     "any": "1915",
-    "titol": "L'origen de la mascota de Mack Trucks",
-    "text": "El 1915, la companyia Mack va llançar el model AC, un camió creat per a tasques extremadament dures. Durant la Primera Guerra Mundial, els soldats britànics el van anomenar «Bulldog» per la resistència del vehicle i la forma xata del seu frontis. L'èxit d'aquest nom va ser tan gran que la marca va decidir adoptar la figura d'aquest gos com a símbol oficial.",
+    "titol": {
+      "ca": "L'origen de la mascota de Mack Trucks",
+      "es": "El origen de la mascota de Mack Trucks"
+    },
+    "text": {
+      "ca": "El 1915, la companyia Mack va llançar el model AC, un camió creat per a tasques extremadament dures. Durant la Primera Guerra Mundial, els soldats britànics el van anomenar «Bulldog» per la resistència del vehicle i la forma xata del seu frontis. L'èxit d'aquest nom va ser tan gran que la marca va decidir adoptar la figura d'aquest gos com a símbol oficial.",
+      "es": "En 1915, la compañía Mack lanzó el modelo AC, un camión creado para tareas extremadamente duras. Durante la Primera Guerra Mundial, los soldados británicos lo apodaron «Bulldog» por la resistencia del vehículo y la forma achatada de su frontal. El éxito de este nombre fue tan grande que la marca decidió adoptar la figura de este perro como símbolo oficial."
+    },
     "fonts": [
       {
         "nom": "Mack Trucks Historical Museum",

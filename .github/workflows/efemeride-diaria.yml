@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/efemerides.json efemerides/ index.html avis-legal.html sitemap.xml
+          git add data/efemerides.json efemerides/ es/ index.html avis-legal.html sitemap.xml
           if git diff --staged --quiet; then
             echo "Sense canvis a desar."
           else
