@@ -107,7 +107,7 @@ async function injectarMarcadorsEnMemoriaCA(html, footerPartial = "footer.html")
 }
 
 async function generarSitemap(historial) {
-  const base = "https://tcrsl.github.io/web/";
+  const base = "https://transcatalarodes.cat/";
   // Entrades bilingües (titol/text són objectes {ca,es}): tenen fitxa a
   // les dues carpetes. Entrades antigues (titol/text són string pla):
   // només existeixen en català.
