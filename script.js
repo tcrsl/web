@@ -11,6 +11,19 @@ if (menuToggle) {
 }
 
 // =============================================
+// Botó de canvi d'idioma: evita doble clic ràpid
+// =============================================
+document.querySelectorAll('.idioma-toggle').forEach((enllac) => {
+  enllac.addEventListener('click', function (e) {
+    if (this.classList.contains('idioma-toggle--desactivat')) {
+      e.preventDefault();
+      return;
+    }
+    this.classList.add('idioma-toggle--desactivat');
+  });
+});
+
+// =============================================
 // Slider / carrusel automàtic
 // =============================================
 const slider = document.querySelector('.slider');
