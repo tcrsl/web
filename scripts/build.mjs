@@ -37,9 +37,9 @@ function substituirMarcador(html, nom, contingut) {
 
 // Injecta HEADER/FOOTER/HEAD_EXTRA a una pàgina CATALANA (arrel o
 // dins d'una subcarpeta com efemerides/).
-async function injectarMarcadorsCA(rutaFitxer, prefix, efemeridesHref, footerPartial = "footer.html") {
+async function injectarMarcadorsCA(rutaFitxer, prefix, efemeridesHref, idiomaEsHref, footerPartial = "footer.html") {
   let html = await readFile(rutaFitxer, "utf-8");
-  const header = await partial("header.html", { PREFIX: prefix, EFEMERIDES_HREF: efemeridesHref });
+  const header = await partial("header.html", { PREFIX: prefix, EFEMERIDES_HREF: efemeridesHref, IDIOMA_ES_HREF: idiomaEsHref });
   const footer = await partial(footerPartial, { PREFIX: prefix });
   const headExtra = await partial("head-extra.html", { PREFIX: prefix });
   html = substituirMarcador(html, "HEADER", header);
@@ -99,8 +99,8 @@ function dataLlarga(dataISO, idioma) {
   }).format(data);
 }
 
-async function injectarMarcadorsEnMemoriaCA(html, footerPartial = "footer.html") {
-  html = substituirMarcador(html, "HEADER", await partial("header.html", { PREFIX: "../", EFEMERIDES_HREF: "index.html" }));
+async function injectarMarcadorsEnMemoriaCA(html, idiomaEsHref, footerPartial = "footer.html") {
+  html = substituirMarcador(html, "HEADER", await partial("header.html", { PREFIX: "../", EFEMERIDES_HREF: "index.html", IDIOMA_ES_HREF: idiomaEsHref }));
   html = substituirMarcador(html, "FOOTER", await partial(footerPartial, { PREFIX: "../" }));
   html = substituirMarcador(html, "HEAD_EXTRA", await partial("head-extra.html", { PREFIX: "../" }));
   return html;
@@ -175,7 +175,8 @@ async function regenerarArxiuIdioma(idioma, historial) {
     // incrustats directament (amb l'enllaç recíproc per SLUG), no
     // calen marcadors.
     if (idioma === "ca") {
-      pagina = await injectarMarcadorsEnMemoriaCA(pagina);
+      const idiomaEsHref = esBilingue ? `../es/efemerides/${entrada.data}.html` : "../es/efemerides/index.html";
+      pagina = await injectarMarcadorsEnMemoriaCA(pagina, idiomaEsHref);
     }
 
     await writeFile(path.join(carpeta, `${entrada.data}.html`), pagina, "utf-8");
@@ -193,7 +194,7 @@ async function regenerarArxiuIdioma(idioma, historial) {
 
   let nouIndex = indexActual;
   if (idioma === "ca") {
-    nouIndex = await injectarMarcadorsEnMemoriaCA(indexActual, "footer-llarg.html");
+    nouIndex = await injectarMarcadorsEnMemoriaCA(indexActual, "../es/efemerides/index.html", "footer-llarg.html");
   }
   // L'índex ES ja porta header/footer incrustats (com el _template ES), no calen marcadors.
 
@@ -207,9 +208,8 @@ async function regenerarArxiuIdioma(idioma, historial) {
 
 async function main() {
   // Pàgines catalanes (arrel)
-  await injectarMarcadorsCA(path.join(ARREL, "index.html"), "", "efemerides/index.html", "footer-llarg.html");
-  await injectarMarcadorsCA(path.join(ARREL, "avis-legal.html"), "", "efemerides/index.html");
-
+  await injectarMarcadorsCA(path.join(ARREL, "index.html"), "", "efemerides/index.html", "es/index.html", "footer-llarg.html");
+  await injectarMarcadorsCA(path.join(ARREL, "avis-legal.html"), "", "efemerides/index.html", "es/avis-legal.html");
   // Pàgines castellanes (dins /es/)
   await injectarMarcadorsES(path.join(ARREL, "es/index.html"), "../", "efemerides/index.html", "../index.html", "footer-llarg-es.html");
   await injectarMarcadorsES(path.join(ARREL, "es/avis-legal.html"), "../", "efemerides/index.html", "../avis-legal.html");
