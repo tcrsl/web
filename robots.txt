@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tcrsl.github.io/web/sitemap.xml
+Sitemap: https://transcatalarodes.cat/sitemap.xml
