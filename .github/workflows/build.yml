@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "partials/**"
+      - "scripts/**"
       - "index.html"
       - "avis-legal.html"
       - "efemerides/_template.html"
