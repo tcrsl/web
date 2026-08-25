@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb llitera",
+      "es": "El nacimiento de la primera cabina con litera"
+    },
+    "text": {
+      "ca": "L'any 1930, la companyia White Motor Company va introduir el model 'Sleeper Cab', permetent als conductors descansar dins del camió durant els trajectes llargs. Aquest avenç va revolucionar el transport de mercaderies, augmentant significativament l'eficiència i la seguretat en les rutes de llarga distància.",
+      "es": "En el año 1930, la compañía White Motor Company introdujo el modelo 'Sleeper Cab', permitiendo a los conductores descansar dentro del camión durante los trayectos largos. Este avance revolucionó el transporte de mercancías, aumentando significativamente la eficiencia y la seguridad en las rutas de larga distancia."
+    },
+    "fonts": [
+      {
+        "nom": "White Motor Company Historical Society",
+        "url": "https://www.whitemotorco.org"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-08-25"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina avançada",
       "es": "El nacimiento de la primera cabina avanzada"
     },
