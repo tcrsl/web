@@ -1176,7 +1176,7 @@ h3 {
    RESPONSIU
    ========================================================= */
 
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
   .header__marca-text {
     display: none;
   }
