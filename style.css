@@ -229,6 +229,8 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  max-width: 1400px;
+  /* ← línia nova */
   padding-top: 14px;
   padding-bottom: 14px;
 }
