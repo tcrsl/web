@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera direcció assistida",
+      "es": "El nacimiento de la primera dirección asistida"
+    },
+    "text": {
+      "ca": "L'any 1924, Francis W. Davis va inventar el primer sistema de direcció assistida per facilitar la maniobrabilitat de vehicles pesants i camions. Aquesta innovació va permetre als conductors realitzar girs precisos amb molt menys esforç físic, revolucionant així la conducció de la maquinària de gran tonatge a tot el món.",
+      "es": "En 1924, Francis W. Davis inventó el primer sistema de dirección asistida para facilitar la maniobrabilidad de vehículos pesados y camiones. Esta innovación permitió a los conductores realizar giros precisos con mucho menos esfuerzo físico, revolucionando así la conducción de la maquinaria de gran tonelaje en todo el mundo."
+    },
+    "fonts": [
+      {
+        "nom": "SAE International",
+        "url": "https://www.sae.org"
+      },
+      {
+        "nom": "National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-08-26"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb llitera",
