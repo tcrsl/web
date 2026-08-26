@@ -71,6 +71,13 @@ function escaparHtml(text) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 }
+// Serialitza un valor per inserir-lo dins d'un bloc <script type="application/ld+json">.
+// A diferència d'escaparHtml (pensat per a text dins d'etiquetes HTML),
+// això produeix un literal JSON vàlid (amb cometes, barres invertides,
+// salts de línia, etc. escapats correctament).
+function jsonStr(valor) {
+  return JSON.stringify(String(valor));
+}
 
 function truncar(text, maxLength) {
   const net = String(text).trim();
@@ -160,6 +167,10 @@ async function regenerarArxiuIdioma(idioma, historial) {
     const titolAny = entrada.any && entrada.any !== "avui" ? `${titol} (${entrada.any})` : titol;
     const prefixData = idioma === "es" ? "Publicado el" : "Publicat el";
 
+    const urlCanonica = idioma === "es"
+      ? `https://transcatalarodes.cat/es/efemerides/${entrada.data}.html`
+      : `https://transcatalarodes.cat/efemerides/${entrada.data}.html`;
+
     let pagina = omplir(plantillaBase, {
       TITOL: escaparHtml(titolAny),
       TEXT_CURT: escaparHtml(truncar(text, 155)),
@@ -168,8 +179,12 @@ async function regenerarArxiuIdioma(idioma, historial) {
       TEXT: escaparHtml(text),
       FONTS_HTML: construirFontsHtml(entrada.fonts, idioma),
       SLUG: entrada.data,
+      TITOL_JSON: jsonStr(titolAny),
+      TEXT_CURT_JSON: jsonStr(truncar(text, 155)),
+      DATA_ISO_JSON: jsonStr(entrada.data),
+      CATEGORIA_JSON: jsonStr(categoria),
+      URL_JSON: jsonStr(urlCanonica),
     });
-
     // La plantilla CA fa servir marcadors HEADER/FOOTER (es resolen
     // via partials); la plantilla ES ja porta el header/footer
     // incrustats directament (amb l'enllaç recíproc per SLUG), no
