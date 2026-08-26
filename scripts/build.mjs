@@ -122,11 +122,15 @@ async function generarSitemap(historial) {
     .filter((e) => e.data)
     .sort((a, b) => (a.data < b.data ? 1 : -1));
 
-  let urls = `  <url>\n    <loc>${base}</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
-  urls += `  <url>\n    <loc>${base}efemerides/</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
-  urls += `  <url>\n    <loc>${base}es/</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
-  urls += `  <url>\n    <loc>${base}es/efemerides/</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  // Data de la darrera efemèride publicada: és la que reflecteix
+  // realment quan es va actualitzar el contingut de la home i dels
+  // índexs (que mostren l'efemèride del dia més recent).
+  const darreraData = entrades[0]?.data ?? new Date().toISOString().slice(0, 10);
 
+  let urls = `  <url>\n    <loc>${base}</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
+  urls += `  <url>\n    <loc>${base}efemerides/</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  urls += `  <url>\n    <loc>${base}es/</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
+  urls += `  <url>\n    <loc>${base}es/efemerides/</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
   for (const e of entrades) {
     const esBilingue = typeof e.titol === "object";
     urls += `  <url>\n    <loc>${base}efemerides/${e.data}.html</loc>\n    <lastmod>${e.data}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
