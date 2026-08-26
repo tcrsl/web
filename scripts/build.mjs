@@ -131,7 +131,8 @@ async function generarSitemap(historial) {
   urls += `  <url>\n    <loc>${base}efemerides/</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
   urls += `  <url>\n    <loc>${base}es/</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
   urls += `  <url>\n    <loc>${base}es/efemerides/</loc>\n    <lastmod>${darreraData}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
-  for (const e of entrades) {
+  urls += `  <url>\n    <loc>${base}avis-legal.html</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.3</priority>\n  </url>\n`;
+  urls += `  <url>\n    <loc>${base}es/avis-legal.html</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.3</priority>\n  </url>\n`; for (const e of entrades) {
     const esBilingue = typeof e.titol === "object";
     urls += `  <url>\n    <loc>${base}efemerides/${e.data}.html</loc>\n    <lastmod>${e.data}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
     if (esBilingue) {
