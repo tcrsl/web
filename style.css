@@ -914,18 +914,18 @@ h3 {
    / background-size individualment sense tocar l'HTML.
    --------------------------------------------------------- */
 .servei--residus {
-  background-image: url('img/contenidor_gran.jpg');
+  background-image: url('img/contenidor_gran.webp');
   background-position: center;
   /* background-size: cover; (ja ve heretat de .servei, sobreescriu aquí si cal) */
 }
 
 .servei--carregues {
-  background-image: url('img/camio3_dreta.jpeg');
+  background-image: url('img/camio3_dreta.webp');
   background-position: center;
 }
 
 .servei--altura {
-  background-image: url('img/treball_precisio_altura_2.jpg');
+  background-image: url('img/treball_precisio_altura_2.webp');
   background-position: center;
 }
 
