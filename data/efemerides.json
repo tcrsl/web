@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera excavadora amb tracció elèctrica",
+      "es": "El nacimiento de la primera excavadora con tracción eléctrica"
+    },
+    "text": {
+      "ca": "L'any 1931, la marca Bucyrus-Erie va marcar una fita en la maquinària pesant en llançar una excavadora totalment accionada per motors elèctrics. Aquest avenç va permetre una major eficiència i control en les operacions mineres i d'obra pública a gran escala, canviant per sempre el disseny dels equips pesants.",
+      "es": "En el año 1931, la marca Bucyrus-Erie marcó un hito en la maquinaria pesada al lanzar una excavadora totalmente accionada por motores eléctricos. Este avance permitió una mayor eficiencia y control en las operaciones mineras y de obra pública a gran escala, cambiando para siempre el diseño de los equipos pesados."
+    },
+    "fonts": [
+      {
+        "nom": "Bucyrus-Erie Historical Society",
+        "url": "https://www.bucyrus-erie.org"
+      }
+    ],
+    "data": "2026-08-27"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera direcció assistida",
