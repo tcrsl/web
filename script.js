@@ -54,8 +54,37 @@ function mostrarSlide(index) {
 
   actual = index;
 
+  slides[actual].classList.add('carregat');
   slides[actual].classList.add('actiu');
   punts[actual].classList.add('actiu');
+}
+
+function seguentSlide() {
+  const seguent = (actual + 1) % slides.length;
+  mostrarSlide(seguent);
+}
+
+function reiniciarTemporitzador() {
+  clearInterval(timer);
+  timer = setInterval(seguentSlide, interval);
+}
+
+if (slides.length > 0) {
+  reiniciarTemporitzador();
+}
+
+// Un cop la pàgina ha acabat de carregar (imatge principal inclosa),
+// activem la resta de diapositives perquè no competeixin amb el LCP.
+function carregarSlidesRestants() {
+  slides.forEach((slide, i) => {
+    if (i !== 0) slide.classList.add('carregat');
+  });
+}
+
+if (document.readyState === 'complete') {
+  carregarSlidesRestants();
+} else {
+  window.addEventListener('load', carregarSlidesRestants);
 }
 
 function seguentSlide() {
