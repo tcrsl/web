@@ -10,7 +10,6 @@
 
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="preload" as="image" href="../img/camio_man_tambor.webp" fetchpriority="high">
     <link rel="canonical" href="https://transcatalarodes.cat/es/">
     <link rel="alternate" hreflang="ca" href="https://transcatalarodes.cat/">
     <link rel="alternate" hreflang="es" href="https://transcatalarodes.cat/es/">
@@ -96,6 +95,12 @@
     <section id="inici" class="slider" data-interval="10000">
 
         <div class="slider__slide slider__slide--1 actiu">
+            <!-- Imagen principal del slider (LCP): se carga como <img> nativo
+       en lugar de background-image para acelerar el renderizado y
+       añadir texto alternativo (SEO). Sustituye el <link rel="preload">
+       anterior, ya no hace falta mantenerlo. -->
+            <img src="../img/camio_man_tambor.webp" alt="Camión grúa de Trans-Català Rodes S.L. trabajando en Flix"
+                class="slider__bg-img" fetchpriority="high" loading="eager" width="1920" height="1080">
             <div class="slider__vel"></div>
             <div class="slider__contingut">
                 <span class="eyebrow">Trans-Català Rodes S.L.</span>

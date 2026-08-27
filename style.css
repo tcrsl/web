@@ -382,8 +382,16 @@ h3 {
   z-index: 1;
 }
 
-.slider__slide--1 {
-  background-image: url('img/camio_man_tambor.webp');
+/* La diapositiva 1 ja no porta la imatge com a background-image:
+   ara es carrega amb un <img> natiu dins l'HTML per millorar el
+   LCP (temps de càrrega de la imatge principal) i el SEO (alt text). */
+.slider__bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* mateix efecte visual que abans amb background-size: cover */
 }
 
 .slider__slide--2.carregat {
