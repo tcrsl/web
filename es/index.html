@@ -32,7 +32,7 @@
   "description": "Transporte de cargas, gestión de residuos y servicios de grúa en Flix y comarca.",
   "telephone": "+34977410690",
   "email": "transcatalarodes@gmail.com",
-  "url": "https://transcatalarodes.cat/",
+  "url": "https://transcatalarodes.cat/es/",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Avgda Catalunya, 14",
@@ -99,8 +99,10 @@
        en lugar de background-image para acelerar el renderizado y
        añadir texto alternativo (SEO). Sustituye el <link rel="preload">
        anterior, ya no hace falta mantenerlo. -->
-            <img src="../img/camio_man_tambor.webp" alt="Camión grúa de Trans-Català Rodes S.L. trabajando en Flix"
-                class="slider__bg-img" fetchpriority="high" loading="eager" width="1920" height="1080">
+            <img src="../img/camio_man_tambor.webp"
+                srcset="../img/camio_man_tambor_mobile.webp 800w, ../img/camio_man_tambor.webp 1920w" sizes="100vw"
+                alt="Camión grúa de Trans-Català Rodes S.L. trabajando en Flix" class="slider__bg-img"
+                fetchpriority="high" loading="eager" width="1920" height="1080">
             <div class="slider__vel"></div>
             <div class="slider__contingut">
                 <span class="eyebrow">Trans-Català Rodes S.L.</span>

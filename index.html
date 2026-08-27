@@ -101,8 +101,10 @@
        en lloc de background-image per accelerar el renderitzat i
        afegir text alternatiu (SEO). Substitueix el <link rel="preload">
        anterior, ja no cal mantenir-lo. -->
-      <img src="img/camio_man_tambor.webp" alt="Camió grua de Trans-Català Rodes S.L. treballant a Flix"
-        class="slider__bg-img" fetchpriority="high" loading="eager" width="1920" height="1080">
+      <img src="img/camio_man_tambor.webp"
+        srcset="img/camio_man_tambor_mobile.webp 800w, img/camio_man_tambor.webp 1920w" sizes="100vw"
+        alt="Camió grua de Trans-Català Rodes S.L. treballant a Flix" class="slider__bg-img" fetchpriority="high"
+        loading="eager" width="1920" height="1080">
       <div class="slider__vel"></div>
       <div class="slider__contingut">
         <span class="eyebrow">Trans-Català Rodes S.L.</span>
