@@ -2,10 +2,11 @@ name: Efemèride diària
 
 on:
   schedule:
-     # 00:00 UTC ≈ 01:00/02:00 hora de Catalunya (segons horari d'estiu/hivern).
-    # Avançat des de les 04:00 UTC per tenir marge davant els retards
-    # habituals de la cua de GitHub Actions (sol trigar 1-2h de més).
-    - cron: "0 0 * * *"
+    # 03:17 UTC (no en hora rodona): les execucions a les 00:00, 06:00, etc.
+    # tenen molta cua a GitHub i sovint es descarten del tot, no només es
+    # retarden. Un minut "no rodó" dins una franja de poc trànsit redueix
+    # el risc que l'esdeveniment es perdi (com va passar el 27/08).
+    - cron: "17 3 * * *"
   workflow_dispatch: {} # permet executar-lo manualment des de la pestanya "Actions"
 permissions:
   contents: write
