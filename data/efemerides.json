@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis sincronitzada",
+      "es": "El nacimiento de la primera caja de cambios sincronizada"
+    },
+    "text": {
+      "ca": "L'any 1924, Earl Thompson va patentar la primera caixa de canvis sincronitzada, un avenç que va revolucionar la conducció dels camions en permetre canvis de marxa més suaus i evitar el doble embragatge. Aquesta innovació va reduir dràsticament el desgast mecànic i va facilitar la feina als conductors de vehicles pesants.",
+      "es": "En el año 1924, Earl Thompson patentó la primera caja de cambios sincronizada, un avance que revolucionó la conducción de los camiones al permitir cambios de marcha más suaves y evitar el doble embrague. Esta innovación redujo drásticamente el desgaste mecánico y facilitó el trabajo a los conductores de vehículos pesados."
+    },
+    "fonts": [
+      {
+        "nom": "Society of Automotive Engineers (SAE)",
+        "url": "https://www.sae.org"
+      },
+      {
+        "nom": "General Motors Heritage Center",
+        "url": "https://www.gmheritagecenter.com"
+      }
+    ],
+    "data": "2026-08-28"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
       "ca": "El naixement de la primera excavadora amb tracció elèctrica",
