@@ -230,6 +230,7 @@ async function main() {
   // Pàgines catalanes (arrel)
   await injectarMarcadorsCA(path.join(ARREL, "index.html"), "", "efemerides/index.html", "es/index.html", "footer-llarg.html");
   await injectarMarcadorsCA(path.join(ARREL, "avis-legal.html"), "", "efemerides/index.html", "es/avis-legal.html");
+  await injectarMarcadorsCA(path.join(ARREL, "404.html"), "", "efemerides/index.html", "es/index.html");
   // Pàgines castellanes (dins /es/)
   await injectarMarcadorsES(path.join(ARREL, "es/index.html"), "../", "efemerides/index.html", "../index.html", "footer-llarg-es.html");
   await injectarMarcadorsES(path.join(ARREL, "es/avis-legal.html"), "../", "efemerides/index.html", "../avis-legal.html");

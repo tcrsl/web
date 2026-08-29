@@ -1181,6 +1181,39 @@ h3 {
 }
 
 /* =========================================================
+   9. PÀGINA 404 (error, no trobat)
+   ========================================================= */
+.error404 {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--espai-seccio) 20px;
+}
+
+.error404__codi {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.error404__titol {
+  font-size: 1.6rem;
+  color: var(--color-primari);
+  margin-bottom: 14px;
+}
+
+.error404__text {
+  color: var(--color-text-fosc);
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+/* =========================================================
    RESPONSIU
    ========================================================= */
 
