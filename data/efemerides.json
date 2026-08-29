@@ -3,6 +3,25 @@
     "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
+      "ca": "El naixement del motor dièsel per a camions",
+      "es": "El nacimiento del motor diésel para camiones"
+    },
+    "text": {
+      "ca": "L'any 1924, Benz & Cie va presentar el primer camió equipat amb un motor dièsel d'injecció directa a l'Exposició de l'Automòbil d'Amsterdam. Aquest avenç va canviar radicalment l'eficiència del transport pesant, permetent que els camions recorreguessin distàncies molt més llargues amb un consum de combustible molt inferior al dels motors de gasolina.",
+      "es": "En 1924, Benz & Cie presentó el primer camión equipado con un motor diésel de inyección directa en la Exposición del Automóvil de Ámsterdam. Este avance cambió radicalmente la eficiencia del transporte pesado, permitiendo que los camiones recorrieran distancias mucho más largas con un consumo de combustible mucho inferior al de los motores de gasolina."
+    },
+    "fonts": [
+      {
+        "nom": "Mercedes-Benz Group Media",
+        "url": "https://group-media.mercedes-benz.com"
+      }
+    ],
+    "data": "2026-08-29"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
       "ca": "El naixement de la primera caixa de canvis sincronitzada",
       "es": "El nacimiento de la primera caja de cambios sincronizada"
     },
