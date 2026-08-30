@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera suspensió pneumàtica",
+      "es": "El nacimiento de la primera suspensión neumática"
+    },
+    "text": {
+      "ca": "L'any 1930, la companyia Firestone va patentar el primer sistema de suspensió pneumàtica. Aquesta innovació va revolucionar el transport pesant, ja que permetia absorbir millor les irregularitats de la carretera i protegir tant la càrrega com l'estructura del camió.",
+      "es": "En el año 1930, la compañía Firestone patentó el primer sistema de suspensión neumática. Esta innovación revolucionó el transporte pesado, ya que permitía absorber mejor las irregularidades de la carretera y proteger tanto la carga como la estructura del camión."
+    },
+    "fonts": [
+      {
+        "nom": "Firestone Historical Archive",
+        "url": "https://www.firestonetire.com"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-08-30"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement del motor dièsel per a camions",
