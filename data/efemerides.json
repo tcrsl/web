@@ -1,5 +1,28 @@
 [
   {
+    "categoria": "dada-curiosa",
+    "any": "1930",
+    "titol": {
+      "ca": "L'origen dels pneumàtics de colors per a vehicles pesants",
+      "es": "El origen de los neumáticos de colores para vehículos pesados"
+    },
+    "text": {
+      "ca": "Abans de l'ús generalitzat del negre de carboni, que aporta resistència i durabilitat, els pneumàtics de camió eren de color blanc o gris natural. Aquesta substància, introduïda als anys 30, no només va canviar el color de les rodes, sinó que va multiplicar la seva vida útil.",
+      "es": "Antes del uso generalizado del negro de carbono, que aporta resistencia y durabilidad, los neumáticos de camión eran de color blanco o gris natural. Esta sustancia, introducida en los años 30, no solo cambió el color de las ruedas, sino que multiplicó su vida útil."
+    },
+    "fonts": [
+      {
+        "nom": "Michelin",
+        "url": "https://www.michelin.com"
+      },
+      {
+        "nom": "Bridgestone Corporation",
+        "url": "https://www.bridgestone.com"
+      }
+    ],
+    "data": "2026-08-31"
+  },
+  {
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
