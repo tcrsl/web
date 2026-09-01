@@ -1,5 +1,28 @@
 [
   {
+    "categoria": "historia-maquinaria",
+    "any": "1910",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat",
+      "es": "El nacimiento de la primera cabina con control avanzado"
+    },
+    "text": {
+      "ca": "A principis del segle XX, Sterling Trucks va revolucionar el sector en traslladar la posició del conductor sobre el motor. Aquest disseny va permetre reduir la longitud total del camió, facilitant significativament les maniobres en entorns urbans i espais reduïts.",
+      "es": "A principios del siglo XX, Sterling Trucks revolucionó el sector al trasladar la posición del conductor sobre el motor. Este diseño permitió reducir la longitud total del camión, facilitando significativamente las maniobras en entornos urbanos y espacios reducidos."
+    },
+    "fonts": [
+      {
+        "nom": "Daimler Truck North America",
+        "url": "https://daimlertrucknorthamerica.com"
+      },
+      {
+        "nom": "Historical Construction Equipment Association",
+        "url": "https://www.hcea.net"
+      }
+    ],
+    "data": "2026-09-01"
+  },
+  {
     "categoria": "dada-curiosa",
     "any": "1930",
     "titol": {
