@@ -87,19 +87,6 @@ if (document.readyState === 'complete') {
   window.addEventListener('load', carregarSlidesRestants);
 }
 
-function seguentSlide() {
-  const seguent = (actual + 1) % slides.length;
-  mostrarSlide(seguent);
-}
-
-function reiniciarTemporitzador() {
-  clearInterval(timer);
-  timer = setInterval(seguentSlide, interval);
-}
-
-if (slides.length > 0) {
-  reiniciarTemporitzador();
-}
 
 // =============================================
 // Efemèride del dia ("Sabies que...?")
