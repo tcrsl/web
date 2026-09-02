@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb aire condicionat",
+      "es": "El nacimiento de la primera cabina con aire acondicionado"
+    },
+    "text": {
+      "ca": "L'any 1930, el camió de la marca Mack va ser pioner en la instal·lació d'un sistema rudimentari de refrigeració per a la cabina. Aquesta innovació va millorar radicalment el confort dels conductors en rutes llargues, transformant per sempre les condicions de treball en el transport pesant de llarga distància.",
+      "es": "En el año 1930, el camión de la marca Mack fue pionero en la instalación de un sistema rudimentario de refrigeración para la cabina. Esta innovación mejoró radicalmente el confort de los conductores en rutas largas, transformando para siempre las condiciones de trabajo en el transporte pesado de larga distancia."
+    },
+    "fonts": [
+      {
+        "nom": "Mack Trucks Historical Museum",
+        "url": "https://www.macktruckshistoricalmuseum.org"
+      }
+    ],
+    "data": "2026-09-02"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1910",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat",
