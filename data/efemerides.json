@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina totalment metàl·lica",
+      "es": "El nacimiento de la primera cabina totalmente metálica"
+    },
+    "text": {
+      "ca": "Abans de la dècada de 1930, les cabines dels camions es fabricaven combinant fusta i metall. L'any 1930, fabricants com Chevrolet van revolucionar el sector presentant la primera cabina construïda completament d'acer, oferint molt més confort i seguretat als conductors davant les inclemències del temps i possibles impactes.",
+      "es": "Antes de la década de 1930, las cabinas de los camiones se fabricaban combinando madera y metal. En 1930, fabricantes como Chevrolet revolucionaron el sector presentando la primera cabina construida completamente de acero, ofreciendo mucho más confort y seguridad a los conductores ante las inclemencias del tiempo y posibles impactos."
+    },
+    "fonts": [
+      {
+        "nom": "General Motors Heritage Center",
+        "url": "https://www.gmheritagecenter.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-09-03"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina amb aire condicionat",
       "es": "El nacimiento de la primera cabina con aire acondicionado"
     },
