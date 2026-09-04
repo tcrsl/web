@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera excavadora muntada sobre camió",
+      "es": "El nacimiento de la primera excavadora montada sobre camión"
+    },
+    "text": {
+      "ca": "L'any 1931, l'empresa Michigan Power Shovel va introduir la primera excavadora dissenyada específicament per ser muntada sobre un xassís de camió. Aquesta innovació va revolucionar la mobilitat al sector de la construcció, permetent als operaris desplaçar-se ràpidament entre diferents obres amb un sol vehicle.",
+      "es": "En el año 1931, la empresa Michigan Power Shovel introdujo la primera excavadora diseñada específicamente para ser montada sobre un chasis de camión. Esta innovación revolucionó la movilidad en el sector de la construcción, permitiendo a los operarios desplazarse rápidamente entre diferentes obras con un solo vehículo."
+    },
+    "fonts": [
+      {
+        "nom": "Association of Equipment Manufacturers (AEM)",
+        "url": "https://www.aem.org"
+      }
+    ],
+    "data": "2026-09-04"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina totalment metàl·lica",
