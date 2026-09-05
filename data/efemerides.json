@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1914",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis amb desmultiplicació",
+      "es": "El nacimiento de la primera caja de cambios con desmultiplicación"
+    },
+    "text": {
+      "ca": "L'any 1914, la companyia Mack Trucks va introduir la transmissió de doble reducció en els seus vehicles pesants. Aquesta innovació va permetre als camions guanyar un pare motor superior, facilitant el transport de càrregues molt pesades per terrenys amb forts pendents.",
+      "es": "En el año 1914, la compañía Mack Trucks introdujo la transmisión de doble reducción en sus vehículos pesados. Esta innovación permitió a los camiones ganar un par motor superior, facilitando el transporte de cargas muy pesadas por terrenos con fuertes pendientes."
+    },
+    "fonts": [
+      {
+        "nom": "Mack Trucks History",
+        "url": "https://www.macktrucks.com"
+      }
+    ],
+    "data": "2026-09-05"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
       "ca": "El naixement de la primera excavadora muntada sobre camió",
