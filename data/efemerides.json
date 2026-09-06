@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1910",
+    "titol": {
+      "ca": "El naixement de la primera cabina tancada de fàbrica",
+      "es": "El nacimiento de la primera cabina cerrada de fábrica"
+    },
+    "text": {
+      "ca": "Abans de 1910, els conductors de camions estaven totalment exposats a la intempèrie. La companyia Autocar va ser pionera en oferir la primera cabina tancada de fàbrica, transformant la comoditat i la seguretat en la conducció de vehicles pesants per sempre.",
+      "es": "Antes de 1910, los conductores de camiones estaban totalmente expuestos a la intemperie. La compañía Autocar fue pionera en ofrecer la primera cabina cerrada de fábrica, transformando la comodidad y la seguridad en la conducción de vehículos pesados para siempre."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com"
+      }
+    ],
+    "data": "2026-09-06"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1914",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis amb desmultiplicació",
