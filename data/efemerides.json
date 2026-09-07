@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis planetària",
+      "es": "El nacimiento de la primera caja de cambios planetaria"
+    },
+    "text": {
+      "ca": "L'any 1924, la marca White Motor Company va introduir la primera caixa de canvis planetària en els seus camions. Aquest sistema va revolucionar el transport pesant en permetre una transmissió de potència més suau i eficient, facilitant enormement la conducció en carreteres amb pendent.",
+      "es": "En el año 1924, la marca White Motor Company introdujo la primera caja de cambios planetaria en sus camiones. Este sistema revolucionó el transporte pesado al permitir una transmisión de potencia más suave y eficiente, facilitando enormemente la conducción en carreteras con pendiente."
+    },
+    "fonts": [
+      {
+        "nom": "White Motor Company Historical Society",
+        "url": "https://www.whitetrucks.com"
+      }
+    ],
+    "data": "2026-09-07"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1910",
     "titol": {
       "ca": "El naixement de la primera cabina tancada de fàbrica",
