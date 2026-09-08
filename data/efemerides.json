@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
+      "ca": "El naixement de la injecció directa en motors dièsel",
+      "es": "El nacimiento de la inyección directa en motores diésel"
+    },
+    "text": {
+      "ca": "L'any 1924, MAN va presentar el primer motor dièsel amb injecció directa d'aire comprimit per a camions. Aquesta innovació va permetre als vehicles pesants guanyar una potència i eficiència desconegudes fins al moment, marcant un abans i un després en la logística mundial.",
+      "es": "En el año 1924, MAN presentó el primer motor diésel con inyección directa de aire comprimido para camiones. Esta innovación permitió a los vehículos pesados ganar una potencia y eficiencia desconocidas hasta el momento, marcando un antes y un después en la logística mundial."
+    },
+    "fonts": [
+      {
+        "nom": "MAN Truck & Bus",
+        "url": "https://www.man.eu"
+      },
+      {
+        "nom": "Deutsches Museum",
+        "url": "https://www.deutsches-museum.de"
+      }
+    ],
+    "data": "2026-09-08"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
       "ca": "El naixement de la primera caixa de canvis planetària",
       "es": "El nacimiento de la primera caja de cambios planetaria"
     },
