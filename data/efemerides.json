@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb visibilitat panoràmica",
+      "es": "El nacimiento de la primera cabina con visibilidad panorámica"
+    },
+    "text": {
+      "ca": "Als anys 30, la marca White Motor Company va revolucionar el sector introduint els primers dissenys de cabina que prioritzaven una visibilitat panoràmica per al conductor. Aquest avenç va permetre millorar dràsticament el control del vehicle en maniobres complexes amb grua o càrregues voluminoses en espais reduïts.",
+      "es": "En los años 30, la marca White Motor Company revolucionó el sector introduciendo los primeros diseños de cabina que priorizaban una visibilidad panorámica para el conductor. Este avance permitió mejorar drásticamente el control del vehículo en maniobras complejas con grúa o cargas voluminosas en espacios reducidos."
+    },
+    "fonts": [
+      {
+        "nom": "White Motor Company Historical Archives",
+        "url": "https://www.truckhistory.com"
+      }
+    ],
+    "data": "2026-09-09"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la injecció directa en motors dièsel",
