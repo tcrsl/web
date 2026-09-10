@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina basculant",
+      "es": "El nacimiento de la primera cabina basculante"
+    },
+    "text": {
+      "ca": "L'any 1930, la marca francesa Willème va ser pionera en presentar la primera cabina basculant. Aquesta innovació va revolucionar el manteniment mecànic, ja que permetia accedir al motor de forma ràpida i còmoda sense necessitat de desmuntar grans peces. Avui dia, aquest sistema és un estàndard indispensable en els camions moderns que utilitzem en el nostre transport diari.",
+      "es": "En el año 1930, la marca francesa Willème fue pionera en presentar la primera cabina basculante. Esta innovación revolucionó el mantenimiento mecánico, ya que permitía acceder al motor de forma rápida y cómoda sin necesidad de desmontar grandes piezas. Hoy en día, este sistema es un estándar indispensable en los camiones modernos que utilizamos en nuestro transporte diario."
+    },
+    "fonts": [
+      {
+        "nom": "Fondation Berliet",
+        "url": "https://www.fondationberliet.org"
+      },
+      {
+        "nom": "TrucksPlanet",
+        "url": "http://www.trucksplanet.com"
+      }
+    ],
+    "data": "2026-09-10"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina amb visibilitat panoràmica",
       "es": "El nacimiento de la primera cabina con visibilidad panorámica"
     },
