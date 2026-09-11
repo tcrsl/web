@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control de temperatura",
+      "es": "El nacimiento de la primera cabina con control de temperatura"
+    },
+    "text": {
+      "ca": "L'any 1931, el fabricant nord-americà Mack Trucks va introduir per primera vegada un sistema de calefacció integrat a la cabina d'un camió. Aquesta innovació va millorar radicalment el confort i la seguretat dels conductors durant les rutes de llarga distància en climes hivernals, convertint-se en un nou estàndard per a la indústria del transport pesant.",
+      "es": "En el año 1931, el fabricante estadounidense Mack Trucks introdujo por primera vez un sistema de calefacción integrado en la cabina de un camión. Esta innovación mejoró radicalmente el confort y la seguridad de los conductores durante las rutas de larga distancia en climas invernales, convirtiéndose en un nuevo estándar para la industria del transporte pesado."
+    },
+    "fonts": [
+      {
+        "nom": "Mack Trucks Historical Museum",
+        "url": "https://www.macktruckshistoricalmuseum.org"
+      }
+    ],
+    "data": "2026-09-11"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina basculant",
