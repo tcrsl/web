@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1910",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb parabrisa frontal",
+      "es": "El nacimiento de la primera cabina con parabrisas frontal"
+    },
+    "text": {
+      "ca": "Abans de 1910, els conductors de camions anaven totalment exposats al vent i a la pluja. Aquell any es va començar a popularitzar la instal·lació de parabrises fixos de vidre, un gran avenç que va millorar enormement la seguretat i el confort durant les llargues jornades de transport de mercaderies.",
+      "es": "Antes de 1910, los conductores de camiones iban totalmente expuestos al viento y a la lluvia. Ese año se empezó a popularizar la instalación de parabrisas fijos de vidrio, un gran avance que mejoró enormemente la seguridad y el confort durante las largas jornadas de transporte de mercancías."
+    },
+    "fonts": [
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-09-13"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
