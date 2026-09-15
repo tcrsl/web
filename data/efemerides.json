@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El desenvolupament de les grues hidràuliques telescòpiques",
+      "es": "El desarrollo de las grúas hidráulicas telescópicas"
+    },
+    "text": {
+      "ca": "Tot i que les grues primitives utilitzaven cables i politges, la dècada dels 30 va marcar l'inici de l'ús de sistemes hidràulics per estendre el braç de càrrega. Aquesta innovació va permetre una precisió molt més gran en el moviment de mercaderies pesants, transformant radicalment el sector de les grues mòbils actuals.",
+      "es": "Aunque las grúas primitivas utilizaban cables y poleas, la década de los 30 marcó el inicio del uso de sistemas hidráulicos para extender el brazo de carga. Esta innovación permitió una precisión mucho mayor en el movimiento de mercancías pesadas, transformando radicalmente el sector de las grúas móviles actuales."
+    },
+    "fonts": [
+      {
+        "nom": "Liebherr",
+        "url": "https://www.liebherr.com"
+      },
+      {
+        "nom": "International Construction Equipment",
+        "url": "https://www.khl.com"
+      }
+    ],
+    "data": "2026-09-15"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
