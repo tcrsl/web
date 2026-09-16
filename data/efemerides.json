@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera furgoneta de repartiment",
+      "es": "El nacimiento de la primera furgoneta de reparto"
+    },
+    "text": {
+      "ca": "L'any 1924, Ford va presentar el model T Runabout amb una caixa de càrrega adaptada, marcant l'inici de les furgonetes de transport lleuger tal com les coneixem avui. Aquesta innovació va permetre als petits negocis agilitzar la logística urbana de manera molt més eficient que amb els antics carros de tracció animal.",
+      "es": "En el año 1924, Ford presentó el modelo T Runabout con una caja de carga adaptada, marcando el inicio de las furgonetas de transporte ligero tal como las conocemos hoy. Esta innovación permitió a los pequeños negocios agilizar la logística urbana de manera mucho más eficiente que con los antiguos carros de tracción animal."
+    },
+    "fonts": [
+      {
+        "nom": "Ford Media Center",
+        "url": "https://media.ford.com"
+      }
+    ],
+    "data": "2026-09-16"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El desenvolupament de les grues hidràuliques telescòpiques",
