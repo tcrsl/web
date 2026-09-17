@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1938",
+    "titol": {
+      "ca": "L'origen del remolc de coll de cigne desmuntable",
+      "es": "El origen del remolque de cuello de cisne desmontable"
+    },
+    "text": {
+      "ca": "L'any 1938, l'empresa Rogers Brothers Corporation va revolucionar el transport pesant amb la invenció del remolc de llit baix amb coll de cigne desmuntable. Aquest disseny va permetre que les màquines i grues pesants pugessin al remolc de cara per la part davantera, eliminant la necessitat de rampes posteriors perilloses. Va ser un pas gegant per a la logística i la seguretat de la maquinària de gran tonatge.",
+      "es": "En 1938, la empresa Rogers Brothers Corporation revolucionó el transporte pesado con la invención del remolque de cama baja con cuello de cisne desmontable. Este diseño permitió que las máquinas y grúas pesadas subieran al remolque de frente por la parte delantera, eliminando la necesidad de peligrosas rampas traseras. Fue un paso gigante para la logística y la seguridad de la maquinaria de gran tonelaje."
+    },
+    "fonts": [
+      {
+        "nom": "Rogers Brothers Corporation",
+        "url": "https://www.rogerstrailers.com"
+      }
+    ],
+    "data": "2026-09-17"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera furgoneta de repartiment",
