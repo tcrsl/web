@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control de temperatura",
+      "es": "El nacimiento de la primera cabina con control de temperatura"
+    },
+    "text": {
+      "ca": "L'any 1930, la companyia nord-americana International Harvester va introduir els primers sistemes rudimentaris per controlar la temperatura a l'interior de les cabines dels camions. Aquesta innovació va marcar el camí per millorar significativament el confort i la seguretat dels conductors durant llargues jornades de treball, deixant enrere les cabines completament obertes o mal aïllades.",
+      "es": "En el año 1930, la compañía estadounidense International Harvester introdujo los primeros sistemas rudimentarios para controlar la temperatura en el interior de las cabinas de los camiones. Esta innovación marcó el camino para mejorar significativamente el confort y la seguridad de los conductores durante largas jornadas de trabajo, dejando atrás las cabinas completamente abiertas o mal aisladas."
+    },
+    "fonts": [
+      {
+        "nom": "Navistar International Heritage",
+        "url": "https://www.internationaltrucks.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-09-18"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1938",
     "titol": {
       "ca": "L'origen del remolc de coll de cigne desmuntable",
