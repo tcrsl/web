@@ -1,6 +1,28 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control de temperatura",
+      "es": "El nacimiento de la primera cabina con control de temperatura"
+    },
+    "text": {
+      "ca": "L'any 1930, la companyia nord-americana International Harvester va introduir les primeres cabines per a camions amb sistemes de calefacció integrats de fàbrica. Aquesta innovació va millorar radicalment el confort i la seguretat dels transportistes que treballaven en climes freds, marcant una fita en l'ergonomia dels vehicles pesants.",
+      "es": "En el año 1930, la compañía estadounidense International Harvester introdujo las primeras cabinas para camiones con sistemas de calefacción integrados de fábrica. Esta innovación mejoró radicalmente el confort y la seguridad de los transportistas que trabajaban en climas fríos, marcando un hito en la ergonomía de los vehículos pesados."
+    },
+    "fonts": [
+      {
+        "nom": "Navistar International",
+        "url": "https://www.internationaltrucks.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History"
+      }
+    ],
+    "data": "2026-09-20"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
