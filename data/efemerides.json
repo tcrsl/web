@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb estructura d'acer integral",
+      "es": "El nacimiento de la primera cabina con estructura de acero integral"
+    },
+    "text": {
+      "ca": "L'any 1931, Chevrolet va revolucionar el sector presentant la primera cabina de camió fabricada totalment amb acer. Aquesta innovació va substituir les estructures mixtes de fusta i metall, oferint una major durabilitat i una protecció significativament superior per als conductors en les dures jornades de treball.",
+      "es": "En el año 1931, Chevrolet revolucionó el sector presentando la primera cabina de camión fabricada totalmente con acero. Esta innovación sustituyó las estructuras mixtas de madera y metal, ofreciendo una mayor durabilidad y una protección significativamente superior para los conductores en las duras jornadas de trabajo."
+    },
+    "fonts": [
+      {
+        "nom": "General Motors Heritage Center",
+        "url": "https://www.gmheritagecenter.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-09-21"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control de temperatura",
