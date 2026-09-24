@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb estructura d'acer",
+      "es": "El nacimiento de la primera cabina con estructura de acero"
+    },
+    "text": {
+      "ca": "Abans de 1930, les cabines dels camions es fabricaven majoritàriament amb una combinació de fusta i metall. L'arribada de les primeres cabines construïdes íntegrament amb acer premsat va suposar una revolució en la seguretat i la durabilitat, establint el nou estàndard que tots els fabricants acabarien seguint per protegir els conductors.",
+      "es": "Antes de 1930, las cabinas de los camiones se fabricaban mayoritariamente con una combinación de madera y metal. La llegada de las primeras cabinas construidas íntegramente con acero prensado supuso una revolución en la seguridad y la durabilidad, estableciendo el nuevo estándar que todos los fabricantes acabarían siguiendo para proteger a los conductores."
+    },
+    "fonts": [
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-09-24"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
