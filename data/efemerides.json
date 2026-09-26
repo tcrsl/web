@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb vitralls de seguretat",
+      "es": "El nacimiento de la primera cabina con cristales de seguridad"
+    },
+    "text": {
+      "ca": "L'any 1930 va marcar una fita en la seguretat dels transportistes amb la introducció generalitzada del vidre laminat en les cabines dels camions. Aquesta innovació va substituir el vidre convencional, evitant que es trenqués en fragments perillosos en cas d'impacte i protegint així els conductors durant les seves llargues jornades a la carretera.",
+      "es": "El año 1930 marcó un hito en la seguridad de los transportistas con la introducción generalizada del vidrio laminado en las cabinas de los camiones. Esta innovación sustituyó al vidrio convencional, evitando que se rompiera en fragmentos peligrosos en caso de impacto y protegiendo así a los conductores durante sus largas jornadas en la carretera."
+    },
+    "fonts": [
+      {
+        "nom": "Pilkington",
+        "url": "https://www.pilkington.com"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-09-26"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
