@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1923",
+    "titol": {
+      "ca": "El naixement de la primera cabina totalment de fusta contraxapada",
+      "es": "El nacimiento de la primera cabina totalmente de madera contrachapada"
+    },
+    "text": {
+      "ca": "Abans de l'era de l'acer, molts camions utilitzaven estructures de fusta. L'any 1923, es va popularitzar l'ús de fusta contraxapada premsada, que va aportar una lleugeresa i resistència inèdites per a l'època, millorant notablement la maniobrabilitat i la capacitat de càrrega dels vehicles de transport pesant.",
+      "es": "Antes de la era del acero, muchos camiones utilizaban estructuras de madera. En 1923, se popularizó el uso de madera contrachapada prensada, que aportó una ligereza y resistencia inéditas para la época, mejorando notablemente la maniobrabilidad y la capacidad de carga de los vehículos de transporte pesado."
+    },
+    "fonts": [
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-09-27"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb vitralls de seguretat",
