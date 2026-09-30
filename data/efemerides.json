@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat (COE)",
+      "es": "El nacimiento de la primera cabina con control avanzado (COE)"
+    },
+    "text": {
+      "ca": "L'any 1931, l'empresa Autocar va presentar el model 'Blue Streak', el primer camió amb cabina sobre el motor, conegut com a COE (Cab Over Engine). Aquest disseny va revolucionar la logística permetent més espai de càrrega en una longitud total menor, una configuració que avui és estàndard en el transport europeu.",
+      "es": "En el año 1931, la empresa Autocar presentó el modelo 'Blue Streak', el primer camión con cabina sobre el motor, conocido como COE (Cab Over Engine). Este diseño revolucionó la logística permitiendo más espacio de carga en una longitud total menor, una configuración que hoy es estándar en el transporte europeo."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com/history/"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu/"
+      }
+    ],
+    "data": "2026-09-30"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
