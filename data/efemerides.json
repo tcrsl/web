@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat",
+      "es": "El nacimiento de la primera cabina con control avanzado"
+    },
+    "text": {
+      "ca": "L'any 1930, Autocar Company va presentar el primer camió de cabina avançada, conegut com a Model C. Aquest disseny va situar la cabina directament sobre el motor, permetent una major longitud de càrrega sense augmentar la distància entre eixos i millorant significativament la maniobrabilitat en espais estrets.",
+      "es": "En 1930, Autocar Company presentó el primer camión de cabina avanzada, conocido como Modelo C. Este diseño situó la cabina directamente sobre el motor, permitiendo una mayor longitud de carga sin aumentar la distancia entre ejes y mejorando significativamente la maniobrabilidad en espacios estrechos."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com/history/"
+      }
+    ],
+    "data": "2026-10-01"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat (COE)",
