@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
+      "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
+    },
+    "text": {
+      "ca": "L'any 1924 es va marcar una fita en la transmissió de vehicles pesants amb la introducció de la primera caixa de canvis de cinc velocitats. Aquesta innovació va permetre als camions gestionar millor la potència del motor en pendents pronunciades, millorant considerablement l'eficiència i la durabilitat del transport de llarga distància.",
+      "es": "En 1924 se marcó un hito en la transmisión de vehículos pesados con la introducción de la primera caja de cambios de cinco velocidades. Esta innovación permitió a los camiones gestionar mejor la potencia del motor en pendientes pronunciadas, mejorando considerablemente la eficiencia y la durabilidad del transporte de larga distancia."
+    },
+    "fonts": [
+      {
+        "nom": "Mercedes-Benz Group",
+        "url": "https://www.mercedes-benz.com"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-10-03"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1923",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
