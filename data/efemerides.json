@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
+      "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
+    },
+    "text": {
+      "ca": "L'any 1930, la incorporació de la cinquena marxa va marcar una fita en l'eficiència dels camions de llarga distància. Aquesta innovació va permetre als conductors mantenir velocitats de creuer més constants i reduir significativament el consum de combustible en les rutes interurbanes.",
+      "es": "En 1930, la incorporación de la quinta marcha marcó un hito en la eficiencia de los camiones de larga distancia. Esta innovación permitió a los conductores mantener velocidades de crucero más constantes y reducir significativamente el consumo de combustible en las rutas interurbanas."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Trucks History",
+        "url": "https://www.volvotrucks.com"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-10-04"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
