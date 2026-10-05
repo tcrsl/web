@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb estructura d'acer reforçada",
+      "es": "El nacimiento de la primera cabina con estructura de acero reforzada"
+    },
+    "text": {
+      "ca": "Durant la dècada de 1930, els fabricants de camions van començar a substituir les estructures de fusta per cabines d'acer totalment estampat. Aquesta innovació va millorar dràsticament la rigidesa estructural i la resistència dels vehicles, establint les bases per a la seguretat i durabilitat dels camions moderns que utilitzem avui dia.",
+      "es": "Durante la década de 1930, los fabricantes de camiones empezaron a sustituir las estructuras de madera por cabinas de acero totalmente estampado. Esta innovación mejoró drásticamente la rigidez estructural y la resistencia de los vehículos, sentando las bases para la seguridad y durabilidad de los camiones modernos que utilizamos hoy en día."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Trucks History",
+        "url": "https://www.volvotrucks.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-10-05"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
       "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
     },
