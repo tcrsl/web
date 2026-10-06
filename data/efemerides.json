@@ -1,5 +1,28 @@
 [
   {
+    "categoria": "curiositat-tecnica",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
+      "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
+    },
+    "text": {
+      "ca": "L'any 1930 va marcar una fita en la logística pesant amb la introducció de la primera caixa de canvis de cinc marxes. Aquesta innovació va permetre als camions mantenir una velocitat més constant en pendents pronunciades, millorant així l'eficiència del consum i la durabilitat del motor en llargues distàncies.",
+      "es": "El año 1930 marcó un hito en la logística pesada con la introducción de la primera caja de cambios de cinco marchas. Esta innovación permitió a los camiones mantener una velocidad más constante en pendientes pronunciadas, mejorando así la eficiencia del consumo y la durabilidad del motor en largas distancias."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Group Heritage",
+        "url": "https://www.volvogroup.com/en/about/history.html"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-10-06"
+  },
+  {
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
