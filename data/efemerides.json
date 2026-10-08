@@ -1,5 +1,28 @@
 [
   {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina basculant",
+      "es": "El nacimiento de la primera cabina basculante"
+    },
+    "text": {
+      "ca": "L'any 1930, l'empresa francesa Willeme va presentar el primer camió amb una cabina capaç de bascular. Aquesta innovació va revolucionar el manteniment mecànic, permetent un accés ràpid i senzill al motor sense haver de desmuntar grans peces de la carrosseria. Encara avui, aquest sistema és un element fonamental per a la logística i la revisió de vehicles pesants.",
+      "es": "En el año 1930, la empresa francesa Willeme presentó el primer camión con una cabina capaz de bascular. Esta innovación revolucionó el mantenimiento mecánico, permitiendo un acceso rápido y sencillo al motor sin tener que desmontar grandes piezas de la carrocería. Todavía hoy, este sistema es un elemento fundamental para la logística y la revisión de vehículos pesados."
+    },
+    "fonts": [
+      {
+        "nom": "Fondation Berliet",
+        "url": "https://www.fondationberliet.org"
+      },
+      {
+        "nom": "Willeme Historical Archive",
+        "url": "https://www.willeme.com"
+      }
+    ],
+    "data": "2026-10-08"
+  },
+  {
     "categoria": "curiositat-tecnica",
     "any": "1931",
     "titol": {
