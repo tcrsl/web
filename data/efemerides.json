@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
+      "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
+    },
+    "text": {
+      "ca": "L'any 1931, el fabricant alemany ZF va revolucionar el sector llançant la primera caixa de canvis de cinc velocitats per a vehicles industrials. Aquesta innovació va permetre als camions aprofitar millor la potència del motor en pendents pronunciades i optimitzar el consum de combustible en trajectes llargs.",
+      "es": "En el año 1931, el fabricante alemán ZF revolucionó el sector lanzando la primera caja de cambios de cinco velocidades para vehículos industriales. Esta innovación permitió a los camiones aprovechar mejor la potencia del motor en pendientes pronunciadas y optimizar el consumo de combustible en trayectos largos."
+    },
+    "fonts": [
+      {
+        "nom": "ZF Friedrichshafen AG History",
+        "url": "https://press.zf.com"
+      }
+    ],
+    "data": "2026-10-09"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina basculant",
