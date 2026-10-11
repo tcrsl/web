@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb sistema de calefacció",
+      "es": "El nacimiento de la primera cabina con sistema de calefacción"
+    },
+    "text": {
+      "ca": "Abans de la dècada de 1930, els conductors de camions patien condicions extremes en les llargues rutes hivernals. La introducció dels primers sistemes de calefacció a les cabines va transformar la logística, permetent una conducció molt més segura i confortable per als transportistes en qualsevol època de l'any.",
+      "es": "Antes de la década de 1930, los conductores de camiones sufrían condiciones extremas en las largas rutas invernales. La introducción de los primeros sistemas de calefacción en las cabinas transformó la logística, permitiendo una conducción mucho más segura y confortable para los transportistas en cualquier época del año."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Group Heritage",
+        "url": "https://www.volvogroup.com"
+      },
+      {
+        "nom": "Society of Automotive Historians",
+        "url": "https://autohistory.org"
+      }
+    ],
+    "data": "2026-10-11"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
