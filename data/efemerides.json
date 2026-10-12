@@ -1,5 +1,24 @@
 [
   {
+    "categoria": "curiositat-tecnica",
+    "any": "2007",
+    "titol": {
+      "ca": "La grua mòbil telescòpica més potent del món",
+      "es": "La grúa móvil telescópica más potente del mundo"
+    },
+    "text": {
+      "ca": "Sabies que la Liebherr LTM 11200-9.1 té la ploma telescòpica més llarga del món integrada en una grua mòbil? Presentada el 2007, aquesta gegant de nou eixos pot aixecar fins a 1.200 tones i la seva ploma s'estén fins als 100 metres d'altura. És una autèntica obra mestra de l'enginyeria, utilitzada en el muntatge de parcs eòlics i grans infraestructures.",
+      "es": "¿Sabías que la Liebherr LTM 11200-9.1 tiene la pluma telescópica más larga del mundo integrada en una grúa móvil? Presentada en 2007, esta gigante de nueve ejes puede levantar hasta 1.200 toneladas y su pluma se extiende hasta los 100 metros de altura. Es una auténtica obra maestra de la ingeniería, utilizada en el montaje de parques eólicos y grandes infraestructuras."
+    },
+    "fonts": [
+      {
+        "nom": "Liebherr",
+        "url": "https://www.liebherr.com"
+      }
+    ],
+    "data": "2026-10-12"
+  },
+  {
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
