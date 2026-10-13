@@ -1,5 +1,28 @@
 [
   {
+    "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb sistema de calefacció",
+      "es": "El nacimiento de la primera cabina con sistema de calefacción"
+    },
+    "text": {
+      "ca": "L'any 1924, la companyia nord-americana International Harvester va marcar una fita en introduir la calefacció com a opció en les cabines dels seus camions. Aquesta innovació va millorar significativament el confort i la seguretat dels conductors durant els freds hiverns, establint un nou estàndard que aviat es convertiria en un element indispensable en el transport pesant.",
+      "es": "En el año 1924, la compañía estadounidense International Harvester marcó un hito al introducir la calefacción como opción en las cabinas de sus camiones. Esta innovación mejoró significativamente el confort y la seguridad de los conductores durante los fríos inviernos, estableciendo un nuevo estándar que pronto se convertiría en un elemento indispensable en el transporte pesado."
+    },
+    "fonts": [
+      {
+        "nom": "International Truck and Engine Corporation Heritage",
+        "url": "https://www.navistar.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-10-13"
+  },
+  {
     "categoria": "curiositat-tecnica",
     "any": "2007",
     "titol": {
