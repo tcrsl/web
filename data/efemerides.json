@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb vitrall de seguretat",
+      "es": "El nacimiento de la primera cabina con vidrio de seguridad"
+    },
+    "text": {
+      "ca": "L'any 1930, Ford va ser el primer fabricant a instal·lar de sèrie vidre laminat de seguretat a les cabines dels seus camions i vehicles. Aquesta innovació va reduir dràsticament el risc de ferides greus per fragments de vidre en cas d'impacte, marcant un abans i un després en la seguretat dels transportistes.",
+      "es": "En el año 1930, Ford fue el primer fabricante en instalar de serie vidrio laminado de seguridad en las cabinas de sus camiones y vehículos. Esta innovación redujo drásticamente el riesgo de heridas graves por fragmentos de vidrio en caso de impacto, marcando un antes y un después en la seguridad de los transportistas."
+    },
+    "fonts": [
+      {
+        "nom": "Ford Heritage Vault",
+        "url": "https://fordheritagevault.com"
+      },
+      {
+        "nom": "The Henry Ford Museum",
+        "url": "https://www.thehenryford.org"
+      }
+    ],
+    "data": "2026-10-14"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera cabina amb sistema de calefacció",
