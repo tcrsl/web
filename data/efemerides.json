@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1974",
+    "titol": {
+      "ca": "L'origen del camió de càrrega lateral per a contenidors",
+      "es": "El origen del camión de carga lateral para contenedores"
+    },
+    "text": {
+      "ca": "L'any 1974 es va revolucionar el transport intermodal amb la invenció del camió de càrrega lateral o grúa lateral. Desenvolupat a Suècia per Bengt-Olof Hammar, aquest sistema hidràulic permet que un sol vehicle pugui carregar i descarregar contenidors pesants de forma autònoma en pocs minuts, sense dependre de la maquinària fixa de les terminals.",
+      "es": "En el año 1974 se revolucionó el transporte intermodal con la invención del camión de carga lateral o grúa lateral. Desarrollado en Suecia por Bengt-Olof Hammar, este sistema hidráulico permite que un solo vehículo pueda cargar y descargar contenedores pesados de forma autónoma en pocos minutos, sin depender de la maquinaria fija de las terminales."
+    },
+    "fonts": [
+      {
+        "nom": "Hammar Lift",
+        "url": "https://www.hammarlift.com"
+      }
+    ],
+    "data": "2026-10-15"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb vitrall de seguretat",
