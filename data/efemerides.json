@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de preselecció",
+      "es": "El nacimiento de la primera caja de cambios de preselección"
+    },
+    "text": {
+      "ca": "L'any 1931, el fabricant Wilson va introduir la primera caixa de canvis de preselecció comercial. Aquest sistema permetia al conductor seleccionar la marxa desitjada abans d'activar-la, millorant considerablement la suavitat i la seguretat en la conducció de vehicles pesants i autobusos de l'època.",
+      "es": "En el año 1931, el fabricante Wilson introdujo la primera caja de cambios de preselección comercial. Este sistema permitía al conductor seleccionar la marcha deseada antes de activarla, mejorando considerablemente la suavidad y la seguridad en la conducción de vehículos pesados y autobuses de la época."
+    },
+    "fonts": [
+      {
+        "nom": "Science Museum Group",
+        "url": "https://collection.sciencemuseumgroup.org.uk"
+      }
+    ],
+    "data": "2026-10-16"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1974",
     "titol": {
       "ca": "L'origen del camió de càrrega lateral per a contenidors",
