@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
+      "ca": "El naixement de la primera cabina amb capó curt",
+      "es": "El nacimiento de la primera cabina con capó corto"
+    },
+    "text": {
+      "ca": "L'any 1931, el fabricant nord-americà White va revolucionar el disseny dels camions en presentar el 'Model 643', que incorporava el motor sota la cabina. Aquest canvi va permetre escurçar la longitud total del vehicle sense perdre potència, millorant la maniobrabilitat en espais urbans i entorns de treball exigents.",
+      "es": "En el año 1931, el fabricante estadounidense White revolucionó el diseño de los camiones al presentar el 'Model 643', que incorporaba el motor bajo la cabina. Este cambio permitió acortar la longitud total del vehículo sin perder potencia, mejorando la maniobrabilidad en espacios urbanos y entornos de trabajo exigentes."
+    },
+    "fonts": [
+      {
+        "nom": "White Motor Company Historical Society",
+        "url": "https://whitetruckhistory.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-10-17"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
       "ca": "El naixement de la primera caixa de canvis de preselecció",
       "es": "El nacimiento de la primera caja de cambios de preselección"
     },
