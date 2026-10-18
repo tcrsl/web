@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis sincronitzada de tipus constant",
+      "es": "El nacimiento de la primera caja de cambios sincronizada de tipo constante"
+    },
+    "text": {
+      "ca": "L'any 1924, Earl Thompson va introduir la primera caixa de canvis sincronitzada, revolucionant el maneig dels vehicles pesants. Aquest sistema va permetre igualar les velocitats dels engranatges abans de l'acoblament, facilitant molt el canvi de marxes per als conductors de camions i reduint el desgast mecànic de la transmissió.",
+      "es": "En 1924, Earl Thompson introdujo la primera caja de cambios sincronizada, revolucionando el manejo de los vehículos pesados. Este sistema permitió igualar las velocidades de los engranajes antes del acoplamiento, facilitando enormemente el cambio de marchas para los conductores de camiones y reduciendo el desgaste mecánico de la transmisión."
+    },
+    "fonts": [
+      {
+        "nom": "SAE International",
+        "url": "https://www.sae.org"
+      },
+      {
+        "nom": "General Motors Heritage Center",
+        "url": "https://www.gmheritagecenter.com"
+      }
+    ],
+    "data": "2026-10-18"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
       "ca": "El naixement de la primera cabina amb capó curt",
