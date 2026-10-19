@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina basculant",
+      "es": "El nacimiento de la primera cabina basculante"
+    },
+    "text": {
+      "ca": "L'any 1930, la marca francesa Willème va introduir la primera cabina basculant en un camió de gran tonatge. Aquest avenç va revolucionar el manteniment mecànic, permetent un accés ràpid i senzill al motor sense haver de desmuntar parts complexes de la carrosseria.",
+      "es": "En el año 1930, la marca francesa Willème introdujo la primera cabina basculante en un camión de gran tonelaje. Este avance revolucionó el mantenimiento mecánico, permitiendo un acceso rápido y sencillo al motor sin tener que desmontar partes complejas de la carrocería."
+    },
+    "fonts": [
+      {
+        "nom": "Fondation Berliet",
+        "url": "https://www.fondationberliet.org"
+      },
+      {
+        "nom": "Willème Histoire du constructeur",
+        "url": "https://www.willeme.org"
+      }
+    ],
+    "data": "2026-10-19"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis sincronitzada de tipus constant",
