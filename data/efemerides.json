@@ -3,6 +3,25 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb llitera integrada",
+      "es": "El nacimiento de la primera cabina con litera integrada"
+    },
+    "text": {
+      "ca": "A la dècada de 1930, els fabricants americans van començar a introduir les primeres cabines amb lliteres integrades per als llargs recorreguts. Aquesta innovació va permetre als transportistes descansar amb seguretat sense abandonar la càrrega, transformant radicalment les rutes de llarga distància i la logística del transport pesant.",
+      "es": "En la década de 1930, los fabricantes americanos comenzaron a introducir las primeras cabinas con literas integradas para los largos recorridos. Esta innovación permitió a los transportistas descansar con seguridad sin abandonar la carga, transformando radicalmente las rutas de larga distancia y la logística del transporte pesado."
+    },
+    "fonts": [
+      {
+        "nom": "American Truck Historical Society",
+        "url": "https://aths.org"
+      }
+    ],
+    "data": "2026-10-20"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina basculant",
       "es": "El nacimiento de la primera cabina basculante"
     },
