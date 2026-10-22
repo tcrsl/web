@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis amb reductora",
+      "es": "El nacimiento de la primera caja de cambios con reductora"
+    },
+    "text": {
+      "ca": "L'any 1924, la marca alemanya Benz & Cie va introduir un sistema de reductora per als seus camions, permetent superar pendents molt més pronunciades amb càrregues pesants. Aquesta innovació va revolucionar el transport de mercaderies en terrenys difícils, optimitzant la potència del motor i facilitant la feina diària dels transportistes. Des de llavors, el control del parell motor ha estat fonamental en l'enginyeria del camió.",
+      "es": "En 1924, la marca alemana Benz & Cie introdujo un sistema de reductora para sus camiones, permitiendo superar pendientes mucho más pronunciadas con cargas pesadas. Esta innovación revolucionó el transporte de mercancías en terrenos difíciles, optimizando la potencia del motor y facilitando el trabajo diario de los transportistas. Desde entonces, el control del par motor ha sido fundamental en la ingeniería del camión."
+    },
+    "fonts": [
+      {
+        "nom": "Mercedes-Benz Group Media",
+        "url": "https://group-media.mercedes-benz.com"
+      }
+    ],
+    "data": "2026-10-22"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina basculant",
