@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat (cabover)",
+      "es": "El nacimiento de la primera cabina con control avanzado (cabover)"
+    },
+    "text": {
+      "ca": "L'any 1930, la companyia Autocar va introduir el model 'Blue Streak', el primer camió de producció amb control avançat. Aquest disseny va permetre moure el motor sota la cabina, maximitzant l'espai de càrrega i millorant la maniobrabilitat en entorns urbans congestionats.",
+      "es": "En 1930, la compañía Autocar introdujo el modelo 'Blue Streak', el primer camión de producción con control avanzado. Este diseño permitió mover el motor bajo la cabina, maximizando el espacio de carga y mejorando la maniobrabilidad en entornos urbanos congestionados."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com"
+      },
+      {
+        "nom": "Society of Automotive Historians",
+        "url": "https://www.autohistory.org"
+      }
+    ],
+    "data": "2026-10-23"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis amb reductora",
