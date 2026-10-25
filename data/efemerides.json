@@ -7,6 +7,29 @@
       "es": "El nacimiento de la primera cabina con control de temperatura"
     },
     "text": {
+      "ca": "L'any 1930, la companyia nord-americana International Harvester va marcar una fita en introduir els primers sistemes de calefacció per a les cabines dels seus camions. Aquesta innovació va transformar radicalment el confort i la seguretat dels transportistes que operaven en climes freds, establint un nou estàndard de qualitat per a tota la indústria del motor pesant.",
+      "es": "En el año 1930, la compañía estadounidense International Harvester marcó un hito al introducir los primeros sistemas de calefacción para las cabinas de sus camiones. Esta innovación transformó radicalmente el confort y la seguridad de los transportistas que operaban en climas fríos, estableciendo un nuevo estándar de calidad para toda la industria del motor pesado."
+    },
+    "fonts": [
+      {
+        "nom": "International Harvester Archives",
+        "url": "https://www.internationaltrucks.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-10-25"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control de temperatura",
+      "es": "El nacimiento de la primera cabina con control de temperatura"
+    },
+    "text": {
       "ca": "L'any 1930, la companyia nord-americana International Harvester va introduir els primers sistemes rudimentaris de calefacció a les cabines dels seus camions. Aquesta innovació va transformar radicalment el confort i la seguretat dels transportistes que operaven en climes freds, marcant l'inici del desenvolupament del control climàtic en vehicles pesants.",
       "es": "En el año 1930, la compañía estadounidense International Harvester introdujo los primeros sistemas rudimentarios de calefacción en las cabinas de sus camiones. Esta innovación transformó radicalmente el confort y la seguridad de los transportistas que operaban en climas fríos, marcando el inicio del desarrollo del control climático en vehículos pesados."
     },
