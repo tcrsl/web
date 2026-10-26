@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb capó rebaixat",
+      "es": "El nacimiento de la primera cabina con capó rebajado"
+    },
+    "text": {
+      "ca": "A principis dels anys 30, els enginyers van començar a dissenyar cabines amb el capó més baix per millorar la visibilitat directa del conductor sobre la carretera. Aquesta innovació va ser crucial per augmentar la seguretat en les maniobres complexes amb camions de gran pes i càrrega.",
+      "es": "A principios de los años 30, los ingenieros comenzaron a diseñar cabinas con el capó más bajo para mejorar la visibilidad directa del conductor sobre la carretera. Esta innovación fue crucial para aumentar la seguridad en las maniobras complejas con camiones de gran peso y carga."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Trucks History",
+        "url": "https://www.volvotrucks.com"
+      },
+      {
+        "nom": "Society of Automotive Historians",
+        "url": "https://autohistory.org"
+      }
+    ],
+    "data": "2026-10-26"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina amb control de temperatura",
       "es": "El nacimiento de la primera cabina con control de temperatura"
     },
