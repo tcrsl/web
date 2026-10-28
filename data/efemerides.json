@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb capó rebaixat",
+      "es": "El nacimiento de la primera cabina con capó rebajado"
+    },
+    "text": {
+      "ca": "A la dècada de 1930, els enginyers van començar a dissenyar cabines amb un capó més baix per millorar la visibilitat directa del conductor sobre la carretera. Aquesta innovació va permetre reduir significativament els punts cecs davant del vehicle, augmentant la seguretat en les maniobres complexes de transport i càrrega.",
+      "es": "En la década de 1930, los ingenieros comenzaron a diseñar cabinas con un capó más bajo para mejorar la visibilidad directa del conductor sobre la carretera. Esta innovación permitió reducir significativamente los puntos ciegos frente al vehículo, aumentando la seguridad en las maniobras complejas de transporte y carga."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Group Historical Archives",
+        "url": "https://www.volvogroup.com/en/about/history.html"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-10-28"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera furgoneta amb motor dièsel",
