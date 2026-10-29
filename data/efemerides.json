@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1910",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb parabrisa",
+      "es": "El nacimiento de la primera cabina con parabrisas"
+    },
+    "text": {
+      "ca": "Abans de 1910, els conductors de camions anaven a la intempèrie. L'addició dels primers vidres frontals va suposar una revolució en la seguretat i el confort, protegint per fi els treballadors del vent i dels residus durant el transport.",
+      "es": "Antes de 1910, los conductores de camiones iban a la intemperie. La adición de los primeros cristales frontales supuso una revolución en la seguridad y el confort, protegiendo por fin a los trabajadores del viento y de los residuos durante el transporte."
+    },
+    "fonts": [
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-10-29"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb capó rebaixat",
