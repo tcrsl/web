@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera direcció assistida hidràulica",
+      "es": "El nacimiento de la primera dirección asistida hidráulica"
+    },
+    "text": {
+      "ca": "L'any 1924, l'enginyer Francis W. Davis va desenvolupar el primer sistema de direcció assistida hidràulica per a vehicles pesants. Aquesta innovació va transformar radicalment el maneig dels camions, reduint l'esforç físic dels conductors en maniobrar càrregues voluminoses amb seguretat.",
+      "es": "En 1924, el ingeniero Francis W. Davis desarrolló el primer sistema de dirección asistida hidráulica para vehículos pesados. Esta innovación transformó radicalmente el manejo de los camiones, reduciendo el esfuerzo físico de los conductores al maniobrar cargas voluminosas con seguridad."
+    },
+    "fonts": [
+      {
+        "nom": "Society of Automotive Engineers (SAE International)",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-10-30"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1910",
     "titol": {
       "ca": "El naixement de la primera cabina amb parabrisa",
