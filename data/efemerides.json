@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1977",
+    "titol": {
+      "ca": "L'origen de la grua mòbil tot terreny moderna",
+      "es": "El origen de la grúa móvil todo terreno moderna"
+    },
+    "text": {
+      "ca": "L'any 1977, la companyia Liebherr va revolucionar el sector amb el llançament de la LTM 1025, la primera grua mòbil dissenyada per circular tant per carretera com per terrenys irregulars. Aquest model va combinar la velocitat d'un camió amb la gran capacitat d'elevació fora d'asfalt. L'innovador concepte va establir l'estàndard de la maquinària d'elevació actual.",
+      "es": "En el año 1977, la compañía Liebherr revolucionó el sector con el lanzamiento de la LTM 1025, la primera grúa móvil diseñada para circular tanto por carretera como por terrenos irregulares. Este modelo combinó la velocidad de un camión con la gran capacidad de elevación fuera de asfalto. El innovador concepto estableció el estándar de la maquinaria de elevación actual."
+    },
+    "fonts": [
+      {
+        "nom": "Liebherr",
+        "url": "https://www.liebherr.com"
+      }
+    ],
+    "data": "2026-10-31"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera direcció assistida hidràulica",
