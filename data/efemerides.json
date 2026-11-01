@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat (cabover)",
+      "es": "El nacimiento de la primera cabina con control avanzado (cabover)"
+    },
+    "text": {
+      "ca": "A la dècada dels anys 30, Autocar Company va introduir el disseny 'cabover' o de control avançat. Aquesta innovació va permetre retallar la longitud del xassís per complir amb les estrictes lleis de llargària de l'època, millorant alhora la maniobrabilitat en entorns urbans densos.",
+      "es": "En la década de los años 30, Autocar Company introdujo el diseño 'cabover' o de control avanzado. Esta innovación permitió recortar la longitud del chasis para cumplir con las estrictas leyes de longitud de la época, mejorando al mismo tiempo la maniobrabilidad en entornos urbanos densos."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks",
+        "url": "https://www.autocartruck.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-11-01"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1977",
     "titol": {
       "ca": "L'origen de la grua mòbil tot terreny moderna",
