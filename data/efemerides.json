@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb llitera integrada",
+      "es": "El nacimiento de la primera cabina con litera integrada"
+    },
+    "text": {
+      "ca": "L'any 1924, la companyia White Motor Company va revolucionar el transport de llarga distància presentant el primer camió amb una cabina que incloïa una llitera integrada. Aquesta innovació va permetre als conductors descansar millor durant els seus trajectes, millorant significativament la logística i les rutes de llarg abast.",
+      "es": "En 1924, la compañía White Motor Company revolucionó el transporte de larga distancia presentando el primer camión con una cabina que incluía una litera integrada. Esta innovación permitió a los conductores descansar mejor durante sus trayectos, mejorando significativamente la logística y las rutas de largo alcance."
+    },
+    "fonts": [
+      {
+        "nom": "White Motor Company History - Hemmings",
+        "url": "https://www.hemmings.com/stories/article/the-white-motor-company"
+      },
+      {
+        "nom": "Society of Automotive Historians",
+        "url": "https://autohistory.org"
+      }
+    ],
+    "data": "2026-11-02"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat (cabover)",
