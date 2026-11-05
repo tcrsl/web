@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis amb reductora",
+      "es": "El nacimiento de la primera caja de cambios con reductora"
+    },
+    "text": {
+      "ca": "L'any 1924 es va popularitzar la introducció de la caixa de canvis amb reductora, una innovació tècnica que va permetre als camions gestionar millor les càrregues pesades en pendents pronunciades. Aquest sistema va revolucionar el transport de mercaderies, augmentant la potència de tracció sense necessitat de motors més grans.",
+      "es": "En 1924 se popularizó la introducción de la caja de cambios con reductora, una innovación técnica que permitió a los camiones gestionar mejor las cargas pesadas en pendientes pronunciadas. Este sistema revolucionó el transporte de mercancías, aumentando la potencia de tracción sin necesidad de motores más grandes."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Trucks History",
+        "url": "https://www.volvotrucks.com"
+      },
+      {
+        "nom": "Society of Automotive Engineers",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-11-05"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
