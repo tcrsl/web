@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat",
+      "es": "El nacimiento de la primera cabina con control avanzado"
+    },
+    "text": {
+      "ca": "L'any 1930, Autocar Company va presentar el primer camió amb cabina situada sobre el motor, conegut com a disseny 'cab-over'. Aquesta innovació va permetre retallar la longitud total del vehicle mantenint la mateixa capacitat de càrrega, optimitzant així la maniobrabilitat en entorns urbans estrets.",
+      "es": "En 1930, Autocar Company presentó el primer camión con cabina situada sobre el motor, conocido como diseño 'cab-over'. Esta innovación permitió recortar la longitud total del vehículo manteniendo la misma capacidad de carga, optimizando así la maniobrabilidad en entornos urbanos estrechos."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-11-06"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis amb reductora",
