@@ -3,6 +3,25 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb inclinació",
+      "es": "El nacimiento de la primera cabina abatible"
+    },
+    "text": {
+      "ca": "L'any 1930, l'empresa francesa Willeme va presentar el primer camió amb una cabina que es podia inclinar cap endavant. Aquest disseny revolucionari va facilitar molt l'accés al motor per realitzar el manteniment necessari, transformant per sempre la mecànica dels vehicles pesants de llarga distància.",
+      "es": "En el año 1930, la empresa francesa Willeme presentó el primer camión con una cabina que se podía inclinar hacia adelante. Este diseño revolucionario facilitó mucho el acceso al motor para realizar el mantenimiento necesario, transformando para siempre la mecánica de los vehículos pesados de larga distancia."
+    },
+    "fonts": [
+      {
+        "nom": "Willeme Heritage",
+        "url": "https://www.fondationberliet.org"
+      }
+    ],
+    "data": "2026-11-07"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina amb control avançat",
       "es": "El nacimiento de la primera cabina con control avanzado"
     },
