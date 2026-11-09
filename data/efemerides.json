@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
+      "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
+    },
+    "text": {
+      "ca": "L'any 1924, la marca alemanya Benz va introduir la primera caixa de canvis de cinc velocitats en els seus vehicles industrials. Aquesta innovació va permetre als camions gestionar millor la potència del motor en pendents pronunciades, optimitzant significativament el transport de càrregues pesants a llarga distància.",
+      "es": "En 1924, la marca alemana Benz introdujo la primera caja de cambios de cinco velocidades en sus vehículos industriales. Esta innovación permitió a los camiones gestionar mejor la potencia del motor en pendientes pronunciadas, optimizando significativamente el transporte de cargas pesadas a larga distancia."
+    },
+    "fonts": [
+      {
+        "nom": "Mercedes-Benz Group Media",
+        "url": "https://group-media.mercedes-benz.com"
+      }
+    ],
+    "data": "2026-11-09"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat",
