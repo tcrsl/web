@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb estructura protectora",
+      "es": "El nacimiento de la primera cabina con estructura protectora"
+    },
+    "text": {
+      "ca": "A la dècada dels trenta, el sector de la maquinària pesant va introduir les primeres estructures de protecció contra bolcaments (ROPS) per garantir la seguretat dels operaris. Aquestes estructures reforçades van transformar el disseny de les cabines, salvant innombrables vides en el transport i l'obra civil.",
+      "es": "En la década de los treinta, el sector de la maquinaria pesada introdujo las primeras estructuras de protección contra vuelcos (ROPS) para garantizar la seguridad de los operarios. Estas estructuras reforzadas transformaron el diseño de las cabinas, salvando innumerables vidas en el transporte y la obra civil."
+    },
+    "fonts": [
+      {
+        "nom": "Caterpillar Heritage",
+        "url": "https://www.caterpillar.com"
+      },
+      {
+        "nom": "International Construction Equipment Museum",
+        "url": "https://www.icemuseum.org"
+      }
+    ],
+    "data": "2026-11-11"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1910",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
