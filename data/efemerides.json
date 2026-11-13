@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
+      "ca": "El naixement de la primera caixa de canvis sincronitzada",
+      "es": "El nacimiento de la primera caja de cambios sincronizada"
+    },
+    "text": {
+      "ca": "L'any 1924, Earl Thompson va introduir el primer sistema de sincronització, una innovació que permetia igualar les velocitats dels engranatges abans d'engranar-los. Aquesta millora va ser fonamental per a la indústria del transport, ja que va facilitar enormement la conducció dels camions pesants i va reduir el desgast mecànic de les transmissions.",
+      "es": "En 1924, Earl Thompson introdujo el primer sistema de sincronización, una innovación que permitía igualar las velocidades de los engranajes antes de engranarlos. Esta mejora fue fundamental para la industria del transporte, ya que facilitó enormemente la conducción de los camiones pesados y redujo el desgaste mecánico de las transmisiones."
+    },
+    "fonts": [
+      {
+        "nom": "SAE International",
+        "url": "https://www.sae.org"
+      },
+      {
+        "nom": "General Motors Heritage Center",
+        "url": "https://www.gmheritagecenter.com"
+      }
+    ],
+    "data": "2026-11-13"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
       "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
     },
