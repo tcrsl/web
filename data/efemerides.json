@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina basculant",
+      "es": "El nacimiento de la primera cabina basculante"
+    },
+    "text": {
+      "ca": "L'any 1930, la marca Marmon-Herrington va introduir al mercat la primera cabina de camió dissenyada per ser basculant. Aquesta innovació va revolucionar el manteniment mecànic, permetent un accés ràpid i senzill al motor sense necessitat de desmuntar grans peces de la carrosseria.",
+      "es": "En el año 1930, la marca Marmon-Herrington introdujo en el mercado la primera cabina de camión diseñada para ser basculante. Esta innovación revolucionó el mantenimiento mecánico, permitiendo un acceso rápido y sencillo al motor sin necesidad de desmontar grandes piezas de la carrocería."
+    },
+    "fonts": [
+      {
+        "nom": "Marmon-Herrington Heritage",
+        "url": "https://marmon-herrington.com"
+      },
+      {
+        "nom": "Society of Automotive Historians",
+        "url": "https://www.autohistory.org"
+      }
+    ],
+    "data": "2026-11-15"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
