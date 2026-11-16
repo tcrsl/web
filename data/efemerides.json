@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat (cabina sobre motor)",
+      "es": "El nacimiento de la primera cabina con control avanzado (cabina sobre motor)"
+    },
+    "text": {
+      "ca": "L'any 1930, la marca Autocar va introduir el disseny 'cab-over-engine', que situava la cabina directament sobre el motor. Aquesta innovació va permetre retallar la longitud total del camió sense perdre espai de càrrega, convertint-se en l'estàndard per a la maniobrabilitat en entorns urbans i estrets.",
+      "es": "En el año 1930, la marca Autocar introdujo el diseño 'cab-over-engine', que situaba la cabina directamente sobre el motor. Esta innovación permitió recortar la longitud total del camión sin perder espacio de carga, convirtiéndose en el estándar para la maniobrabilidad en entornos urbanos y estrechos."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-11-16"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina basculant",
       "es": "El nacimiento de la primera cabina basculante"
     },
