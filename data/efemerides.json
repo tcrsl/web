@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
+      "ca": "El naixement de la primera cabina amb control de temperatura",
+      "es": "El nacimiento de la primera cabina con control de temperatura"
+    },
+    "text": {
+      "ca": "L'any 1930, la companyia nord-americana International Harvester va introduir els primers sistemes de ventilació i calefacció regulable en les cabines dels seus camions. Aquesta innovació va transformar radicalment el confort i la seguretat dels conductors en llargues distàncies, marcant l'inici del desenvolupament del control climàtic industrial.",
+      "es": "En el año 1930, la compañía estadounidense International Harvester introdujo los primeros sistemas de ventilación y calefacción regulable en las cabinas de sus camiones. Esta innovación transformó radicalmente el confort y la seguridad de los conductores en largas distancias, marcando el inicio del desarrollo del control climático industrial."
+    },
+    "fonts": [
+      {
+        "nom": "International Harvester Archives",
+        "url": "https://www.internationaltrucks.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-11-17"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
       "ca": "El naixement de la primera cabina amb control avançat (cabina sobre motor)",
       "es": "El nacimiento de la primera cabina con control avanzado (cabina sobre motor)"
     },
