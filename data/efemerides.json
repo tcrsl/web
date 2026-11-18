@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1910",
+    "titol": {
+      "ca": "El naixement dels primers camions amb tracció a les quatre rodes",
+      "es": "El nacimiento de los primeros camiones con tracción a las cuatro ruedas"
+    },
+    "text": {
+      "ca": "L'any 1910, l'empresa Badger Four-Wheel Drive va marcar una fita en la història del transport pesant en comercialitzar el primer camió amb tracció a les quatre rodes. Aquesta innovació va permetre als vehicles operar amb seguretat en terrenys complicats i amb càrregues pesants, millorant dràsticament l'eficiència en el transport de mercaderies fora de carretera.",
+      "es": "En el año 1910, la empresa Badger Four-Wheel Drive marcó un hito en la historia del transporte pesado al comercializar el primer camión con tracción a las cuatro ruedas. Esta innovación permitió a los vehículos operar con seguridad en terrenos complicados y con cargas pesadas, mejorando drásticamente la eficiencia en el transporte de mercancías fuera de carretera."
+    },
+    "fonts": [
+      {
+        "nom": "Wisconsin Automotive Museum",
+        "url": "https://wisconsinautomuseum.com"
+      },
+      {
+        "nom": "Four Wheel Drive Foundation",
+        "url": "https://fwdfoundation.com"
+      }
+    ],
+    "data": "2026-11-18"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control de temperatura",
