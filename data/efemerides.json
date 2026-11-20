@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
+      "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
+    },
+    "text": {
+      "ca": "L'any 1924, Mack Trucks va introduir la primera transmissió de cinc velocitats per a vehicles pesants, millorant radicalment l'eficiència en el transport. Aquesta innovació va permetre als camions adaptar millor la seva potència a les càrregues pesades i als terrenys difícils, marcant una fita en l'enginyeria del transport per carretera.",
+      "es": "En el año 1924, Mack Trucks introdujo la primera transmisión de cinco velocidades para vehículos pesados, mejorando radicalmente la eficiencia en el transporte. Esta innovación permitió a los camiones adaptar mejor su potencia a las cargas pesadas y a los terrenos difíciles, marcando un hito en la ingeniería del transporte por carretera."
+    },
+    "fonts": [
+      {
+        "nom": "Mack Trucks Historical Museum",
+        "url": "https://www.macktruckshistoricalmuseum.org"
+      }
+    ],
+    "data": "2026-11-20"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat",
