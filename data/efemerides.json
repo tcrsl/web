@@ -1,6 +1,25 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1931",
+    "titol": {
+      "ca": "El naixement de la primera cabina basculant",
+      "es": "El nacimiento de la primera cabina basculante"
+    },
+    "text": {
+      "ca": "L'any 1931, l'enginyer italià Giulio Cesare Cappa va presentar el primer camió amb cabina basculant de la història. Aquesta innovació va revolucionar el manteniment mecànic, permetent un accés directe i ràpid al motor sense haver de desmuntar parts complexes de la carrosseria.",
+      "es": "En el año 1931, el ingeniero italiano Giulio Cesare Cappa presentó el primer camión con cabina basculante de la historia. Esta innovación revolucionó el mantenimiento mecánico, permitiendo un acceso directo y rápido al motor sin tener que desmontar partes complejas de la carrocería."
+    },
+    "fonts": [
+      {
+        "nom": "Museo Nazionale dell'Automobile",
+        "url": "https://www.museoauto.com"
+      }
+    ],
+    "data": "2026-11-21"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
