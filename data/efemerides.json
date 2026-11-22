@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat",
+      "es": "El nacimiento de la primera cabina con control avanzado"
+    },
+    "text": {
+      "ca": "Als anys 30, Autocar va revolucionar el sector llançant el model DC, el primer camió amb configuració 'cab-over' o control avançat. Aquest disseny va permetre escurçar la longitud total del vehicle, millorant la maniobrabilitat en espais reduïts sense sacrificar la capacitat de càrrega.",
+      "es": "En los años 30, Autocar revolucionó el sector lanzando el modelo DC, el primer camión con configuración 'cab-over' o control avanzado. Este diseño permitió acortar la longitud total del vehículo, mejorando la maniobrabilidad en espacios reducidos sin sacrificar la capacidad de carga."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com"
+      },
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      }
+    ],
+    "data": "2026-11-22"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1931",
     "titol": {
       "ca": "El naixement de la primera cabina basculant",
