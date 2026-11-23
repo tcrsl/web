@@ -1,6 +1,29 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb calefacció",
+      "es": "El nacimiento de la primera cabina con calefacción"
+    },
+    "text": {
+      "ca": "Abans de 1924, els conductors de camions patien el fred extrem durant els mesos d'hivern. Aquell any, els fabricants van començar a implementar sistemes de calefacció que aprofitaven la calor residual del motor, millorant significativament la comoditat i la seguretat en llargs trajectes.",
+      "es": "Antes de 1924, los conductores de camiones sufrían el frío extremo durante los meses de invierno. Aquel año, los fabricantes empezaron a implementar sistemas de calefacción que aprovechaban el calor residual del motor, mejorando significativamente la comodidad y la seguridad en largos trayectos."
+    },
+    "fonts": [
+      {
+        "nom": "Volvo Trucks History",
+        "url": "https://www.volvotrucks.com"
+      },
+      {
+        "nom": "Society of Automotive Engineers (SAE)",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-11-23"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat",
