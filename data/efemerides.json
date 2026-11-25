@@ -1,5 +1,28 @@
 [
   {
+    "categoria": "historia-maquinaria",
+    "any": "1930",
+    "titol": {
+      "ca": "El naixement de la primera cabina amb control avançat",
+      "es": "El nacimiento de la primera cabina con control avanzado"
+    },
+    "text": {
+      "ca": "L'any 1930, Autocar Company va introduir el primer camió amb control avançat, situant la cabina sobre el motor. Aquest disseny va revolucionar la logística permetent vehicles més curts i amb major capacitat de càrrega per a les mateixes dimensions totals.",
+      "es": "En el año 1930, Autocar Company introdujo el primer camión con control avanzado, situando la cabina sobre el motor. Este diseño revolucionó la logística al permitir vehículos más cortos y con mayor capacidad de carga para las mismas dimensiones totales."
+    },
+    "fonts": [
+      {
+        "nom": "Autocar Trucks History",
+        "url": "https://www.autocartruck.com"
+      },
+      {
+        "nom": "Society of Automotive Historians",
+        "url": "https://www.autohistory.org"
+      }
+    ],
+    "data": "2026-11-25"
+  },
+  {
     "categoria": "curiositat-tecnica",
     "any": "2007",
     "titol": {
