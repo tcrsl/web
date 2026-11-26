@@ -1,6 +1,24 @@
 [
   {
     "categoria": "historia-maquinaria",
+    "any": "1916",
+    "titol": {
+      "ca": "L'origen del primer camió hormigonera",
+      "es": "El origen del primer camión hormigonera"
+    },
+    "text": {
+      "ca": "L'any 1916, l'inventor Stephen Stepanian va sol·licitar la patent del primer camió amb tambor giratori per barrejar formigó durant el transport. Tot i que la concessió es va endarrerir uns anys, la seva ideació va revolucionar la indústria de la construcció en permetre subministrar formigó fresc directament a l'obra.",
+      "es": "En el año 1916, el inventor Stephen Stepanian solicitó la patente del primer camión con tambor giratorio para mezclar hormigón durante el transporte. Aunque la concesión se retrasó unos años, su ideación revolucionó la industria de la construcción al permitir suministrar hormigón fresco directamente a la obra."
+    },
+    "fonts": [
+      {
+        "nom": "National Ready Mixed Concrete Association"
+      }
+    ],
+    "data": "2026-11-26"
+  },
+  {
+    "categoria": "historia-maquinaria",
     "any": "1930",
     "titol": {
       "ca": "El naixement de la primera cabina amb control avançat",
