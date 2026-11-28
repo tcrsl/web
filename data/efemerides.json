@@ -3,6 +3,29 @@
     "categoria": "historia-maquinaria",
     "any": "1924",
     "titol": {
+      "ca": "El naixement de la primera cabina amb sistema de calefacció",
+      "es": "El nacimiento de la primera cabina con sistema de calefacción"
+    },
+    "text": {
+      "ca": "L'any 1924, els fabricants de camions van començar a implementar els primers sistemes de calefacció a les cabines, aprofitant la calor residual del motor. Aquesta innovació va millorar dràsticament el confort dels conductors durant l'hivern, transformant la manera d'entendre les llargues jornades de ruta.",
+      "es": "En 1924, los fabricantes de camiones empezaron a implementar los primeros sistemas de calefacción en las cabinas, aprovechando el calor residual del motor. Esta innovación mejoró drásticamente el confort de los conductores durante el invierno, transformando la manera de entender las largas jornadas de ruta."
+    },
+    "fonts": [
+      {
+        "nom": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu"
+      },
+      {
+        "nom": "Society of Automotive Engineers (SAE)",
+        "url": "https://www.sae.org"
+      }
+    ],
+    "data": "2026-11-28"
+  },
+  {
+    "categoria": "historia-maquinaria",
+    "any": "1924",
+    "titol": {
       "ca": "El naixement de la primera caixa de canvis de cinc velocitats",
       "es": "El nacimiento de la primera caja de cambios de cinco velocidades"
     },
